@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - ASMI</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="~/lib/assets/css/main.css" />
+
+    <link rel="stylesheet" href="~/css/setari_aditionale.css" />
+
+</head>
+
+<body class="is-preload" style="margin:0">
+    <header id="header">
+        <a class="logo" href="/"><img src="/images/cropped-asmi-logo-3.png" height="40" width="40" style="margin:5px;"></a>
+        <nav>
+            <a href="#menu">Meniu</a>
+        </nav>
+    </header>
+    <nav id="menu">
+        <ul class="links">
+            <li><a  asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Departamente">Departamente</a></li>
+            <li> <a  asp-area="" asp-controller="Home" asp-action="ZiarulASMI">Ziarul ASMI</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Smarthack">Smarthack</a></li>
+            <li> <a  asp-area="" asp-controller="Home" asp-action="GhidulBobocului">Ghidul Bobocului</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="CalendarASMI">Calendar ASMI & FMI</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div>
+        <main role="main" style="margin:0" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3><b>Contactează-ne! </b></h3>
+                    <p>Și îți vom răspunde pe cât de repede posibil.</p>
+                </section>
+                <section>
+                    <h4><b>Date de contact</b></h4>
+                    <ul class="alt">
+                        <li><a href="#">Strada Academiei Nr. 14 București</a></li>
+                        <li><a href="#">E-mail: cd@asmi.ro</a></li>
+                        <li><a href="#">Phone: 0720 257 456</a></li>
+
+                    </ul>
+                </section>
+                <section>
+                    <h4><b>Retele de socializare</b></h4>
+                    <ul class="plain">
+                        <li><a href="https://www.facebook.com/asmi.ub/about/?ref=page_internal"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/asmi.ub/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="container">
+                &copy; 2021 - ASMI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Scripts -->
+    <script src="~/lib/assets/js/jquery.min.js"></script>
+    <script src="~/lib/assets/js/browser.min.js"></script>
+    <script src="~/lib/assets/js/breakpoints.min.js"></script>
+    <script src="~/lib/assets/js/util.js"></script>
+    <script src="~/lib/assets/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
