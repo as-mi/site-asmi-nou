@@ -6,13 +6,13 @@
 
     <title>@ViewData["Title"] - ASMI</title>
 
+    <link rel="stylesheet" href="~/lib/assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-
     <link rel="stylesheet" href="~/lib/assets/css/main.css" />
-
     <link rel="stylesheet" href="~/css/setari_aditionale.css" />
 
+    @await RenderSectionAsync("Styles", required: false)
 </head>
 
 <body class="is-preload" style="margin:0">

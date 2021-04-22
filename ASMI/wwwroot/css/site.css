@@ -68,27 +68,25 @@ body {
     background-position: 50% 0;
     background-size: cover;
 }
-    body::after {
-        content: "";
-        background-image: url(../images/unibuc.jpg);
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.1;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-
+body::after {
+    content: "";
+    background-image: url(../images/unibuc.jpg);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 #cta {
     background-color: #ce1b28;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/univ-buc.jpg);
+    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url('/images/univ-buc.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
