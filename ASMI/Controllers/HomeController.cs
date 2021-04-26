@@ -115,6 +115,12 @@ namespace ASMI.Controllers
             return View();
         }
 
+        public IActionResult Studenti()
+        {
+            return View();
+        }
+
+
         public IActionResult Smarthack()
         {
             return View();

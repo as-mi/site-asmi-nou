@@ -1,88 +1,88 @@
 ﻿body {
-    background-image: url(../images/wrapbg.jpg) !important;
-    background-position: top left !important;
-    background-repeat: no-repeat !important;
-    background-size: 100% !important;
+background-image: url(../images/wrapbg.jpg) !important;
+background-position: top left !important;
+background-repeat: no-repeat !important;
+background-size: 100% !important;
 }
 
-    body::after {
-        content: none;
-    }
+body::after {
+content: none;
+}
 
 .service-35 {
-    color: #8d97ad;
-    font-weight: 300;
+color: #8d97ad;
+font-weight: 300;
 }
 
-    .service-35 h1, .service-35 h2, .service-35 h3, .service-35 h4, .service-35 h5, .service-35 h6 {
-        color: #3e4555;
-    }
+.service-35 h1, .service-35 h2, .service-35 h3, .service-35 h4, .service-35 h5, .service-35 h6 {
+color: #3e4555;
+}
 
-    .service-35 .font-weight-medium {
-        font-weight: 500;
-    }
+.service-35 .font-weight-medium {
+font-weight: 500;
+}
 
-    .service-35 .badge {
-        line-height: 14px;
-    }
+.service-35 .badge {
+line-height: 14px;
+}
 
-    .service-35 .badge-success {
-        background: #2cdd9b;
-    }
+.service-35 .badge-success {
+background: #2cdd9b;
+}
 
-    .service-35.wrap-service35-box .feature-35-owl .item {
-        position: relative;
-    }
+.service-35.wrap-service35-box .feature-35-owl .item {
+position: relative;
+}
 
-        .service-35.wrap-service35-box .feature-35-owl .item h5 {
-            position: absolute;
-            bottom: 20px;
-            left: 30px;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
+.service-35.wrap-service35-box .feature-35-owl .item h5 {
+position: absolute;
+bottom: 20px;
+left: 30px;
+color: #ffffff;
+text-transform: uppercase;
+}
 
-    .service-35 .max-500 {
-        max-width: 500px;
-    }
+.service-35 .max-500 {
+max-width: 500px;
+}
 
 .owl-dot {
-    box-shadow: none;
+box-shadow: none;
 }
 
 .service-26 {
-    color: #8d97ad;
-    font-weight: 300;
+color: #8d97ad;
+font-weight: 300;
 }
 
-    .service-26 h1, .service-26 h2, .service-26 h3, .service-26 h4, .service-26 h5, .service-26 h6 {
-        color: #3e4555;
-    }
+.service-26 h1, .service-26 h2, .service-26 h3, .service-26 h4, .service-26 h5, .service-26 h6 {
+color: #3e4555;
+}
 
-    .service-26 .font-weight-medium {
-        font-weight: 500;
-    }
+.service-26 .font-weight-medium {
+font-weight: 500;
+}
 
-    .service-26 .badge {
-        line-height: 14px;
-    }
+.service-26 .badge {
+line-height: 14px;
+}
 
-    .service-26 .badge-info {
-        background: #188ef4;
-    }
+.service-26 .badge-info {
+background: #188ef4;
+}
 
-    .service-26 .wrap-service-26 .max-box {
-        max-width: 580px;
-    }
+.service-26 .wrap-service-26 .max-box {
+max-width: 580px;
+}
 
-    .service-26 a {
-        text-decoration: none;
-    }
+.service-26 a {
+text-decoration: none;
+}
 
-    .service-26 .linking {
-        color: #3e4555;
-    }
+.service-26 .linking {
+color: #3e4555;
+}
 
-        .service-26 .linking:hover {
-            color: #316ce8;
-        }
+.service-26 .linking:hover {
+color: #316ce8;
+}
