@@ -216,11 +216,6 @@ namespace ASMI.Controllers
             return View();
         }
 
-        public IActionResult ZiarulASMI()
-        {
-            return View();
-        }
-
         public IActionResult Privacy()
         {
             return View();
