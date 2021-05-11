@@ -2896,7 +2896,7 @@ ul.icons {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    /*background-image: url("../../images/banner.jpg");*/
+    /* background-image: url("../../images/banner.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3172,12 +3172,12 @@ ul.icons {
         -webkit-transition-delay: 1.25s;
         -ms-transition-delay: 1.25s;
         transition-delay: 1.25s;
-        background: #111111;
+        background: #334193;
         content: '';
         display: block;
         height: 100%;
         left: 0;
-        opacity: 0.45;
+        opacity: 0.5;
         position: absolute;
         top: 0;
         width: 100%;
@@ -3185,15 +3185,15 @@ ul.icons {
     }
 
     #banner:after {
-        background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
-        content: ' ';
+        /*background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);*/
+        background: linear-gradient(135deg, #303f5a 0%, #111 74%);
         display: block;
         height: 100%;
         left: 0;
         opacity: 0.6;
         position: absolute;
         top: 0;
-        webkit-linear-gradientidth: 100%;
+        /*webkit-linear-gradient-Width: 100%;*/
         width: 100%;
         z-index: 1;
     }
