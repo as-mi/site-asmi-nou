@@ -14,48 +14,6 @@ content: none;
 box-shadow: none;
 }
 
-.service-26 {
-color: #8d97ad;
-font-weight: 300;
-}
-
-.service-26 h1, .service-26 h2, .service-26 h3, .service-26 h4, .service-26 h5, .service-26 h6 {
-color: #3e4555;
-}
-
-.service-26 .font-weight-medium {
-font-weight: 500;
-}
-
-.service-26 .badge {
-line-height: 14px;
-}
-
-.service-26 .badge-info {
-background: #188ef4;
-}
-
-.service-26 .wrap-service-26 .max-box {
-max-width: 580px;
-}
-
-.service-26 a {
-text-decoration: none;
-}
-
-.service-26 .linking {
-color: #3e4555;
-}
-
-.service-26 .linking:hover {
-color: #316ce8;
-}
-
-
-
-
-
-
 
 .owl-carousel .owl-prev.disabled,
 .owl-carousel .owl-next.disabled {
