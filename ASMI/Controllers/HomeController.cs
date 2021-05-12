@@ -200,23 +200,7 @@ namespace ASMI.Controllers
             return View();
         }
 
-
-        public IActionResult Smarthack()
-        {
-            return View();
-        }
-
-        public IActionResult GhidulBobocului()
-        {
-            return View();
-        }
-
         public IActionResult CalendarASMI()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }
