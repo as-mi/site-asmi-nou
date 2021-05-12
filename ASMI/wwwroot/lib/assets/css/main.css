@@ -1114,7 +1114,7 @@ table {
     }
 
     .testimonials > * {
-        padding: 1.5rem;
+        /*padding: 1.5rem;*/
         width: calc(33.3333333333% + 1rem);
     }
 
@@ -1188,7 +1188,7 @@ table {
     }
 
     .testimonials > * {
-        padding: 1rem;
+        /*padding: 1rem;*/
         width: calc(33.3333333333% + 0.6666666667rem);
     }
 
@@ -1215,7 +1215,7 @@ table {
     }
 
     .testimonials > * {
-        padding: 1rem;
+        /*padding: 1rem;*/
         width: calc(50% + 1rem);
     }
 
@@ -1251,7 +1251,7 @@ table {
     }
 
     .testimonials > * {
-        padding: 1rem;
+        /*padding: 1rem;*/
         width: calc(33.3333333333% + 0.6666666667rem);
     }
 
@@ -1278,7 +1278,7 @@ table {
     }
 
     .testimonials > * {
-        padding: 1rem;
+        /*padding: 1rem;*/
         width: calc(50% + 1rem);
     }
 
@@ -1305,7 +1305,7 @@ table {
     }
 
     .testimonials > * {
-        padding: 1rem;
+        /*padding: 1rem;*/
         width: calc(100% + 2rem);
     }
 
