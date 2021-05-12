@@ -36,7 +36,7 @@ namespace ASMI.Controllers
             new ProjData {
                 img = "CaravanaEducationala.png",
                 desc = "Descoperă Facultatea de Matematică și Informatică a Universității din București!",
-                name = "CARAVANA EDU",
+                name = "CARAVANA EDUCAȚIONALĂ",
                 url = "#"
             },
             new ProjData {
