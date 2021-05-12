@@ -282,7 +282,7 @@ input, select, textarea {
 }
 
 a {
-    color: #ce1b28;
+    color: #334193;
 }
 
 strong, b {
@@ -415,8 +415,8 @@ button,
     input[type="button"]:hover,
     button:hover,
     .button:hover {
-        box-shadow: inset 0 0 0 1px #ce1b28;
-        color: #ce1b28 !important;
+        box-shadow: inset 0 0 0 1px #334193;
+        color: #334193 !important;
     }
 
         input[type="submit"]:hover:active,
@@ -433,7 +433,7 @@ button,
     button.primary,
     .button.primary {
         box-shadow: none;
-        background-color: #ce1b28;
+        background-color: #334193;
         color: #ffffff !important;
     }
 
@@ -634,8 +634,8 @@ textarea {
     input[type="url"]:focus,
     select:focus,
     textarea:focus {
-        border-color: #ce1b28;
-        box-shadow: 0 0 0 1px #ce1b28;
+        border-color: #334193;
+        box-shadow: 0 0 0 1px #334193;
     }
 
 select {
@@ -660,15 +660,15 @@ input[type="radio"] + label {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-    background-color: #ce1b28;
-    border-color: #ce1b28;
+    background-color: #334193;
+    border-color: #334193;
     color: #ffffff;
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-    border-color: #ce1b28;
-    box-shadow: 0 0 0 1px #ce1b28;
+    border-color: #334193;
+    box-shadow: 0 0 0 1px #334193;
 }
 
 ::-webkit-input-placeholder {
@@ -1337,7 +1337,7 @@ table {
 }
 
     .testimonials .content .credit strong {
-        color: #ce1b28;
+        color: #334193;
     }
 
 /* Actions */
@@ -2915,7 +2915,7 @@ ul.icons {
     }
 
     #banner a {
-        color: #ce1b28;
+        color: #334193;
     }
 
     #banner strong, #banner b {
@@ -2954,8 +2954,8 @@ ul.icons {
         #banner input[type="button"]:hover,
         #banner button:hover,
         #banner .button:hover {
-            box-shadow: inset 0 0 0 1px #ce1b28;
-            color: #ce1b28 !important;
+            box-shadow: inset 0 0 0 1px #334193;
+            color: #334193 !important;
         }
 
             #banner input[type="submit"]:hover:active,
@@ -2972,7 +2972,7 @@ ul.icons {
         #banner button.primary,
         #banner .button.primary {
             box-shadow: none;
-            background-color: #ce1b28;
+            background-color: #334193;
             color: #ffffff !important;
         }
 
@@ -3017,8 +3017,8 @@ ul.icons {
         #banner input[type="url"]:focus,
         #banner select:focus,
         #banner textarea:focus {
-            border-color: #ce1b28;
-            box-shadow: 0 0 0 1px #ce1b28;
+            border-color: #334193;
+            box-shadow: 0 0 0 1px #334193;
         }
 
     #banner select {
@@ -3043,15 +3043,15 @@ ul.icons {
 
     #banner input[type="checkbox"]:checked + label:before,
     #banner input[type="radio"]:checked + label:before {
-        background-color: #ce1b28;
-        border-color: #ce1b28;
+        background-color: #334193;
+        border-color: #334193;
         color: #ffffff;
     }
 
     #banner input[type="checkbox"]:focus + label:before,
     #banner input[type="radio"]:focus + label:before {
-        border-color: #ce1b28;
-        box-shadow: 0 0 0 1px #ce1b28;
+        border-color: #334193;
+        box-shadow: 0 0 0 1px #334193;
     }
 
     #banner ::-webkit-input-placeholder {
@@ -3109,7 +3109,7 @@ ul.icons {
     }
 
         #banner .testimonials .content .credit strong {
-            color: #ce1b28;
+            color: #334193;
         }
 
     #banner > .inner {
@@ -3185,7 +3185,7 @@ ul.icons {
     }
 
     #banner:after {
-        /*background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);*/
+        /*background: linear-gradient(135deg, #334193 0%, #111111 74%);*/
         background: linear-gradient(135deg, #303f5a 0%, #111 74%);
         display: block;
         height: 100%;
@@ -3259,7 +3259,7 @@ body.is-preload #banner:before {
 
 /* CTA */
 #cta {
-    background-color: #ce1b28;
+    background-color: #334193;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed;
     background-position: bottom;
@@ -3332,7 +3332,7 @@ body.is-preload #banner:before {
         #cta .button.primary {
             box-shadow: none;
             background-color: #ffffff;
-            color: #ce1b28 !important;
+            color: #334193 !important;
         }
 
             #cta input[type="submit"].primary:hover,
@@ -3386,7 +3386,7 @@ body.is-preload #banner:before {
 
         #cta select option {
             color: rgba(255, 255, 255, 0.75);
-            background-color: #ce1b28;
+            background-color: #334193;
         }
 
     #cta input[type="checkbox"] + label,
@@ -3404,7 +3404,7 @@ body.is-preload #banner:before {
     #cta input[type="radio"]:checked + label:before {
         background-color: #ffffff;
         border-color: #ffffff;
-        color: #ce1b28;
+        color: #334193;
     }
 
     #cta input[type="checkbox"]:focus + label:before,
@@ -3458,17 +3458,17 @@ body.is-preload #banner:before {
     }
 
     #cta .highlights .content {
-        background: #ce1b28;
+        background: #334193;
         box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
     }
 
     #cta .testimonials .content {
-        background: #ce1b28;
+        background: #334193;
         box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025);
     }
 
         #cta .testimonials .content .credit strong {
-            color: #ce1b28;
+            color: #334193;
         }
 
     #cta .inner {
@@ -3494,7 +3494,7 @@ body.is-preload #banner:before {
     }
 
     #footer a {
-        color: #ce1b28;
+        color: #334193;
     }
 
     #footer strong, #footer b {
@@ -3533,8 +3533,8 @@ body.is-preload #banner:before {
         #footer input[type="button"]:hover,
         #footer button:hover,
         #footer .button:hover {
-            box-shadow: inset 0 0 0 1px #ce1b28;
-            color: #ce1b28 !important;
+            box-shadow: inset 0 0 0 1px #334193;
+            color: #334193 !important;
         }
 
             #footer input[type="submit"]:hover:active,
@@ -3551,7 +3551,7 @@ body.is-preload #banner:before {
         #footer button.primary,
         #footer .button.primary {
             box-shadow: none;
-            background-color: #ce1b28;
+            background-color: #334193;
             color: #ffffff !important;
         }
 
@@ -3596,8 +3596,8 @@ body.is-preload #banner:before {
         #footer input[type="url"]:focus,
         #footer select:focus,
         #footer textarea:focus {
-            border-color: #ce1b28;
-            box-shadow: 0 0 0 1px #ce1b28;
+            border-color: #334193;
+            box-shadow: 0 0 0 1px #334193;
         }
 
     #footer select {
@@ -3622,15 +3622,15 @@ body.is-preload #banner:before {
 
     #footer input[type="checkbox"]:checked + label:before,
     #footer input[type="radio"]:checked + label:before {
-        background-color: #ce1b28;
-        border-color: #ce1b28;
+        background-color: #334193;
+        border-color: #334193;
         color: #ffffff;
     }
 
     #footer input[type="checkbox"]:focus + label:before,
     #footer input[type="radio"]:focus + label:before {
-        border-color: #ce1b28;
-        box-shadow: 0 0 0 1px #ce1b28;
+        border-color: #334193;
+        box-shadow: 0 0 0 1px #334193;
     }
 
     #footer ::-webkit-input-placeholder {
@@ -3688,7 +3688,7 @@ body.is-preload #banner:before {
     }
 
         #footer .testimonials .content .credit strong {
-            color: #ce1b28;
+            color: #334193;
         }
 
     #footer a {
@@ -3697,7 +3697,7 @@ body.is-preload #banner:before {
     }
 
         #footer a:hover {
-            color: #ce1b28;
+            color: #334193;
         }
 
     #footer .content {
@@ -3914,7 +3914,7 @@ body.is-preload #banner:before {
     }
 
     #heading a {
-        color: #ce1b28;
+        color: #334193;
     }
 
     #heading strong, #heading b {
@@ -3953,8 +3953,8 @@ body.is-preload #banner:before {
         #heading input[type="button"]:hover,
         #heading button:hover,
         #heading .button:hover {
-            box-shadow: inset 0 0 0 1px #ce1b28;
-            color: #ce1b28 !important;
+            box-shadow: inset 0 0 0 1px #334193;
+            color: #334193 !important;
         }
 
             #heading input[type="submit"]:hover:active,
@@ -3971,7 +3971,7 @@ body.is-preload #banner:before {
         #heading button.primary,
         #heading .button.primary {
             box-shadow: none;
-            background-color: #ce1b28;
+            background-color: #334193;
             color: #ffffff !important;
         }
 
@@ -4016,8 +4016,8 @@ body.is-preload #banner:before {
         #heading input[type="url"]:focus,
         #heading select:focus,
         #heading textarea:focus {
-            border-color: #ce1b28;
-            box-shadow: 0 0 0 1px #ce1b28;
+            border-color: #334193;
+            box-shadow: 0 0 0 1px #334193;
         }
 
     #heading select {
@@ -4042,15 +4042,15 @@ body.is-preload #banner:before {
 
     #heading input[type="checkbox"]:checked + label:before,
     #heading input[type="radio"]:checked + label:before {
-        background-color: #ce1b28;
-        border-color: #ce1b28;
+        background-color: #334193;
+        border-color: #334193;
         color: #ffffff;
     }
 
     #heading input[type="checkbox"]:focus + label:before,
     #heading input[type="radio"]:focus + label:before {
-        border-color: #ce1b28;
-        box-shadow: 0 0 0 1px #ce1b28;
+        border-color: #334193;
+        box-shadow: 0 0 0 1px #334193;
     }
 
     #heading ::-webkit-input-placeholder {
@@ -4108,11 +4108,11 @@ body.is-preload #banner:before {
     }
 
         #heading .testimonials .content .credit strong {
-            color: #ce1b28;
+            color: #334193;
         }
 
     #heading:before {
-        background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+        background: linear-gradient(135deg, #334193 0%, #111111 74%);
         content: ' ';
         display: block;
         height: 100%;
@@ -4188,7 +4188,7 @@ body.is-preload #banner:before {
     }
 
     #menu a {
-        color: #ce1b28;
+        color: #334193;
     }
 
     #menu strong, #menu b {
@@ -4227,8 +4227,8 @@ body.is-preload #banner:before {
         #menu input[type="button"]:hover,
         #menu button:hover,
         #menu .button:hover {
-            box-shadow: inset 0 0 0 1px #ce1b28;
-            color: #ce1b28 !important;
+            box-shadow: inset 0 0 0 1px #334193;
+            color: #334193 !important;
         }
 
             #menu input[type="submit"]:hover:active,
@@ -4245,7 +4245,7 @@ body.is-preload #banner:before {
         #menu button.primary,
         #menu .button.primary {
             box-shadow: none;
-            background-color: #ce1b28;
+            background-color: #334193;
             color: #ffffff !important;
         }
 
