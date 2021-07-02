@@ -4,6 +4,8 @@
 
 :point_right: [Link site vechi](https://www.asmi.ro/)
 
+### :robot: [Link setup local](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md) :robot:
+
 ## TO DO :bookmark_tabs:
 - [ ] De schimbat video cover (cand o sa fie gata)
 - [ ] De schimbat paleta de culori in cea din ghidul de indentitate vizuala: [Manual de identitate vizuala ASMI](https://docs.google.com/document/d/1VNwK4EsaEQGp_ZNNmjoMAhAdtq2PBTIxnfrFzUdaB1Y/edit?usp=sharing)
