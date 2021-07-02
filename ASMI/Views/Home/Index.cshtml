@@ -1,0 +1,251 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section id="banner">
+    <div class="inner">
+        <h1><b>Asociația Studenților la Matematică și Informatică</b></h1>
+        <p>
+            ASMI este Asociația Studenților la Facultatea de Matematică și Informatică din cadrul Universității din<br>
+            București, în prezent membră <a href="https://www.facebook.com/asub.page"><b>ASUB</b></a>  si <a href="https://www.facebook.com/anosr.ro"><b>ANOSR</b></a>.
+
+        </p>
+    </div>
+    <video autoplay="" loop="" muted="" playsinline="" src="images/banner.mp4"></video>
+</section>
+
+
+<section id="top-clients" class="bg-light" style="padding: 5px 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <a href="https://unibuc.ro/" target="_blank">
+                    <img src="~/images/ub.png" class="img-fluid" alt="" width="200">
+                </a>
+            </div>
+
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <a href="https://web.facebook.com/asub.page?_rdc=1&_rdr" target="_blank">
+                    <img src="~/images/asub.png" class="img-fluid" alt="" width="115">
+                </a>
+            </div>
+
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <a href="https://anosr.ro/" target="_blank">
+                    <img src="~/images/ansor.png" class="img-fluid" alt="" width="150">
+                </a>
+            </div>
+
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <a href="https://fmi.unibuc.ro/" target="_blank">
+                    <img src="~/images/facult-mi.png" class="img-fluid" alt="" width="115">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="wrapper">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><b>Despre noi</b></h2>
+                    <p>
+                        <b>ASMI</b> este asociația reprezentativă la nivelul Facultății de Matematică și Informatică a Universității din București,
+                        organizată ca un ONG non-profit.
+                        Pentru noi anul 2009 a reprezentat începutul, momentul în care au fost puse bazele comunității care a ajutat la dezvoltarea generațiilor de studenți și care încă de atunci își propune să evolueze constant.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2><b>Ce facem</b></h2>
+                    <p>
+                        În primul rând reprezentăm interesele și aspirațiile studenților dar nu ne limităm la atât. Alături de partenerii noștri realizăm proiecte și activități de interes pentru studenți ce au ca scop dezvoltarea lor pe plan profesional, socio-cultural și personal. <br />
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Dacă te-am făcut curios vizualizeaza proiectele noastre pentru a afla mai multe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <h3 class="mb-0 text-dark">Proiecte</h3>
+                </div>
+
+                <div class="col-md-4" style="border-left:2px solid #555; border-right:2px solid #555;">
+                    <h3 class="mb-0 text-dark">Voluntari</h3>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="mb-0 text-dark">Ani de experiență</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br /><br />
+
+    <partial name="partial_proiecte" view-data="ViewData" />
+
+    <div class="inner">
+        <div class="highlights justify-content-around">
+            <a href="/Proiecte" class="text-center py-3 pr-0"><span></span> <h4 class="separator mb-0"><i class="fas fa-arrow-right"></i> <span class="mx-3">  Vezi toate proiectele  </span> <i class="fas fa-arrow-left"></i></h4>  </a>
+        </div>
+    </div>
+
+    <section id="cta" class="wrapper">
+        <div class="inner">
+            <h2><b>Consiliul Director</b></h2>
+        </div>
+    </section>
+
+    <div class="inner">
+        <div class="testimonials justify-content-around">
+            <section>
+                <div class="content">
+                    <div class="author" style="padding-bottom:20px;">
+                        <div class="image">
+                            <img src="images/rsz_1presedinte.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-weight-bold mb-0">Dawod Paul</h3>
+                            <h5 class="text-primary">Presedinte</h5>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>Dorința de a ajuta studenții mă motivează sa dau întotdeauna mai mult. Inovație, dezvoltare și oportunitate sunt cuvintele cheie dupa care mă axez, pentru Asociație, voluntari și studenți.</p>
+                    </blockquote>
+                    <ul class="icons">
+                        <li>
+                            <a href="https://www.facebook.com/last.paul" style="color:orange; "><i class="fab fa-facebook-f fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <div class="author" style="padding-bottom:20px; ">
+                        <div class="image">
+                            <img src="images/rsz_11prim-vice.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-weight-bold mb-0">Bouruc Liviu</h3>
+                            <h5 class="text-primary">Prim Vicepreședinte</h5>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>Ambițios și perseverent, dornic de a ajuta asociația să se dezvolte pentru a aduce o schimbare în jurul nostru, de la studenți pentru studenți.</p>
+                    </blockquote>
+
+                    <ul class="icons">
+                        <li>
+                            <a href="https://www.facebook.com/bouruc.liviu/" style="color:blue; "><i class="fab fa-facebook-f fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/petru-liviu-bouruc-276931177/" style="color:blue; "><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/liviubouruc" style="color:blue;  "><i class="fab fa-github fa-lg"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+            <section>
+                <div class="content">
+                    <div class="author" style="padding-bottom:20px;">
+                        <div class="image">
+                            <img src="images/rsz_vice.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-weight-bold mb-0">Kopacz Mădălina</h3>
+                            <h5><b style="color:lightpink">Vicepreședinte</b> </h5>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>Consecventă, foarte energică și prietenoasă. Pasionată de voluntariat și dornică să reprezinte un sprijin real pentru cei din jurul ei.</p>
+                    </blockquote>
+
+                    <ul class="icons">
+                        <li>
+                            <a href="https://www.facebook.com/madakopacz" style="color:lightpink; "><i class="fab fa-facebook-f fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/madalina-kopacz/" style="color:lightpink; "><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/MadalinaKopacz" style="color:lightpink;  "><i class="fab fa-github fa-lg"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <div class="author" style="padding-bottom:20px;">
+                        <div class="image">
+                            <img src="images/rsz_2director.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-weight-bold mb-0">Dima Oana</h3>
+                            <h5 style="color:blueviolet"> Director Executiv </h5>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>Calculată, empatică și înțelegătoare. Dedicată și dornică să ajute oricând studenții și asociația. "Believe you can and you're halfway there." -Theodore Roosevelt</p>
+                    </blockquote>
+
+                    <ul class="icons">
+                        <li>
+                            <a href="https://www.facebook.com/oana.dima.391" style="color:blueviolet; "><i class="fab fa-facebook-f fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/oanadima/" style="color:blueviolet; "><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/DimaOanaTeodora" style="color:blueviolet;  "><i class="fab fa-github fa-lg"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <div class="author" style="padding-bottom:20px;">
+                        <div class="image">
+                            <img src="images/rsz_secretar.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-weight-bold mb-0">Bârsan Andreia</h3>
+                            <h5 style="color:green"> Secretar General </h5>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>Rațională și pragmatică, mereu ancorată în realitate. Îndrăgostită de cultură și de armonie. Cele enumerate, cearcănele și dorința de a face bine sunt constante, restul e în continuă mișcare.</p>
+                    </blockquote>
+                    <ul class="icons">
+                        <li>
+                            <a href="https://www.facebook.com/crista.andreia.barsan" style="color:green; "><i class="fab fa-facebook-f fa-lg"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</section>
