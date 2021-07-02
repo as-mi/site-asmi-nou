@@ -1,4 +1,4 @@
-# Visual Studio 
+# Visual Studio :fleur_de_lis:
 
 Visual Studio (Community-it's free) 2019 (nu mai mic) ```v.16.10.2 ++``` 
 
