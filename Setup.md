@@ -18,6 +18,7 @@ Ca sa poti rula proiectul pe PC-ul tau, asigura-te ca la instalare ai urmatoarel
 
 # Lucrul cu Git 
 :bangbang: Fiecare contribuitor trebuie sa lucreze pe un branch separat, doar modificarile finale-intermediare sa fie introduse in branch-ul main. :bangbang:
+
 :bangbang: De fiecare data cand te apuci sa continui la proiect, ai grija sa fie utlima versiune actulizata. :bangbang:
 
 ## Descarcare proiect (Daca nu il ai deja pe PC)
