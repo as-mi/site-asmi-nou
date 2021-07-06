@@ -1,6 +1,6 @@
 # Setup tehnic :hammer_and_wrench:
-1. [Instalsare Visual Studio si ASP.NET 5]().
-2. [Pasi de lucru si recomandari]().
+1. [Instalsare Visual Studio si ASP.NET 5](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#visual-studio-fleur_de_lis).
+2. [Pasi de lucru si recomandari](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#pasii-de-lucru-gear).
 
 ## Visual Studio :fleur_de_lis:
 - ASP.NET 5 este disponibil pentru versiunile de Visual Studio >= 2019. 
@@ -21,13 +21,13 @@
 ## Pasii de lucru :gear:
 - *Daca NU ai mai lucrat la proiect* 
 
-➡️ Daca contribui pentru prima oara la dezvoltarea proiectului, gasesti aici [Instructiunile pentru instalarea GitHub si descarcarea proiectului local]().
+➡️ Daca contribui pentru prima oara la dezvoltarea proiectului, gasesti aici [Instructiunile pentru instalarea GitHub si descarcarea proiectului local](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-descarcare-proiect).
 
 - *Daca ai mai lucrat la proiect* 
 
-➡️ Ai grija sa lucrezi pe utlima versiune a proiectului, daca alti colegi au facut modificari in branch-ul ```main```. Gasesti aici [Instructiunile pentru actualizarea proiectului deja aflat local]().
+➡️ Ai grija sa lucrezi pe utlima versiune a proiectului, daca alti colegi au facut modificari in branch-ul ```main```. Gasesti aici [Instructiunile pentru actualizarea proiectului deja aflat local](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-actualizare-versiune-proiect-local).
 
-➡️ Este recomandat ca fiecare contribuitor sa foloseasca un branch separat. Cand termina un set de modificari, vei da ```merge``` cu branch-ul main. Gasesti aici [Instructiunile pentru crearea unui branch nou si incarcarea modificarilor pe Git-ul ASMI]().
+➡️ Este recomandat ca fiecare contribuitor sa foloseasca un branch separat. Cand termina un set de modificari, vei da ```merge``` cu branch-ul main. Gasesti aici [Instructiunile pentru crearea unui branch nou si incarcarea modificarilor pe Git-ul ASMI](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-creare-branch-nou-si-incarcare-modificari-pe-git-ul-asmi).
 
 ### :toolbox: Descarcare proiect 
 
