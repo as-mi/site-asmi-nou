@@ -29,7 +29,7 @@
 
 ➡️ Ai grijă să lucrezi pe utlima versiune a proiectului, dacă alți colegi au făcut modificări în branch-ul ```main```. Găsești aici [Instrucțiunile pentru actualizarea proiectului deja aflat local](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-actualizare-versiune-proiect-local).
 
-➡️ Este recomandat ca fiecare contribuitor să folosească un branch separat. Cand termini un set de modificări, vei da ```merge``` cu branch-ul main. Găsești aici [Instrucțiunile pentru crearea unui branch nou și încarcarea modificărilor pe Git-ul ASMI](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-creare-branch-nou-și-încărcare-modificări-pe-git-ul-asmi) și [Instrucțiunile pentru merging cu branch-ul main]().
+➡️ Este recomandat ca fiecare contribuitor să folosească un branch separat. Cand termini un set de modificări, vei da ```merge``` cu branch-ul main. Găsești aici [Instrucțiunile pentru crearea unui branch nou și încarcarea modificărilor pe Git-ul ASMI](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-creare-branch-nou-și-încărcare-modificări-pe-git-ul-asmi) și [Instrucțiunile pentru merging cu branch-ul main](https://github.com/as-mi/site-asmi-nou/blob/main/Setup.md#toolbox-merging-in-branch-ul-main).
 
 ### :toolbox: Descărcare proiect 
 
