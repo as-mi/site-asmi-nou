@@ -2,6 +2,17 @@
     ViewData["Title"] = "Home";
 }
 
+<style>
+    #all-projects-btn .separator {
+        width: 25%;
+    }
+
+        #all-projects-btn .separator::before,
+        #all-projects-btn .separator::after {
+            border-bottom: 1px solid #1861ac;
+        }
+</style>
+
 <section id="banner">
     <div class="inner">
         <h1><b>Asociația Studenților la Matematică și Informatică</b></h1>
@@ -99,10 +110,13 @@
 
     <partial name="partial_proiecte" view-data="ViewData" />
 
-    <div class="inner">
-        <div class="highlights justify-content-around">
-            <a href="/Proiecte" class="text-center py-3 pr-0"><span></span> <h4 class="separator mb-0"><i class="fas fa-arrow-right"></i> <span class="mx-3">  Vezi toate proiectele  </span> <i class="fas fa-arrow-left"></i></h4>  </a>
+    <div class="inner mb-5">
+        <div class="d-flex justify-content-center" id="all-projects-btn">
+            <span class="separator"></span>
+            <a href="/Proiecte" class="btn btn-primary-outline py-3"><span class="mx-3">Vezi toate proiectele</span></a>
+            <span class="separator"></span>
         </div>
+        <br />
     </div>
 
     <section id="cta" class="wrapper">
