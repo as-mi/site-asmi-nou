@@ -1,0 +1,12 @@
+﻿#all-projects-btn .separator {
+    width: 25%;
+}
+
+    #all-projects-btn .separator::before,
+    #all-projects-btn .separator::after {
+        border-bottom: 1px solid var(--asmi-dark-blue);
+    }
+
+    #banner::before {
+        background: var(--asmi-light-blue);
+    }

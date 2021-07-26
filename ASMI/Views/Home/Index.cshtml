@@ -2,16 +2,9 @@
     ViewData["Title"] = "Home";
 }
 
-<style>
-    #all-projects-btn .separator {
-        width: 25%;
-    }
-
-        #all-projects-btn .separator::before,
-        #all-projects-btn .separator::after {
-            border-bottom: 1px solid #1861ac;
-        }
-</style>
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" />
+}
 
 <section id="banner">
     <div class="inner">
