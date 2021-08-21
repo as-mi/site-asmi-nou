@@ -10,3 +10,7 @@
     #banner::before {
         background: var(--asmi-light-blue);
     }
+
+.author h5 {
+    margin: 0;
+}
