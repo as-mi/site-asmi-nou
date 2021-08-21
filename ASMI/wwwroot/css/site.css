@@ -11,7 +11,10 @@ a.navbar-brand {
 a {
     color: #0366d6;
 }
-
+.project-logo {
+    height: 120px;
+    width: auto;
+}
 
 .btn-primary {
     color: #fff;
