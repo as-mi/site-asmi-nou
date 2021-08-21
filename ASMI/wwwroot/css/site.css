@@ -9,20 +9,32 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #0366d6;
+    color: var(--asmi-dark-blue);
 }
 
 
 .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    color: var(--asmi-white);
+    background-color: var(--asmi-light-blue);
+    border-color: var(--asmi-dark-blue);
 }
 
+.btn-primary-outline {
+    color: var(--asmi-dark-blue);
+    border-color: var(--asmi-dark-blue);
+}
+
+    .btn-primary-outline:hover {
+        color: var(--asmi-white);
+        border-color: var(--asmi-dark-blue);
+        background-color: var(--asmi-light-blue);
+        text-decoration: none !important;
+    }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    color: var(--asmi-white);
+    background-color: var(--asmi-light-blue);
+    border-color: var(--asmi-dark-blue);
 }
 
 /* Sticky footer styles
@@ -99,11 +111,11 @@ body {
 }
 
 #asmi-navbar {
-    background-color: #334193 !important;
+    background-color: var(--asmi-light-blue) !important;
 }
 
     #asmi-navbar a {
-        color: #fff;
+        color: var(--asmi-white);
     }
 
 .separator {
@@ -116,7 +128,7 @@ body {
     .separator::after {
         content: '';
         flex: 1;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid var(--asmi-black);
     }
 
     .separator:not(:empty)::before {
