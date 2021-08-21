@@ -53,13 +53,13 @@ namespace ASMI.Controllers
             },
             new ProjData {
                 img = "smarthack.png",
-                desc = "",
+                desc = "SMARTHACK este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
                 name = "SMARTHACK",
                 url = "#"
             },
             new ProjData {
                 img = "cariere.png",
-                desc = "",
+                desc = "Cariere este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților, realizând o legătura între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
                 name = "Cariere",
                 url = "#"
             },

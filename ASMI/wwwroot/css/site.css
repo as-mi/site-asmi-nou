@@ -11,7 +11,10 @@ a.navbar-brand {
 a {
     color: var(--asmi-dark-blue);
 }
-
+.project-logo {
+    height: 120px;
+    width: auto;
+}
 
 .btn-primary {
     color: var(--asmi-white);
