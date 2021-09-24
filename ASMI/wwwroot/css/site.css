@@ -12,8 +12,8 @@ a {
     color: var(--asmi-dark-blue);
 }
 .project-logo {
-    height: 120px;
-    width: auto;
+    width: 150px;
+    height: auto;
 }
 
 .btn-primary {
@@ -154,4 +154,8 @@ body {
 .testimonials .content .author .image {
     /*    width:70px;
     height:70px;*/
+}
+
+.vh-50 {
+    height: 50vh;
 }

@@ -7,3 +7,7 @@ content: none;
     cursor: pointer;
     background-color: #f4f4f4;
 }
+
+#bug-report-btn {
+    text-decoration: none!important;
+}
