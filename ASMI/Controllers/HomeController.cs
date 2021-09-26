@@ -33,63 +33,74 @@ namespace ASMI.Controllers
         }
 
         private static List<ProjData> pProjects = new List<ProjData>() {
+             new ProjData {
+                img = "Logo_Tre_Sa_Caut.png",
+                desc = "Întrucât o mare parte din studenții din anul întâi nu cunosc Bucureștiul, asociația organizează o vânătoare de comori în prima" +
+                "săptămână a anului universitar, pentru a le prezenta o parte din oraș, în timp ce cunosc oameni din facultate, atât studenți mai mari," +
+                " cât și boboci, cu care urmează să interacționeze în următorii ani. ",
+                name = "Tre’ sa caut",
+                url = "#"
+            },
             new ProjData {
                 img = "CaravanaEducationala.png",
-                desc = "Descoperă Facultatea de Matematică și Informatică a Universității din București!",
+                desc = "Caravana Educațională este proiectul desfășurat de Asociația Studenților la Matematică și Informatică care are ca scop" + 
+                " prezentarea și informarea elevilor de liceu din țară cu privire la oferta educațională și la oportunitățile pe care le oferă" +
+                " Facutatea de Matematică și Informatică din cadrul Universității din București.",
                 name = "CARAVANA EDUCAȚIONALĂ",
                 url = "#"
             },
             new ProjData {
-                img = "artandar-.png",
-                desc = "Artă'n Dar este un eveniment ce promovează cultura si arta în rândul studenților și în același timp urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
-                name = "Artă’n Dar",
-                url = "#"
-            },
-            new ProjData {
-                img = "SOS-LOGO-FINAL.png",
-                desc = "Students' Organizations Showdown este un campionat caritabil de CS:GO între asociațiile studențești, în cadrul căruia strângem donații pentru o cauză nobilă.",
-                name = "Students’ Organizations Showdown",
-                url = "#"
-            },
-            new ProjData {
                 img = "smarthack.png",
-                desc = "SMARTHACK este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
+                desc = "SMARTHACK este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui " + 
+                "produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
                 name = "SMARTHACK",
                 url = "#"
             },
             new ProjData {
                 img = "cariere.png",
-                desc = "Cariere este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților, realizând o legătura între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
+                desc = "Cariere este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților," + 
+                " realizând o legătura între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
                 name = "Cariere",
                 url = "#"
             },
             new ProjData {
                 img = "logo-zile-1.png",
-                desc = "La mulți ani, drag ASMI! Anul acesta Asociația Studenților la Matematică și Informatică sărbătorește ziua de naștere <b>#stândacasă</b>. Te invităm să sărbătorești împreună cu noi pe cei 11 ani de voluntariat.",
+                desc = "Proiectul acesta reprezintă aniversarea înființării asociației dar și promovarea acesteia în rândul studenților." + 
+                " Este alcătuit din mai multe evenimente tematice, de obicei pe parcursul unei întregi săptămâni. Câteva evenimente " +
+                " organizate în cadrul proiectului în anii precedenți sunt: FMI’s got talent, Crosul Build and Run, traininguri de " + 
+                " dezvoltare personală, meciul de fotbal studenți vs. profesori, campionate de League of Legends și Counter Strike ș.a. ",
                 name = "Zilele ASMI",
                 url = "#"
             },
+             new ProjData {
+                img = "artandar-.png",
+                desc = "Este un eveniment caritabil ce promovează cultura și arta în rândul studenților și în același timp urmărește" +
+                " scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie. În fiecare an, este stabilită o cauză" +
+                " pentru care sunt realizate diversele activități. Evenimentul este alcătuit din mai multe seri tematice (seară de folk," +
+                " seară de stand-up, seară de muzică, seara de League of Legends sau Counter Strike etc.) și se întinde " +
+                " pe 5-6 zile. Donațiile obținute sunt donate la finalul proiectului cauzei stabilite inițial. ",
+                name = "Artă’n Dar",
+                url = "#"
+            },
+
             new ProjData {
                 img = "logo-marea-ieseala.png",
-                desc = "„Marea Ieșeală” este unul din primele proiecte ale asociației cu care te întâlnești ca boboc la Facultatea de Matematică și Informatică.",
+                desc = "Acest proiect se petrece înainte de începerea anului universitar și constă într-o ieșire destinată bobocilor, în cadrul căreia" + 
+                "aceștia au ocazia de a se cunoaște. Acest proiect nu s-a desfășurat anul acesta din cauza contextului pandemic. ",
                 name = "Marea Ieșeală",
                 url = "#"
             },
             new ProjData {
                 img = "LogoDuckFinal.png",
-                desc = "Rățusca este proiectul prin care intrăm în contact cu bobocii și îi introducem în viața de facultate. Încă din primele zile, voluntarii asociației se integrează cu grupele nou-formate, și îi ghidează prin primii pași de studenție.",
+                desc = "Se desfășoară imediat după încheierea festivității de deschidere și constă în alocarea a 2- 3 voluntari fiecărei grupe de " + 
+                "studenți pentru a ajuta la completarea contractelor de studii, alegerea șefului de grupă și pentru a răspunde la diverse întrebări.",
                 name = "Rățusca",
                 url = "#"
             },
             new ProjData {
-                img = "Logo_Tre_Sa_Caut.png",
-                desc = "Tre' sa caut” este un treasure hunt ce se desfasoara in Bucuresti. Scopul este familiarizarea studentilor cu locuri interesant sau importante din jurul zonei universitatii, dar mai important este cunoasterea mai buna a colegilor si formarea de legaturi noi cu acestia.",
-                name = "Tre’ sa caut",
-                url = "#"
-            },
-            new ProjData {
                 img = "logo_raport_cdos.png",
-                desc = "Prin chestionarul CDOS se urmărește nivelul de satisfacție al studenților cu privire la condițiile oferite de facultate, cât și dacă le-au fost respectate drepturile sau nu.",
+                desc = "Prin chestionarul CDOS se urmărește nivelul de satisfacție al studenților cu privire la condițiile oferite de facultate, cât și" +
+                "dacă le-au fost respectate drepturile sau nu.",
                 name = "Raport CDOS",
                 url = "#"
             },
@@ -110,12 +121,11 @@ namespace ASMI.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult CalendarASMI()
         {
-            ViewData["ProjData"] = EnumProjects(4);
             return View();
         }
-
+    
         public IActionResult Departamente()
         {
             List<DepData> pConfig = new List<DepData>() {
@@ -189,26 +199,30 @@ namespace ASMI.Controllers
             return View();
         }
 
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public IActionResult Index()
+        {
+            ViewData["ProjData"] = EnumProjects(4);
+            return View();
+        }
+
         public IActionResult Proiecte()
         {
             ViewData["ProjData"] = EnumProjects(0);
             return View();
         }
 
+        public IActionResult Recrutari()
+        {
+            return View();
+        }
         public IActionResult Studenti()
         {
             return View();
-        }
-
-        public IActionResult CalendarASMI()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }     
     }
 }
