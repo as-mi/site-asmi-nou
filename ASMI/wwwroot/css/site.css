@@ -11,7 +11,10 @@ a.navbar-brand {
 a {
     color: var(--asmi-dark-blue);
 }
-
+.project-logo {
+    width: 150px;
+    height: auto;
+}
 
 .btn-primary {
     color: var(--asmi-white);
@@ -151,4 +154,8 @@ body {
 .testimonials .content .author .image {
     /*    width:70px;
     height:70px;*/
+}
+
+.vh-50 {
+    height: 50vh;
 }
