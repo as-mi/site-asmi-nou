@@ -50,7 +50,7 @@ namespace ASMI.Controllers
                 url = "#"
             },
             new ProjData {
-                img = "smarthack.png",
+                img = "smarthack_light.png",
                 desc = "SMARTHACK este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui " + 
                 "produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
                 name = "SMARTHACK",
