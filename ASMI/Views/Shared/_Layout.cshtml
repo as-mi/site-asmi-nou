@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ASMI este asociația reprezentativă la nivelul Facultății de Matematică și Informatică a Universității din București.">
+
+    <link rel="icon" href="https://www.asmi.ro/wp-content/uploads/2021/04/cropped-sigla-full-vectoriala-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.asmi.ro/wp-content/uploads/2021/04/cropped-sigla-full-vectoriala-1-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.asmi.ro/wp-content/uploads/2021/04/cropped-sigla-full-vectoriala-1-180x180.png">
+
+    <title>@ViewData["Title"] - ASMI</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/colors.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/assets/css/main.css" />
+    <link rel="stylesheet" href="~/css/setari_aditionale.css" />
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body class="is-preload" style="margin:0">
+    <nav id="asmi-navbar" class="navbar navbar-expand-lg position-sticky pb-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/asmi-2.png" class="img-fluid" alt="" width="45">
+            </a>
+
+            <button class="navbar-toggler text-white shadow-none" type="button" data-toggle="collapse" data-target="#asmi-nav-content" aria-controls="asmi-nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="asmi-nav-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/" aria-current="page">Pagina principală</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Departamente">Departamente</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Studenti">Studenți</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://smarthack.asmi.ro/">Smarthack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://cariere.asmi.ro/">Cariere</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ghid.asmi.ro/">Ghidul Bobocului</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/CalendarASMI">Calendar ASMI & FMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Recrutari">Alătură-te!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <main role="main" style="margin:0" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="row">
+                <section class="col-8">
+                    <h4><b>Date de contact</b></h4>
+                    <ul class="alt">
+                        <li><a href="#">Strada Academiei Nr. 14 București</a></li>
+                        <li><a href="#">E-mail: cd@asmi.ro</a></li>
+                        <li><a href="#">Phone: 0720 257 456</a></li>
+                    </ul>
+                </section>
+                <section class="col-4">
+                    <h4><b>Rețele de socializare</b></h4>
+                    <ul class="plain">
+                        <li><a href="https://www.facebook.com/asmi.ub/about/?ref=page_internal"><i class="fab fa-facebook-f">&nbsp;&nbsp;</i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/asmi.ub/"><i class="fab fa-instagram">&nbsp;&nbsp;</i>Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/asociatia-studentilor-la-matematica-si-informatica/"><i class="fab fa-linkedin-in">&nbsp;&nbsp;</i>LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com/company/asociatia-studentilor-la-matematica-si-informatica/"><i class="fab fa-youtube">&nbsp;</i>YouTube</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-8">
+                    <h4 class="mb-2"><b>Contactează-ne! </b></h4>
+                    <p>Și îți vom răspunde pe cât de repede posibil.</p>
+                </section>
+            </div>
+            <div>
+                <p class="text-white py-3 mb-0">
+                    <span>Theme <a href="https://themewagon.com/themes/free-responsive-business-template/" title="Industrious" target="_blank">Industrious</a>.</span>
+                    <span class="bottom-copyright" data-customizer="copyright-credit">© Copyright @DateTime.Now.Year ASMI - Toate drepturile rezervate</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Scripts -->
+    <script src="~/lib/assets/js/jquery.min.js"></script>
+    <script src="~/lib/assets/js/browser.min.js"></script>
+    <script src="~/lib/assets/js/breakpoints.min.js"></script>
+    <script src="~/lib/assets/js/util.js"></script>
+    <script src="~/lib/assets/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

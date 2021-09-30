@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Departamente";
+
+    var DepDataList = ViewData["DepData"] as List<ASMI.Controllers.HomeController.DepData>;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/departamente.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+}
+
+<br />
+<br />
+<div class="py-5 service-26">
+    <div class="container">
+        <div class="row">
+            <header>
+                <h2>Departamente</h2>
+            </header>
+        </div>
+
+        @for (int i = 0; i < DepDataList.Count; i++)
+        {
+            var DepData = DepDataList[i];
+
+            <div class="row justify-content-between mt-4 pt-3">
+                    @if (i % 2 == 1)
+                    {
+                        <div class="col-md-6">
+                            <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+                                <div class="card p-4">
+                                    <div class="image d-flex flex-column justify-content-center align-items-center">
+                                        <img class="circle" src="@DepData.img"/>
+
+                                        <span class="name mt-3">@DepData.director</span> 
+                                        <span class="idd">Director de departament</span>
+
+                                        <div class="d-flex flex-row justify-content-center align-items-center gap-2"> 
+                                            <span>
+                                                <a href="@DepData.facebook" target="_blank">
+                                                    <i class="fab fa-facebook-f spaces btn-lg"></i>
+                                                </a>
+                                                <a href="@DepData.linkedin" target="_blank">
+                                                    <i class="fab fa-linkedin-in spaces btn-lg"></i>
+                                                </a>
+                                                <a href="@DepData.github" target="_blank">
+                                                    <i class="fab fa-github spaces btn-lg"></i>
+                                                </a>
+                                            </span> 
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
+                    }
+
+                    <div class="col-md-6 align-self-center">
+                        <h3 class="mt-3">@DepData.title</h3>
+                        <p class="mt-3">@DepData.desc</p>
+                    </div>
+
+                    @if (i % 2 == 0)
+                    {
+                        <div class="col-md-5 col-md-5">
+                                <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+                                    <div class="card p-4">
+                                        <div class="image d-flex flex-column justify-content-center align-items-center">
+                                            <img class="circle" src="@DepData.img" />
+
+                                            <span class="name mt-3">@DepData.director</span>
+                                            <span class="idd">Director de departament</span>
+
+                                            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                                <span>
+                                                    <a href="@DepData.facebook" target="_blank">
+                                                        <i class="fab fa-facebook-f spaces btn-lg"></i>
+                                                    </a>
+                                                    <a href="@DepData.linkedin" target="_blank">
+                                                        <i class="fab fa-linkedin-in spaces btn-lg"></i>
+                                                    </a>
+                                                    <a href="@DepData.github" target="_blank">
+                                                        <i class="fab fa-github spaces btn-lg"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    }
+            </div>
+
+            <div class="row mt-5">
+                <div class="feature-35-owl owl-carousel owl-theme">
+
+                    @foreach (string img in DepData.imgs)
+                    {
+                        <div class="item">
+                            <a href="javascript:void(0)">
+                                <img src="@img" alt="gal-item" class="w-100" style="max-height:610px;" />
+                            </a>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $('.feature-35-owl').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            margin: 10,
+            nav: true,
+            navText: ["<i class='nav-btn prev-slide fa fa-angle-left fa-5x'></i>", "<i class='nav-btn next-slide fa fa-angle-right fa-5x'></i>"]
+        });
+    </script>
+}

@@ -1,0 +1,50 @@
+﻿#all-projects-btn .separator {
+    width: 25%;
+}
+
+    #all-projects-btn .separator::before,
+    #all-projects-btn .separator::after {
+        border-bottom: 1px solid var(--asmi-dark-blue);
+    }
+
+#banner::before {
+    background: var(--asmi-light-blue);
+}
+
+.author h5 {
+    margin: 0;
+}
+
+.cd-text {
+    min-height: 100px;
+}
+
+/* fix pentru card-uri CD */
+.testimonials .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 550px;
+}
+
+@media screen and (max-width: 1680px) {
+    .testimonials .content {
+        min-height: 450px;
+    }
+}
+
+@media screen and (max-width: 11300px) {
+    .testimonials .content {
+        min-height: 470px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .testimonials .content {
+        min-height: 400px;
+    }
+}
+
+.testimonials .content .icons {
+    margin: 0;
+}

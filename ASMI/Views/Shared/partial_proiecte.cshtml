@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+    var ProjDataList = ViewData["ProjData"] as List<ASMI.Controllers.HomeController.ProjData>;
+}
+
+<div class="inner mt-5">
+    <header class="special">
+        <h2><b>Proiecte</b></h2>
+        <p>
+            Munca noastră este prezentarea aptitudinilor noastre.
+        </p>
+    </header>
+
+    <div class="highlights justify-content-around">
+        @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
+        {
+            <section>
+                <div class="content">
+                    <header>
+                        <a href="@ProjData.url"><img src="/images/@ProjData.img" class="project-logo" /> </a>
+                        <h3>@ProjData.name</h3>
+                    </header>
+                    <p>
+                        @ProjData.desc
+                    </p>
+                </div>
+            </section>
+        }
+    </div>
+</div>
+
