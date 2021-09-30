@@ -41,8 +41,8 @@ namespace ASMI.Controllers
                 desc = "Întrucât o mare parte din studenții din anul întâi nu cunosc Bucureștiul, asociația organizează o vânătoare de comori în prima" +
                 "săptămână a anului universitar, pentru a le prezenta o parte din oraș, în timp ce cunosc oameni din facultate, atât studenți mai mari," +
                 " cât și boboci, cu care urmează să interacționeze în următorii ani. ",
-                name = "Tre’ sa caut",
-                url = "#"
+                name = "Tre’ să caut",
+                url = null
             },
             new ProjData {
                 img = "CaravanaEducationala.png",
@@ -50,21 +50,21 @@ namespace ASMI.Controllers
                 " prezentarea și informarea elevilor de liceu din țară cu privire la oferta educațională și la oportunitățile pe care le oferă" +
                 " Facutatea de Matematică și Informatică din cadrul Universității din București.",
                 name = "CARAVANA EDUCAȚIONALĂ",
-                url = "#"
+                url = "https://caravana.asmi.ro/"
             },
             new ProjData {
                 img = "smarthack.png",
                 desc = "SMARTHACK este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui " + 
                 "produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
                 name = "SMARTHACK",
-                url = "#"
+                url = "https://smarthack.asmi.ro/"
             },
             new ProjData {
                 img = "cariere.png",
                 desc = "Cariere este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților," + 
                 " realizând o legătura între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
                 name = "Cariere",
-                url = "#"
+                url = "https://cariere.asmi.ro/"
             },
             new ProjData {
                 img = "logo-zile-1.png",
@@ -73,7 +73,7 @@ namespace ASMI.Controllers
                 " organizate în cadrul proiectului în anii precedenți sunt: FMI’s got talent, Crosul Build and Run, traininguri de " + 
                 " dezvoltare personală, meciul de fotbal studenți vs. profesori, campionate de League of Legends și Counter Strike ș.a. ",
                 name = "Zilele ASMI",
-                url = "#"
+                url = null
             },
              new ProjData {
                 img = "artandar-.png",
@@ -83,7 +83,7 @@ namespace ASMI.Controllers
                 " seară de stand-up, seară de muzică, seara de League of Legends sau Counter Strike etc.) și se întinde " +
                 " pe 5-6 zile. Donațiile obținute sunt donate la finalul proiectului cauzei stabilite inițial. ",
                 name = "Artă’n Dar",
-                url = "#"
+                url = null
             },
 
             new ProjData {
@@ -91,21 +91,21 @@ namespace ASMI.Controllers
                 desc = "Acest proiect se petrece înainte de începerea anului universitar și constă într-o ieșire destinată bobocilor, în cadrul căreia" + 
                 "aceștia au ocazia de a se cunoaște. Acest proiect nu s-a desfășurat anul acesta din cauza contextului pandemic. ",
                 name = "Marea Ieșeală",
-                url = "#"
+                url = null
             },
             new ProjData {
                 img = "LogoDuckFinal.png",
                 desc = "Se desfășoară imediat după încheierea festivității de deschidere și constă în alocarea a 2- 3 voluntari fiecărei grupe de " + 
                 "studenți pentru a ajuta la completarea contractelor de studii, alegerea șefului de grupă și pentru a răspunde la diverse întrebări.",
                 name = "Rățusca",
-                url = "#"
+                url = null
             },
             new ProjData {
                 img = "logo_raport_cdos.png",
                 desc = "Prin chestionarul CDOS se urmărește nivelul de satisfacție al studenților cu privire la condițiile oferite de facultate, cât și" +
                 "dacă le-au fost respectate drepturile sau nu.",
                 name = "Raport CDOS",
-                url = "#"
+                url = null
             },
         };
 
