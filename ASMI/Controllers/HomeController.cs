@@ -223,6 +223,10 @@ namespace ASMI.Controllers
         public IActionResult Studenti()
         {
             return View();
+        }  
+        public IActionResult Galerie()
+        {
+            return View();
         }     
     }
 }
