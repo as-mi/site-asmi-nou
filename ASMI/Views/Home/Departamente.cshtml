@@ -95,14 +95,14 @@
                     }
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 container-fluid">
                 <div class="feature-35-owl owl-carousel owl-theme">
 
                     @foreach (string img in DepData.imgs)
                     {
-                        <div class="item">
+                        <div class="item d-flex flex-row justify-content-center align-items-center">
                             <a href="javascript:void(0)">
-                                <img src="@img" alt="gal-item" class="w-100" style="max-height:610px;" />
+                                <img src="@img" alt="gal-item" class="img-fluid" style="max-height: 50vh;" />
                             </a>
                         </div>
                     }
@@ -125,8 +125,6 @@
             loop: true,
             autoplay: true,
             margin: 10,
-            nav: true,
-            navText: ["<i class='nav-btn prev-slide fa fa-angle-left fa-5x'></i>", "<i class='nav-btn next-slide fa fa-angle-right fa-5x'></i>"]
         });
     </script>
 }
