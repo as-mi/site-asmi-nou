@@ -20,14 +20,22 @@
         {
             <section>
                 <div class="project-content content">
-                    <div class="project-media-ctn">
-                        <a href="@ProjData.url"><img src="/images/@ProjData.img" class="project-logo" /> </a>
+                    @if (ProjData.img != "")
+                    {
+                        <div class="project-media-ctn">
+                            <a href="@ProjData.url">
+
+
+                                <img src="/images/@ProjData.img" class="project-logo" />
+
+                            </a>
+                        </div>
+                    }
+                        <h3>@ProjData.name</h3>
+                        <p>
+                            @ProjData.desc
+                        </p>
                     </div>
-                    <h3>@ProjData.name</h3>
-                    <p>
-                        @ProjData.desc
-                    </p>
-                </div>
             </section>
         }
     </div>
