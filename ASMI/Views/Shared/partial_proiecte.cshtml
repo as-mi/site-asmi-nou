@@ -18,17 +18,18 @@
     <div class="highlights justify-content-around">
         @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
         {
-            <section>
-                <div class="content">
-                    <header>
-                        <a href="@ProjData.url"><img src="/images/@ProjData.img" class="project-logo" /> </a>
-                        <h3>@ProjData.name</h3>
-                    </header>
-                    <p>
-                        @ProjData.desc
-                    </p>
-                </div>
-            </section>
+        <section>
+            <div class="content">
+                <header>
+                    <a href="@ProjData.url"><img src="/images/@ProjData.img" class="project-logo" /> </a>
+                    <h3>@ProjData.name</h3>
+                </header>
+                <p>
+                    @ProjData.desc
+                </p>
+            </div>
+            
+        </section>
         }
     </div>
 </div>

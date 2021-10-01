@@ -99,8 +99,9 @@ namespace ASMI.Controllers
                 name = "Raport CDOS",
                 url = "#"
             },
-        };
 
+        };
+        
 
         private List<ProjData> EnumProjects(int cbCount)
         {
@@ -110,7 +111,7 @@ namespace ASMI.Controllers
             }
             return pProjects.GetRange(0, cbCount);
         }
-
+       
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
