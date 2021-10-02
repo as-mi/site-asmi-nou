@@ -26,11 +26,36 @@
             var f = (i & 1) == 1;
 
             <div class="row justify-content-between mt-4 pt-3">
-                @if (f)
+                    @if (i % 2 == 1)
                 {
                     <div class="col-md-6">
-                        <img src="@DepData.img" class="img-fluid" />
+                            <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+                                <div class="card p-4">
+                                    <div class="image d-flex flex-column justify-content-center align-items-center">
+                                        <img class="circle" src="@DepData.img"/>
+
+                                        <span class="name mt-3">@DepData.director</span> 
+                                        <span class="idd">Director de departament</span>
+
+                                        <div class="d-flex flex-row justify-content-center align-items-center gap-2"> 
+                                            <span>
+                                                <a href="@DepData.facebook" target="_blank">
+                                                    <i class="fab fa-facebook-f spaces btn-lg"></i>
+                                                </a>
+                                                <a href="@DepData.linkedin" target="_blank">
+                                                    <i class="fab fa-linkedin-in spaces btn-lg"></i>
+                                                </a>
+                                                <a href="@DepData.github" target="_blank">
+                                                    <i class="fab fa-github spaces btn-lg"></i>
+                                                </a>
+                                            </span> 
                     </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+
                 }
 
                 <div class="col-md-6 align-self-center">
@@ -39,22 +64,47 @@
                     <p>@DepData.desc1</p>
                 </div>
 
-                @if (!f)
+                    @if (i % 2 == 0)
                 {
                     <div class="col-md-5 col-md-5">
-                        <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/features/feature26/img1.jpg" class="img-fluid" />
+                                <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+                                    <div class="card p-4">
+                                        <div class="image d-flex flex-column justify-content-center align-items-center">
+                                            <img class="circle" src="@DepData.img" />
+
+                                            <span class="name mt-3">@DepData.director</span>
+                                            <span class="idd">Director de departament</span>
+
+                                            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                                <span>
+                                                    <a href="@DepData.facebook" target="_blank">
+                                                        <i class="fab fa-facebook-f spaces btn-lg"></i>
+                                                    </a>
+                                                    <a href="@DepData.linkedin" target="_blank">
+                                                        <i class="fab fa-linkedin-in spaces btn-lg"></i>
+                                                    </a>
+                                                    <a href="@DepData.github" target="_blank">
+                                                        <i class="fab fa-github spaces btn-lg"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            
                     </div>
                 }
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 container-fluid">
                 <div class="feature-35-owl owl-carousel owl-theme">
 
                     @foreach (string img in DepData.imgs)
                     {
-                        <div class="item">
+                        <div class="item d-flex flex-row justify-content-center align-items-center">
                             <a href="javascript:void(0)">
-                                <img src="@img" alt="gal-item" class="w-100" style="max-height:450px;" />
+                                <img src="@img" alt="gal-item" class="img-fluid" style="max-height: 50vh;" />
                             </a>
                         </div>
                     }

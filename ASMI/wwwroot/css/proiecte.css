@@ -1,0 +1,17 @@
+﻿.project-media-ctn {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+
+}
+.project-logo {
+    width: 150px;
+    height: auto;
+}

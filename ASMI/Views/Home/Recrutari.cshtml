@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Recrutări";
-}
+﻿@{ ViewData["Title"] = "Recrutări"; }
 
 @section Styles {
     <link rel="stylesheet" href="~/css/studenti.css" />
@@ -12,15 +10,62 @@
 
     <div class="container">
         <h2 class="card-title">Recrutări</h2>
-        <h6 class="card-subtitle mb-2 text-muted">Intră în echipa ASMI!</h6>
-
+        <h6 class="card-subtitle mb-2 text-muted">
+            <span style="color: darkslateblue; font-size:15px !important">
+                Intră în echipa ASMI!
+            </span>
+        </h6>
     </div>
 
-    <br />
-    <div class="container vh-50">
-        <div class="row">
-            <div class="col-sm-6">
-                Momentan formularul este închis. Te așteptam la următoarea sesiune de recrutări!
+    <div class="container">
+        <h3 style="color: red;">Încă mai poți completa formularul de înscriere</h3>
+        <div id="countdown">
+            <ul>
+                <li class="clock"><span id="days"></span>days</li>
+                <li class="clock"><span id="hours"></span>Hours</li>
+                <li class="clock"><span id="minutes"></span>Minutes</li>
+                <li class="clock"><span id="seconds"></span>Seconds</li>
+            </ul>
             </div>
+        <div id="content" class="emoji">
+            <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
     </div>
 </div>
+
+</div>
+
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let birthday = "Oct 30, 2021 00:00:00",
+            countDown = new Date(birthday).getTime(),
+            x = setInterval(function () {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                    let headline = document.getElementById("headline"),
+                        countdown = document.getElementById("countdown"),
+                        content = document.getElementById("content");
+
+                    headline.innerText = "It's my birthday!";
+                    countdown.style.display = "none";
+                    content.style.display = "block";
+
+                    clearInterval(x);
+                }
+                //seconds
+            }, 0)
+    }());
+</script>

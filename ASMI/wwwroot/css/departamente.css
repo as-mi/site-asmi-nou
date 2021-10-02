@@ -30,7 +30,8 @@ box-shadow: none;
     position: absolute;
     width: 26px;
     cursor: pointer;
-    top: 100px !important;
+    top: 200px !important;
+    right: 100px !important;
     border: none !important;
     background: none !important;
     box-shadow: none;
@@ -42,4 +43,41 @@ box-shadow: none;
 
 .owl-carousel .owl-next {
     right: 10px;
+}
+
+img {
+    border-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.card {
+    width: 350px;
+    border-color: #efefef;
+    
+}
+
+.circle {
+    height: 140px;
+    width: 140px;
+    border-radius: 50% !important
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.idd {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4d4dff;
+}
+
+.spaces {
+    padding: 4px 4px 4px 4px;
+    color: #585858
 }

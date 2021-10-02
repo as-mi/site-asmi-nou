@@ -19,11 +19,19 @@
         @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
         {
             <section>
-                <div class="content">
-                    <header>
-                        <a href="@ProjData.url"><img src="/images/@ProjData.img" class="project-logo" /> </a>
-                        <h3>@ProjData.name</h3>
-                    </header>
+                <div class="project-content content">
+                    @if (ProjData.img != null)
+                    {
+                        <div class="project-media-ctn">
+                            <a href="@ProjData.url">
+
+
+                                <img src="/images/@ProjData.img" class="project-logo" />
+
+                            </a>
+                        </div>
+                    }
+                    <h3>@ProjData.name</h3>
                     <p>
                         @ProjData.desc
                     </p>
