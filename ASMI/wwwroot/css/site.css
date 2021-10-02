@@ -11,10 +11,6 @@ a.navbar-brand {
 a {
     color: var(--asmi-dark-blue);
 }
-.project-logo {
-    width: 150px;
-    height: auto;
-}
 
 .btn-primary {
     color: var(--asmi-white);
@@ -119,6 +115,7 @@ body {
 
     #asmi-navbar a {
         color: var(--asmi-white);
+        font-size: 1.2rem;
     }
 
 .separator {
@@ -159,3 +156,32 @@ body {
 .vh-50 {
     height: 50vh;
 }
+
+#backToTopButton {
+    display: inline-block;
+    font-size: 48px;
+    color: var(--asmi-light-blue);
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+    #backToTopButton:hover {
+        cursor: pointer;
+        color: #333;
+    }
+
+    #backToTopButton:active {
+        color: #555;
+    }
+
+    #backToTopButton.show {
+        opacity: 1;
+        visibility: visible;
+    }

@@ -54,6 +54,7 @@ namespace ASMI.Controllers
             new ProjData {
                 img = "smarthack.png",
                 desc = "„Smarthack” este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
+
                 name = "SMARTHACK",
                 url = "#"
             },
@@ -79,6 +80,13 @@ namespace ASMI.Controllers
                 img = "logo-marea-ieseala.png",
                 desc = "„Marea Ieșeală” este unul din primele proiecte ale asociației cu care te întâlnești ca boboc la Facultatea de Matematică și Informatică.",
                 name = "Marea Ieșeală",
+                url = "#"
+            },
+            new ProjData {
+                img = "logo_raport_cdos.png",
+                desc = "Prin chestionarul CDOS se urmărește nivelul de satisfacție al studenților cu privire la condițiile oferite de facultate, cât și " +
+                "dacă le-au fost respectate drepturile sau nu.",
+                name = "Raport CDOS",
                 url = "#"
             },
             new ProjData {
@@ -217,6 +225,10 @@ namespace ASMI.Controllers
             return View();
         }
         public IActionResult Studenti()
+        {
+            return View();
+        }  
+        public IActionResult Galerie()
         {
             return View();
         }     
