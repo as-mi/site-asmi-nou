@@ -34,59 +34,51 @@ namespace ASMI.Controllers
 
         private static List<ProjData> pProjects = new List<ProjData>() {
              new ProjData {
-                img = "Logo_Tre_Sa_Caut.png",
-                desc = "Întrucât o mare parte din studenții din anul întâi nu cunosc Bucureștiul, asociația organizează o vânătoare de comori în prima" +
-                "săptămână a anului universitar, pentru a le prezenta o parte din oraș, în timp ce cunosc oameni din facultate, atât studenți mai mari," +
-                " cât și boboci, cu care urmează să interacționeze în următorii ani. ",
-                name = "Tre’ sa caut",
-                url = "#"
-            },
-            new ProjData {
-                img = "CaravanaEducationala.png",
-                desc = "Caravana Educațională este proiectul desfășurat de Asociația Studenților la Matematică și Informatică care are ca scop" + 
-                " prezentarea și informarea elevilor de liceu din țară cu privire la oferta educațională și la oportunitățile pe care le oferă" +
-                " Facutatea de Matematică și Informatică din cadrul Universității din București.",
-                name = "CARAVANA EDUCAȚIONALĂ",
-                url = "#"
-            },
-            new ProjData {
-                img = "smarthack_light.png",
-                desc = "SMARTHACK este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui " + 
-                "produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
-                name = "SMARTHACK",
+                img = "artandar-.png",
+                desc = "„Artă'n Dar” este un eveniment ce promovează cultura și arta în rândul studenților și în același timp urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
+                name = "Artă’n Dar",
                 url = "#"
             },
             new ProjData {
                 img = "cariere.png",
-                desc = "Cariere este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților," + 
-                " realizând o legătura între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
+                desc = "„Cariere” este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților, realizând o legătură între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
                 name = "Cariere",
                 url = "#"
             },
             new ProjData {
                 img = "logo-zile-1.png",
-                desc = "Proiectul acesta reprezintă aniversarea înființării asociației dar și promovarea acesteia în rândul studenților." + 
-                " Este alcătuit din mai multe evenimente tematice, de obicei pe parcursul unei întregi săptămâni. Câteva evenimente" +
-                " organizate în cadrul proiectului în anii precedenți sunt: FMI’s got talent, Crosul Build and Run, traininguri de" + 
-                " dezvoltare personală, meciul de fotbal studenți vs. profesori, campionate de League of Legends și Counter Strike ș.a. ",
+                desc = "La mulți ani, drag ASMI! Anul acesta Asociația Studenților la Matematică și Informatică sărbătorește ziua de naștere <b>#stândacasă</b>. Te invităm să sărbătorești împreună cu noi pe cei 11 ani de voluntariat.",
                 name = "Zilele ASMI",
                 url = "#"
             },
-             new ProjData {
-                img = "artandar-.png",
-                desc = "Este un eveniment caritabil ce promovează cultura și arta în rândul studenților și în același timp urmărește" +
-                " scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie. În fiecare an, este stabilită o cauză" +
-                " pentru care sunt realizate diversele activități. Evenimentul este alcătuit din mai multe seri tematice (seară de folk," +
-                " seară de stand-up, seară de muzică, seara de League of Legends sau Counter Strike etc.) și se întinde" +
-                " pe 5-6 zile. Donațiile obținute sunt donate la finalul proiectului cauzei stabilite inițial. ",
-                name = "Artă’n Dar",
+            new ProjData {
+                img = "smarthack.png",
+                desc = "„Smarthack” este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
+
+                name = "SMARTHACK",
                 url = "#"
             },
-
+            new ProjData {
+                img = "CaravanaEducationala.png",
+                desc = "Descoperă Facultatea de Matematică și Informatică a Universității din București!",
+                name = "CARAVANA EDUCAȚIONALĂ",
+                url = "#"
+            },
+            new ProjData {
+                img = "Logo_practica.png",
+                desc = "„Practica” este proiectul care vine în ajutorul studenților din an terminal, cu scopul de a își echivala orele de practică necesare obținerii diplomei de licență.",
+                name = "PRACTICA",
+                url = "#"
+            },
+            new ProjData {
+                img = "SOS-LOGO-FINAL.png",
+                desc = "„Students' Organizations Showdown” este un campionat caritabil de CS:GO între asociațiile studențești, în cadrul căruia strângem donații pentru o cauză nobilă.",
+                name = "Students’ Organizations Showdown",
+                url = "#"
+            },
             new ProjData {
                 img = "logo-marea-ieseala.png",
-                desc = "Acest proiect se petrece înainte de începerea anului universitar și constă într-o ieșire destinată bobocilor, în cadrul căreia " + 
-                "aceștia au ocazia de a se cunoaște. Acest proiect nu s-a desfășurat anul acesta din cauza contextului pandemic. ",
+                desc = "„Marea Ieșeală” este unul din primele proiecte ale asociației cu care te întâlnești ca boboc la Facultatea de Matematică și Informatică.",
                 name = "Marea Ieșeală",
                 url = "#"
             },
@@ -99,88 +91,25 @@ namespace ASMI.Controllers
             },
             new ProjData {
                 img = "LogoDuckFinal.png",
-                desc = "Se desfășoară imediat după încheierea festivității de deschidere și constă în alocarea a 2- 3 voluntari fiecărei grupe de " + 
-                "studenți pentru a ajuta la completarea contractelor de studii, alegerea șefului de grupă și pentru a răspunde la diverse întrebări.",
+                desc = "„Rățușca” este proiectul prin care intrăm în contact cu bobocii și îi introducem în viața de facultate. Încă din primele zile, voluntarii asociației se integrează cu grupele nou-formate, și îi ghidează prin primii pași de studenție.",
                 name = "Rățusca",
                 url = "#"
             },
-            new ProjData
-            {
-                img = "",
-                desc = "Acest eveniment este dedicat noilor studenți FMI. În cadrul evenimentului au loc diverse probe prin care trec candidații " +
-                "pentru Miss și Mister FMI, iar în urma acestora sunt desemnați câștigătorii titlurilor.",
-                name = "Balul Bobocilor",
+            new ProjData {
+                img = "Logo_Tre_Sa_Caut.png",
+                desc = "„Tre' sa caut” este un treasure hunt ce se desfasoara in Bucuresti. Scopul este familiarizarea studentilor cu locuri interesant sau importante din jurul zonei universitatii, dar mai important este cunoasterea mai buna a colegilor si formarea de legaturi noi cu acestia.",
+                name = "Tre’ sa caut",
                 url = "#"
             },
-            new ProjData
-            {
-                img = "",
-                desc = "În cadrul acestui proiect, voluntarii asociației ajută la buna desfășurare a procesului de admitere, creând un grup de Facebook " +
-                "în care ei răspund la toate întrebările candidaților, îndrumându-i către sălile de depunere a dosarelor și ajutându-i să completeze " +
-                "documentele necesare și multe altele.",
-                name = "Admitere",
+            new ProjData {
+                img = "logo_raport_cdos.png",
+                desc = "Prin chestionarul CDOS se urmărește nivelul de satisfacție al studenților cu privire la condițiile oferite de facultate, cât și dacă le-au fost respectate drepturile sau nu.",
+                name = "Raport CDOS",
                 url = "#"
             },
-            new ProjData
-            {
-                img = "",
-                desc = "Acest proiect este organizat la începutul anului universitar, fiind adresat " + 
-                "noilor studenți, și constă în discuții voluntari - boboci, pentru a oferi informații " +
-                "și a răspunde la întrebări.",
-                name = "Dialog Deschis",
-                url = "#"
-            },
-             new ProjData
-             {
-                img = "",
-                desc = "Acest proiect se desfășoară la începutul anului universitar, deoarece scopul său este de a motiva și de a " + 
-                 "pregăti studenții să aplice la firmele de top din domeniu (Google, Facebook, Amazon etc.) și constă într-o " + 
-                 "prezentare din partea diverselor persoane care au fost interni în cadrul acestora.",
-                name = "Internview",
-                url = "#"
-             },
-              new ProjData
-              {
-                img = "",
-                desc = "Din cauza nevoii studenților de a avea oportunități de practică diverse în cadrul facultății și care să-i pregătească pentru " +
-                  "viitor, de anul acesta ASMI gestionează practica în cadrul facultății. Astfel, studenții care au nevoie de practică se pot înscrie " +
-                  "prin intermediul unui formular, urmând ca voluntarii ASMI să îi repartizeze la o oportunitate de practică ce le îndeplinește cât " +
-                  "mai bine nevoile și dorințele. Aceste oportunități de practică includ și nu se limitează la: crearea aplicațiilor în folosul " +
-                  "facultății și în folosul ASMI, pregătiri pentru Bacalaureat și Admitere, sprijinul profesorilor la realizarea materialelor pentru " +
-                  "cursuri și la corectarea temelor și multe altele.",
-                name = "Practică",
-                url = "#"
-              },
-             new ProjData
-             {
-                img = "",
-                desc = "Acest proiect se desfășoară imediat înainte de începerea recrutărilor din toamnă. El constă într-o prezentare a asociației, " + 
-                 "a departamentelor și a proiectelor sale și are rolul de a oferi studenților o înțelegerea mult mai bună a asociației cât și să îi " + 
-                 "motiveze să participe la procesul de recrutare pentru a deveni voluntari.",
-                name = "Meet ASMI",
-                url = "#"
-             },
-              new ProjData
-              {
-                img = "",
-                desc = "Pentru a asigura continuitatea și bunul mers al proiectelor, sunt organizate 2 sesiuni de recrutare în asociație. Prima " + 
-                  "sesiune are loc în luna octombrie, odată cu venirea noilor studenți, iar cealaltă în luna mai, pentru a le oferi ocazia de a se " + 
-                  "implica și celor care nu au avut șansa să între în asociație în toamnă.",
-                name = "Recrutări",
-                url = "#"
-              },
-              new ProjData
-              {
-                img = "",
-                desc = "Acest proiect își propune să organizeze o multitudine de petreceri pentru a face viața studențească mai frumoasă și pentru a le oferi studenților " + 
-                  "oportunitatea de a socializa și de a se distra. Printre acestea se numără Bumtzi (prima petrecere din anul universitar), FeMeI Party,"  + 
-                  "ASMI Party și Petrecerea de Trecere. ",
-                name = "Petreceri ASMI",
-                url = "#"
-              },
 
         };
-
+        
 
         private List<ProjData> EnumProjects(int cbCount)
         {
@@ -190,7 +119,7 @@ namespace ASMI.Controllers
             }
             return pProjects.GetRange(0, cbCount);
         }
-
+       
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -281,7 +210,7 @@ namespace ASMI.Controllers
         }
         public IActionResult Index()
         {
-            ViewData["ProjData"] = EnumProjects(4);
+            ViewData["ProjData"] = EnumProjects(6);
             return View();
         }
 
