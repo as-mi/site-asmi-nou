@@ -9,5 +9,22 @@ content: none;
 }
 
 #bug-report-btn {
-    text-decoration: none!important;
+    text-decoration: none !important;
+    font-size: 0.9rem
+}
+
+#bug-report-btn:visited {
+    color: black;
+    }
+
+.danger-card {
+    border-color: #FFADB6;
+    background-color: #FFF0F1;
+}
+    .danger-card:hover {
+        background-color: #BF3243;
+        color: white;
+    }
+.danger-card:hover #bug-report-btn {
+    color: white;
 }
