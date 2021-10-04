@@ -39,31 +39,31 @@ namespace ASMI.Controllers
         private static List<ProjData> pProjects = new List<ProjData>() {
              new ProjData {
                 img = "artandar-.png",
-                desc = "„Artă'n Dar” este un eveniment ce promovează cultura și arta în rândul studenților și în același timp urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
+                desc = "„Artă'n Dar” este un eveniment care promovează cultura și arta în rândul studenților și, în același timp, urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
                 name = "Artă’n Dar",
                 url = null
             },
             new ProjData {
                 img = "cariere.png",
-                desc = "„Cariere” este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților, realizând o legătură între aceștia (participanți) și o parte din cele mai cunoscute companii din piața IT din Romania.",
+                desc = "„Cariere” este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților, realizând o legătură între aceștia și o parte dintre cele mai cunoscute companii de pe piața IT din România.",
                 name = "Cariere",
                 url = "https://cariere.asmi.ro/"
             },
             new ProjData {
                 img = "logo-zile-1.png",
-                desc = "La mulți ani, drag ASMI! Anul acesta Asociația Studenților la Matematică și Informatică sărbătorește ziua de naștere <b>#stândacasă</b>. Te invităm să sărbătorești împreună cu noi pe cei 11 ani de voluntariat.",
+                desc = "Acest eveniment este organizat pentru sărbătorirea zilei înființării asociației. Este dedicat tuturor studenților FMI care vor să își facă prieteni noi, să participe la competiții sportive, seri de boardgames, seri de teatru, campionate de CS/LOL etc.",
                 name = "Zilele ASMI",
                 url = null
             },
             new ProjData {
                 img = "smarthack.png",
-                desc = "„Smarthack” este un hackathon de 24 de ore în care mai multe echipe de câte 3-4 studenţi lucrează la dezvoltarea unui produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe.",
+                desc = "„Smarthack” este un hackathon de 24 de ore în care mai multe echipe formate din câte 3-4 studenţi, lucrează la dezvoltarea unui produs software pe baza unei teme, care se finalizează cu jurizarea şi premierea celor mai bune echipe de către cele mai mari firme din IT din România.",
                 name = "SMARTHACK",
                 url = "https://smarthack.asmi.ro/"
             },
             new ProjData {
                 img = "CaravanaEducationala.png",
-                desc = "Descoperă Facultatea de Matematică și Informatică a Universității din București!",
+                desc = "Ești elev de liceu și nu știi către ce facultate să te îndrepți? Ei bine, voluntarii ASMI te ajută să descoperi Facultatea de Matematică și Informatică a Universității din București!",
                 name = "CARAVANA EDUCAȚIONALĂ",
                 url = "https://caravana.asmi.ro/"
             },
@@ -81,20 +81,20 @@ namespace ASMI.Controllers
             },
             new ProjData {
                 img = "logo-marea-ieseala.png",
-                desc = "„Marea Ieșeală” este unul din primele proiecte ale asociației cu care te întâlnești ca boboc la Facultatea de Matematică și Informatică.",
+                desc = "„Marea Ieșeală” este unul dintre primele proiecte ale asociației cu care te întâlnești ca boboc la Facultatea de Matematică și Informatică.",
                 name = "Marea Ieșeală",
                 url = null
             },
             new ProjData {
                 img = "LogoDuckFinal.png",
-                desc = "„Rățușca” este proiectul prin care intrăm în contact cu bobocii și îi introducem în viața de facultate. Încă din primele zile, voluntarii asociației se integrează cu grupele nou-formate, și îi ghidează prin primii pași de studenție.",
+                desc = "„Rățușca” este proiectul prin care intrăm în contact cu bobocii și îi introducem în viața de student al FMI. Încă din primele zile, voluntarii asociației se integrează cu grupele nou formate, și îi ghidează către primii pași ai studenției.",
                 name = "Rățusca",
                 url = null
             },
             new ProjData {
                 img = "Logo_Tre_Sa_Caut.png",
-                desc = "„Tre' sa caut” este un treasure hunt ce se desfasoara in Bucuresti. Scopul este familiarizarea studentilor cu locuri interesant sau importante din jurul zonei universitatii, dar mai important este cunoasterea mai buna a colegilor si formarea de legaturi noi cu acestia.",
-                name = "Tre’ sa caut",
+                desc = "„Tre' să caut” este un treasure hunt care se desfășoară în București. Scopul este familiarizarea studenților cu locuri importante din jurul zonei universității, dar mai ales, scopul lui îl reprezintă cunoașterea mai bună a colegilor și formarea de legături noi cu aceștia.",
+                name = "Tre’ să caut",
                 url = null
             },
             new ProjData {
@@ -106,8 +106,8 @@ namespace ASMI.Controllers
             new ProjData
             {
                 img = null,
-                desc = "Acest eveniment este dedicat noilor studenți FMI. În cadrul evenimentului au loc diverse probe prin care trec candidații " +
-                "pentru Miss și Mister FMI, iar în urma acestora sunt desemnați câștigătorii titlurilor.",
+                desc = "Acest eveniment este dedicat noilor studenți FMI. În cadrul acestuia au loc diverse probe prin care trec candidații " +
+                "pentru Miss și Mister FMI, iar în urma acestora, sunt desemnați câștigătorii titlurilor.",
                 name = "Balul Bobocilor",
                 url = null
             },
@@ -124,8 +124,8 @@ namespace ASMI.Controllers
             {
                 img = null,
                 desc = "Acest proiect este organizat la începutul anului universitar, fiind adresat " +
-                "noilor studenți, și constă în discuții voluntari - boboci, pentru a oferi informații " +
-                "și a răspunde la întrebări.",
+                "noilor studenți și constă în discuții voluntari-boboci, pentru a le oferi informații " +
+                "și a  le răspunde la întrebări.",
                 name = "Dialog Deschis",
                 url = null
             },
@@ -133,9 +133,9 @@ namespace ASMI.Controllers
              {
                 img = null,
                 desc = "Acest proiect se desfășoară la începutul anului universitar, deoarece scopul său este de a motiva și de a " +
-                 "pregăti studenții să aplice la firmele de top din domeniu (Google, Facebook, Amazon etc.) și constă într-o " +
+                 "pregăti studenții să aplice la firmele de top din domeniu (Google, Facebook, Amazon etc.). Constă într-o " +
                  "prezentare din partea diverselor persoane care au fost interni în cadrul acestora.",
-                name = "Internview",
+                name = "InternView",
                 url = null
              },
               
@@ -151,16 +151,16 @@ namespace ASMI.Controllers
               new ProjData
               {
                 img = null,
-                desc = "Pentru a asigura continuitatea și bunul mers al proiectelor, sunt organizate 2 sesiuni de recrutare în asociație. Prima " +
+                desc = "Pentru a asigura continuitatea asociației și bunul mers al proiectelor, sunt organizate 2 sesiuni de recrutare în ASMI. Prima " +
                   "sesiune are loc în luna octombrie, odată cu venirea noilor studenți, iar cealaltă în luna mai, pentru a le oferi ocazia de a se " +
-                  "implica și celor care nu au avut șansa să între în asociație în toamnă.",
+                  "implica și celor care nu au avut șansa să intre în asociație în toamnă.",
                 name = "Recrutări",
                 url = null
               },
               new ProjData
               {
                 img = null,
-                desc = "Acest proiect își propune să organizeze o multitudine de petreceri pentru a face viața studențească mai frumoasă și pentru a le oferi studenților " +
+                desc = "ASMI organizează o multitudine de petreceri pentru a le face viața studențească mai frumoasă și pentru a le oferi studenților " +
                   "oportunitatea de a socializa și de a se distra. Printre acestea se numără Bumtzi (prima petrecere din anul universitar), FeMeI Party,"  +
                   "ASMI Party și Petrecerea de Trecere. ",
                 name = "Petreceri ASMI",

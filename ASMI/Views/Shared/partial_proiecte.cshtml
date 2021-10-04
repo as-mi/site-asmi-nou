@@ -18,26 +18,61 @@
     <div class="highlights justify-content-around">
         @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
         {
-            <section>
-                <div class="project-content content">
-                    @if (ProjData.img != null)
-                    {
+            @if (ProjData.img != null)
+            {
+                <section>
+                    <div class="project-content content">
+
                         <div class="project-media-ctn">
+
+
                             <a href="@ProjData.url">
 
 
                                 <img src="/images/@ProjData.img" class="project-logo" />
 
-                            </a>
-                        </div>
-                    }
-                    <h3>@ProjData.name</h3>
-                    <p>
-                        @ProjData.desc
-                    </p>
-                </div>
-            </section>
-        }
-    </div>
-</div>
 
+                            </a>
+
+
+                        </div>
+
+
+
+                        <h3>@ProjData.name</h3>
+                        <p>
+                            @ProjData.desc
+                        </p>
+
+                        
+                    </div>
+
+                </section>
+             }
+         }
+        </div>
+    <header class="special">
+        <h2><b>Alte proiecte</b></h2>
+       
+    </header>
+        @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
+        {
+            
+
+                @if (ProjData.img == null)
+                {
+
+                    <section>
+
+                        <h3>@ProjData.name</h3>
+                        <p>
+                            @ProjData.desc
+                        </p>
+                    </section>
+                }
+
+
+            
+        }
+
+</div>
