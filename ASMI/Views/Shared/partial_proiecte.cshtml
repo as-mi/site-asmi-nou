@@ -5,6 +5,7 @@
 
 @{
     var ProjDataList = ViewData["ProjData"] as List<ASMI.Controllers.HomeController.ProjData>;
+    var afisat = false;
 }
 
 <div class="inner mt-5">
@@ -44,35 +45,32 @@
                             @ProjData.desc
                         </p>
 
-                        
+
                     </div>
 
                 </section>
-             }
-         }
-        </div>
-    <header class="special">
-        <h2><b>Alte proiecte</b></h2>
-       
-    </header>
-        @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
-        {
-            
-
-                @if (ProjData.img == null)
-                {
-
-                    <section>
-
-                        <h3>@ProjData.name</h3>
-                        <p>
-                            @ProjData.desc
-                        </p>
-                    </section>
-                }
-
-
-            
+            }
         }
+    </div>
+
+    
+    @foreach (ASMI.Controllers.HomeController.ProjData ProjData in ProjDataList)
+    {
+
+        @if (ProjData.img == null)
+        {
+
+            <section>
+
+                <h3>@ProjData.name</h3>
+                <p>
+                    @ProjData.desc
+                </p>
+            </section>
+        }
+
+
+
+    }
 
 </div>
