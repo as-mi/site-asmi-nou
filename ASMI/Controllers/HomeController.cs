@@ -215,7 +215,7 @@ namespace ASMI.Controllers
                 {
                     title = "Design & PR",
                     img = "images/dd_design.jpg",
-                    director = "Andrei Constantinescu",
+                    director = "Andreea Ciurescu",
                     desc = "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi 'imaginea asociației'. Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram. De exemplu Recrutările. Sau ce zici de o petrecere? Exact, informația ar ajunge la mult mai puțini oameni, sau cei care ar ști nu ar veni, deoarece nu i-a atras nimic auzind o informație doar prin viu grai. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător. Te pricepi la photoshop/editare video/grafică? Ai talent la desen sau pur și simplu îți dorești să înveți tot ce ți-am enumerat? Înseamnă că ai nimerit unde trebuie, la Design & PR îți poți dezvolta hard skillurile și poți să ajuți la toate proiectele asociației!",
                     facebook = "",
                     linkedin = "",
@@ -234,12 +234,12 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Educațional",
-                    img = "images/dd_edu.jpg",
-                    director = "Mădălina Bădescu",
+                    img = "images/dd_edu.jpeg",
+                    director = "Liviu Păun",
                     desc = "Departamentul Educațional are ca scop îmbunătățirea calității vieții academice a studenților, reprezentând o punte de legătură între aceștia și Conducerea Facultății. Cu ce se ocupă mai exact Edu? Proiecte precum Admiterea, Tutoriate, Ziua Porților Deschise, Rățușca și, mai recent, Practica sunt organizate de voluntarii noștri, care sunt motivați să ajute studenții să aibă o experiență a anilor de Facultate cât mai plăcută. Membrii departamentului facilitează comunicarea cu Decanatul, învață public speaking, organizează evenimentele vitale desfășurării anului universitar și lucrează activ la identificarea și soluționarea problemelor studențești. Deci, dacă vrei să-ți ajuți colegii, ți-ar plăcea să îi reprezinți sau să contribui la organizarea proiectelor care îi influențează pe plan academic, Edu este pentru tine!",
-                    facebook = "",
-                    linkedin = "",
-                    github = "",
+                    facebook = "https://www.facebook.com/liviu.paun.779",
+                    linkedin = "https://www.linkedin.com/in/liviu-p%C4%83un-149813222",
+                    github = null,
                     imgs = new List<string>{
                         "images/edu/d1.jpeg",
                         "images/edu/d2.jpeg",
@@ -255,8 +255,8 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Human Resources",
-                    img = "images/dd_hr.jpg",
-                    director = "Codruț Rotaru",
+                    img = "images/dd_hr.jpeg",
+                    director = "Miruna Vasiliu",
                     desc = "Noi suntem, în câteva cuvinte, 'inima asociației'! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât ei să ajungă să se simtă cu adevărat parte din familia noastră, dar și de bunăstarea tuturor voluntarilor, prin organizarea de joculețe interactive și de activități de socializare. În timpul pandemiei, am adaptat aceste activități de socializare în mediul online prin intermediul unor seri de jocuri sau de trivia. În plus, asigură dezvoltarea și motivarea constanta a voluntarilor noștri. Așa că, dacă îți place să comunici cu oamenii, să organizezi activități și să ajuți persoane, departamentul de Resurse Umane este pentru tine!",
                     facebook = "",
                     linkedin = "",

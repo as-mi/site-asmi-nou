@@ -4,6 +4,7 @@
 
 @section Styles {
     <link rel="stylesheet" href="~/css/studenti.css" />
+    
 }
 
 
@@ -11,11 +12,7 @@
 
     <div class="container">
         <h2 class="card-title">Studenți</h2>
-        <h6 class="card-subtitle mb-3 text-muted">
-            <span style="color: darkslateblue; font-size:15px !important">
-                Monitorul oficial - De pe această pagină poți obține informații referitoare la burse, orar, reprezentare studențească și altele.
-            </span>
-        </h6>
+        
 
         <p class="card-text">Unele date și informații prezentate pe această pagină ar putea să nu fie de încredere sau s-ar putea ca o parte dintre acestea să fie neactualizate și să nu reflecte cerințele și responsabilitățile impuse de Universitatea București. De aceea, consultă și site-ul oficial al universității pentru informații sigure.</p>
 
@@ -75,10 +72,15 @@
                     <div class="card" tabindex="0">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-sitemap"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
+                                    <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">
                                     <a href="https://ghid.asmi.ro/" target="_blank">GHIDUL BOBOCULUI</a>
                                 </h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
+                                    <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -89,9 +91,11 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="intrebariBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-question-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hexagon-half" viewBox="0 0 16 16">
+                                    <path d="M14 4.577v6.846L8 15V1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">
-                                    ÎNTREBĂRI FRECVENTE
+                                    OPȚIONALE ȘI FACULTATIVE
                                 </h5>
                             </div>
                         </div>
@@ -103,10 +107,13 @@
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">ÎNTREBĂRI FRECVENTE</h3>
-                        <p class="card-text">
-                            //TODO
-                        </p>
+                        <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">OPȚIONALE ȘI FACULTATIVE</h3>
+
+                        <ul>
+                            <li>Diferența dintre facultative și opționale constă în faptul că este obligatoriu să participi la un număr de opționale, dar tu alegi ordinea acestora și vei fi repartizat  în funcție de medie și preferințele colegilor. La facultative te poți înscrie doar dacă îți dorești, iar dacă nu te prezinți la evaluarea finală, materia nu va fi considerată restanță.</li>
+                            <li>Pentru unele facultative poate avea loc o selecție a studenților.</li>
+                            <li>Dacă faci la licență cursul de pedagogie poți preda până la maxim clasa a 10-a. Dacă faci cursul și de la master poți preda la maxim clasa a 12-a. Dacă termini un doctorat, poți preda la nivel universitar.</li>
+                        </ul>
                     </div>
 
                 </div>
@@ -116,7 +123,9 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="medicBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fab fa-heart"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">
                                     ASISTENȚĂ MEDICALĂ
                                 </h5>
@@ -142,7 +151,9 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="bibliotecaBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fab fa-telegram-plane"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">BIBLIOTECĂ</h5>
                             </div>
                         </div>
@@ -167,7 +178,10 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="reprezentareBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-tasks"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">STUDENȚI REPREZENTANȚI</h5>
                             </div>
                         </div>
@@ -180,36 +194,67 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">STUDENȚI REPREZENTANȚI</h3>
-                        <p class="card-text">
-                            Anual se aleg studenți reprezentanți, care au rolul de a eficientiza comunicarea conducere-studenți și de a sublinia interesele colegilor în cadrul ședințelor Consiliul Facultății, luptând pentru drepturile studențești. Sunt 8 studenți reprezentanți și oricine poate candida.
-                        </p>
+
+                        Rolul unui student reprezentant este acela de a fi vocea studenților în toate structurile de conducere de la nivel academic. Acesta nu numai că își reprezintă colegii, dar are datoria de a-i consulta în legătură cu problemele care îi vizează și de a-i informa despre tot ceea ce îi interesează.
+                        Conform CDOS-ului, studenții trebuie să reprezinte 25% din membrii Consiliul Facultății și tot 25% din membrii Senatului Universității. În cadrul FMI studenții au ca reprezentanți în Consiliu Facultății:
+
+                        <ul>
+                            <li>un loc pentru anul I Matematică și Informatică</li>
+                            <li>un loc pentru anul II Matematică</li>
+                            <li>un loc pentru anul II Informatică</li>
+                            <li>un loc pentru anii I și II Calculatoare și Tehnologia Informației</li>
+                            <li>un loc pentru anul III Matematică</li>
+                            <li>un loc pentru anul III Informatică</li>
+                            <li>un loc pentru anii III și IV Calculatoare și Tehnologia Informației</li>
+                            <li>un loc pentru reprezentarea tuturor studenților, indiferent de ciclu de studii, an, program sau forma de învățământ</li>
+                        </ul>
+                        În Senatul Universității, FMI are doi reprezentanți.
+
+
                     </div>
 
                 </div>
 
                 <div class="d-inline-block mr-2 mb-2 w-100">
                     <div class="card" tabindex="0">
-                        <div class="card-body" id="exameneBtn">
+                        <div class="card-body" id="senatBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-university"></i>
-                                <h5 class="card-title my-0 ml-2">PLANIFICARE EXAMENE</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                </svg>
+                                <h5 class="card-title my-0 ml-2">ALEGERI</h5>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- The Modal -->
-                <div id="examene" class="modal">
+                <div id="senat" class="modal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">PLANIFICARE EXAMENE</h3>
+                        <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">ALEGERI</h3>
                         <p class="card-text">
-                            Cele două sesiuni de examene din timpul unui an universitar sunt în ianuarie și în iunie. Înainte de acestea, trebuie stabilite datele fiecărui examen împreună cu profesorul de curs și întreaga serie din care faci parte. După ce studenții din fiecare grupă cad de acord asupra datelor, șeful de serie sau cel puțin un șef de grupă trebuie să trimită mail profesorului ca să îl înștiințeze de preferințele studenților și să poată confirma data. Cu câteva zile înainte de sesiune, va apărea un calendar asupra căruia te poți uita, atât pentru a fi sigur de corectitudinea orelor și zilelor stabilite, cât și pentru a-l avea la îndemână oricând ai nevoie. Totodată, sesiunea de restanțe din semestrul I este la început de iunie, cea din semestrul II este în iulie, iar sesiunea de reexaminări și măriri este în primele două săptămâni din septembrie. Datele și orele din cadrul acestor sesiuni nu sunt stabilite de către studenți, ci doar de către profesori, calendarele aferente fiind postate de asemenea pe site-ul facultății.
+                            Va fi folosit votul exclusiv online, pe Helios.
+
+                            Calendar:
+                            <ul>
+                                <li>10 - 14 octombrie, depunerea candidaturilor pentru alegeri</li>
+                                <li>15 - 24 octombrie campania electorală</li>
+                                <li>25 octombrie ziua alegerilor (dată propusă)</li>
+                            </ul>
+
+                            Pe timpul Campaniei, candidații au posibilitatea de a se promova pe rețelele de socializare și de a participa la o dezbatere în mediul virtual
+                            Universitatea nu poate condiţiona statutul de student reprezentant de performanţele academice, prezenţa la cursuri, seminarii şi laboratoare
+                            Pentru studenţi, durata mandatului de reprezentant în structurile decizionale (Consiliul Facultăţii și Senatul Universității) este de un an, cu posibilitatea reînnoirii în limitele duratei normale ale aceluiași ciclu de studii, cu un maxim posibil de 4 ani de reprezentare. Orice student are dreptul de a candida și de a vota în cadrul alegerilor.
                         </p>
                     </div>
 
                 </div>
+
+                
 
 
             </div>
@@ -236,10 +281,169 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">STRUCTURA ANULUI UNIVERSITAR</h3>
-                        <p class="card-text">
-                            Anul universitar începe pe data de 1 Octombrie, activitatea didactică continuând până la vacanța de Crăciun care începe în fiecare an în jur de 23 decembrie. Când ne întoarcem din vacanță mai este o perioadă de aproximativ două săptămâni de activitate didactică în care are loc și presesiunea, iar după aceasta este sesiunea de examene de pe semestrul I. În februarie este săptămâna de vacanță intersemestrială, după care începe semestrul II. În semestrul II se desfășoară vacanța de Paște și activitate didactică. La final de mai este presesiunea, iar la începutul lui iunie este sesiunea de restanțe de pe semestrul I care este liberă pentru cei care nu au de susținut astfel de examene. Celelalte trei săptămâni din iunie sunt reprezentate de sesiunea din semestrul II, iar în iulie sunt restanțele din al doilea semestru. După aceea, începe vacanța de vară, iar în primele două săptămâni din septembrie se desfășoară sesiunile de reexaminări și măriri aferente celor două semestre.
-                            De menționat este faptul ca studenții din an terminal au o structură a anului universitar diferită față de cea clasică, aceasta integrând și sesiunea de licență.
-                        </p>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <td scope="col">Perioadă</td>
+                                        <td scope="col">Activitate</td>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">01.10.2021 – 23.12.2021</td>
+                                        <td>
+                                            Activitate didactică
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            24.12.2021 – 02.01.2022
+                                        </td>
+                                        <td class="bg-success">
+                                            Vacanţă de iarnă
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            03.01.2022 – 16.01.2022
+                                        </td>
+                                        <td>
+                                            Activitate didactică
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            17.01.2022 – 06.02.2022
+                                        </td>
+                                        <td>
+                                            Sesiune de examene
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            07.02.2022 – 13.02.2022
+
+                                        </td>
+                                        <td class="bg-success">
+                                            Vacanţă intersemestrială
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">14.02.2022 – 20.04.2022</th>
+                                        <td>
+                                            Activitate didactică
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            21.04.2022 – 27.04.2022
+                                        </td>
+                                        <td class="bg-success">
+                                            Vacanță de Paște
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            28.04.2022 – 29.05.2022
+                                        </td>
+                                        <td>
+                                            Activitate didactică
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            30.05.2022-06.06.2022
+                                        </td>
+                                        <td>
+                                            Sesiune de restanțe sem. I
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            07.06.2022 – 26.06.2022
+
+                                        </td>
+                                        <td>
+                                            Sesiune de examene
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            04.07.2022 – 11.07.2022
+
+                                        </td>
+                                        <td>
+                                            Sesiune de restanțe sem. II
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            12.07.2022 – 11.09.2022
+                                        </td>
+                                        <td class="bg-success">
+                                            Vacanță de vară
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="row">
+                                            12.09.2022 – 18.09.2022
+                                        </td>
+                                        <td>
+                                            Reexaminări și măriri
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="d-inline-block mr-2 mb-2 w-100">
+                    <div class="card" tabindex="0">
+                        <div class="card-body" id="exameneBtn">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-university"></i>
+                                <h5 class="card-title my-0 ml-2">SECRETARIAT</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Modal -->
+                <div id="examene" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">SECRETARIAT</h3>
+
+                        <ul>
+                            <li>Adeverința de student este valabilă doar pentru transportul din București, iar pentru tren e nevoie de legitimația de student.</li>
+                            <li>Se pot cumpăra bilete online, însă, în prealabil, trebuie luat de la gară ID-ul de student.</li>
+                            <li>Fiecare specializare are un departament separat al secretariatului.</li>
+                            <li>Programul secretariatului este de luni până joi între 13:00-14:00 și vinerea între 12:00-13:00.</li>
+                            <li>Secretariatul se află la parter în holul de lângă Amfiteatrul Haret.</li>
+                            <li>Datele de contact și programul actualizat se regăsesc constant pe site-ul facultății la rubrica „Secretariat".</li>
+                        </ul>
+
                     </div>
 
                 </div>
@@ -248,7 +452,11 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="practicaBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-graduation-cap"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                                    <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">PRACTICĂ</h5>
                             </div>
                         </div>
@@ -297,7 +505,9 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="licentaBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fab fa-check"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">LICENȚĂ</h5>
                             </div>
                         </div>
@@ -324,7 +534,9 @@
                     <div class="card" tabindex="0">
                         <div class="card-body" id="masterBtn">
                             <div class="d-flex align-items-center">
-                                <i class="fab fa-check-circle"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hdd-network-fill" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z" />
+                                </svg>
                                 <h5 class="card-title my-0 ml-2">MASTER</h5>
                             </div>
                         </div>
@@ -337,39 +549,32 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">MASTER</h3>
-                        <p class="card-text">
-                            Programele de master pe care le oferă facultatea noastră sunt specifice fiecărui domeniu de licență. Admiterea la unul dintre programele de master este condiționată de o metodologie specifică, nu de o licențiere într-un domeniu anume. *vreți să zic că e interviu și stuf?*
-                            Cu specializarea în matematică avem: Matematică Didactică și Probabilități și Statistică în Finanțe și Știință, cu predarea în limba română, Advanced Studies in Mathematics, cu predarea în limba engleză.
-                            Cu specializarea în Informatică avem: Baze de Date și Tehnologii Software, Inginerie Software, Artificial Intelligence, Sisteme Distribuite, Security and Applied Logic, Data Science și Natural Language Processing. (limba de predare este cea din denumirea programului).
-                        </p>
+
+                        <p>Programele de master pe care le oferă facultatea noastră sunt specifice fiecărui domeniu de licență. Admiterea la unul dintre programele de master este condiționată de o metodologie specifică, nu de o licențiere într-un domeniu anume.</p>
+                        Cu specializarea în matematică avem:
+                        <ul>
+
+                            <li>Advanced Studies in Mathematics(cu predarea în limba engleză)</li>
+                            <li>Matematică Didactică și Probabilități și Statistică în Finanțe și Știință(cu predarea în limba română)</li>
+
+                        </ul>
+
+                        Cu specializarea în Informatică sau CTI avem:
+                        <ul>
+                            <li>Baze de Date și Tehnologii Software(cu predarea în limba română)</li>
+                            <li>Inginerie Software(cu predarea în limba română)</li>
+                            <li>Artificial Intelligence(cu predarea în limba engleză)</li>
+                            <li>Sisteme Distribuite(cu predarea în limba română)</li>
+                            <li>Security and Applied Logic(cu predarea în limba engleză)</li>
+                            <li>Data Science și Natural Language Processing(cu predarea în limba engleză)</li>
+                        </ul>
+
                     </div>
 
                 </div>
 
 
-                <div class="d-inline-block mr-2 mb-2 w-100">
-                    <div class="card" tabindex="0">
-                        <div class="card-body" id="senatBtn">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-flag"></i>
-                                <h5 class="card-title my-0 ml-2">SENATUL UNIVERSITAR</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- The Modal -->
-                <div id="senat" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <h3 style="display: flex; flex-direction: column; justify-content: center; text-align: center;">SENATUL UNIVERSITAR</h3>
-                        <p class="card-text">
-                            În cadrul ședințelor Senatului Universitar se discută interesele și planurile la nivelul întregii Universități București. Facultatea noastră are doi studenți reprezentanți în senat, alături de decanat.
-                        </p>
-                    </div>
-
-                </div>
 
             </div>
         </div>

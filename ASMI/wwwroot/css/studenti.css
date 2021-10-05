@@ -93,3 +93,8 @@ content: none;
         display: block;
         font-size: 4.5rem;
     }
+
+table {
+    text-align:center;
+}
+    
