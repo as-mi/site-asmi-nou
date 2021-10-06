@@ -8,6 +8,7 @@
 }
 
 @section Styles {
+    <link rel="stylesheet" href="~/css/galerie.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 }
 
@@ -15,13 +16,14 @@
 <div class="py-5">
     <div class="lightbox-gallery">
         <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Galerie Foto</h2>
+            <div class="intro jumbotron">
+                <h1 class="text-center font-weight-bold">Galerie Foto</h1>
+                <h5 class="text-center">Prin proiectele noastre rămânem cu cele mai frumoase amintiri</h5>
             </div>
             <div class="row photos">
                 @foreach (var path in galleryPhotosRelativePaths)
                 {
-                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-2"><a href="@path" data-lightbox="photos"><img class="img-fluid" src="@path"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-2 "><a href="@path" data-lightbox="photos"><img class="img-fluid dumnezeu-pe-front-end" src="@path"></a></div>
                 }
             </div>
         </div>
