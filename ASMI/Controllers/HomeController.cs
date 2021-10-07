@@ -138,7 +138,15 @@ namespace ASMI.Controllers
                 name = "InternView",
                 url = null
              },
-              
+
+             new ProjData
+             {
+                img = null,
+                desc = "Sunt o oportunitate de practică pentru studenții de ani mai mari, de a-i ajuta pe cei de anul I sau II pe parcursul semestrului prin lecții organizate online. În cadrul acestora se lucrează exerciții pentru fixarea și însușirea noțiunilor studiate la curs, seminar sau laborator.",
+                name = "Tutoriate",
+                url = null
+             },
+
              new ProjData
              {
                 img = null,
@@ -195,11 +203,11 @@ namespace ASMI.Controllers
                 {
                     title = "Management & Fundraising",
                     img = "images/dd_mf.jpg",
-                    director = "Gabriel Majeri",
+                    director = "Andreea Gherghescu",
                     desc = "Principalul nostru obiectiv este să îmbunătățim condițiile în care decurg evenimentele asociației. Acest lucru îl realizăm prin supervizarea desfășurării proiectelor ASMI și dezvoltarea acestora pe mai departe, dar și intrând în contact direct cu diverse firme (din domeniul IT și nu numai), cu care încheiem contracte de sponsorizare. Un alt lucru important pentru noi este feedback-ul, fiind mereu acolo ca să ascultăm ideile și sugestiile voluntarilor noștri. În perioada pandemiei, asociația a continuat să păstreze relația cu mediul de afaceri, și a adus sponsorizări și oportunități pentru studenții FMI. Ce câștigi dacă faci parte din acest departament? Abilități de negociere, contact cu mulți oameni din diverse companii pe care le poți fructifica după facultate și traininguri speciale (project management, Linkedin, fundraising). Simți că ai idei originale și interesante? Îți place să organizezi un eveniment până la cel mai mic detaliu? Dacă răspunsul la oricare din întrebările acestea este da, departamentul Management & Fundraising este pentru tine!",
-                    facebook = "https://www.facebook.com/oana.dima.391/",
-                    linkedin = "",
-                    github = "",
+                    facebook = "https://www.facebook.com/andreea.gherghescu.94/",
+                    linkedin = null,
+                    github = "https://github.com/AndreeaGherghescu",
                     imgs = new List<string>{
                         "images/mf/d1.jpg",
                         "images/mf/d2.jpg",
@@ -216,14 +224,14 @@ namespace ASMI.Controllers
                     title = "Design & PR",
                     img = "images/dd_design.jpg",
                     director = "Andreea Ciurescu",
-                    desc = "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi 'imaginea asociației'. Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram. De exemplu Recrutările. Sau ce zici de o petrecere? Exact, informația ar ajunge la mult mai puțini oameni, sau cei care ar ști nu ar veni, deoarece nu i-a atras nimic auzind o informație doar prin viu grai. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător. Te pricepi la photoshop/editare video/grafică? Ai talent la desen sau pur și simplu îți dorești să înveți tot ce ți-am enumerat? Înseamnă că ai nimerit unde trebuie, la Design & PR îți poți dezvolta hard skillurile și poți să ajuți la toate proiectele asociației!",
+                    desc = "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi 'imaginea asociației'. Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram, de exemplu Recrutările sau ce zici de o petrecere? Exact, informația ar ajunge la mult mai puțini oameni, sau cei care ar ști nu ar veni, deoarece nu i-a atras nimic auzind o informație doar prin viu grai. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător. Te pricepi la photoshop/editare video/grafică? Ai talent la desen sau pur și simplu îți dorești să înveți tot ce ți-am enumerat? Înseamnă că ai nimerit unde trebuie, la Design & PR îți poți dezvolta hard skillurile și poți să ajuți la toate proiectele asociației!",
                     facebook = "https://www.facebook.com/andreea.ciurescu",
                     linkedin = "https://www.linkedin.com/in/andreea-ciurescu-4527601bb/",
                     github = null,
                     imgs = new List<string>{
                         "images/design/d1.jpg",
                         "images/design/d2.JPG",
-                        "images/design/d3.png",
+                        "images/design/d3.jpg",
                         "images/design/d4.jpeg",
                         "images/design/d5.jpg",
                         "images/design/d6.jpg",
@@ -257,7 +265,7 @@ namespace ASMI.Controllers
                     title = "Human Resources",
                     img = "images/dd_hr.jpeg",
                     director = "Miruna Vasiliu",
-                    desc = "Noi suntem, în câteva cuvinte, 'inima asociației'! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât ei să ajungă să se simtă cu adevărat parte din familia noastră, dar și de bunăstarea tuturor voluntarilor, prin organizarea de joculețe interactive și de activități de socializare. În timpul pandemiei, am adaptat aceste activități de socializare în mediul online prin intermediul unor seri de jocuri sau de trivia. În plus, asigură dezvoltarea și motivarea constanta a voluntarilor noștri. Așa că, dacă îți place să comunici cu oamenii, să organizezi activități și să ajuți persoane, departamentul de Resurse Umane este pentru tine!",
+                    desc = "Noi suntem, în câteva cuvinte, 'inima asociației'! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât ei să ajungă să se simtă cu adevărat parte din familia noastră, dar și de bunăstarea tuturor voluntarilor, prin organizarea de joculețe interactive și de activități de socializare. În timpul pandemiei, am adaptat aceste activități de socializare în mediul online prin intermediul unor seri de jocuri sau de trivia. În plus, asigurăm dezvoltarea și motivarea constanta a voluntarilor noștri. Așa că, dacă îți place să comunici cu oamenii, să organizezi activități și să ajuți persoane, departamentul de Resurse Umane este pentru tine!",
                     facebook = "https://www.facebook.com/miruna.vasiliu.39/",
                     linkedin = "https://www.linkedin.com/in/miruna-vasiliu-258064215/",
                     github = null,
