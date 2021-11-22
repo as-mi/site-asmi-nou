@@ -15,61 +15,79 @@
     </div>
 </div>
 
-<div class="text-center">
-    <h2 class="font-weight-bold">Te așteptăm în echipa noastră!</h2>
-    <h3>Înscrieri disponibile: <span style="color:red;">7 octombrie 2021- 13 octombrie 2021</span></h3>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJV8VIrVOR4UZpK_bN7pI_HpbzNCRGz2rg7n5or8asZPPMAw/viewform?usp=sf_link" class="btn-lg btn-danger font-weight-bold" target="_blank">
+@{
+    const bool avemRecrutari = false;
+}
 
-        <span style="color: white;">Înscrie-te aici!</span>
-    </a>
-    <br />
-    <div id="countdown">
-        <ul>
-            <li class="clock"><span id="days"></span>zile</li>
-            <li class="clock"><span id="hours"></span>ore</li>
-            <li class="clock"><span id="minutes"></span>minute</li>
-            <li class="clock"><span id="seconds"></span>secunde</li>
-        </ul>
+
+@if (avemRecrutari)
+{
+
+
+    <div class="text-center">
+        <h2 class="font-weight-bold">Te așteptăm în echipa noastră!</h2>
+        <h3>Înscrieri disponibile: <span style="color:red;">7 octombrie 2021- 13 octombrie 2021</span></h3>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJV8VIrVOR4UZpK_bN7pI_HpbzNCRGz2rg7n5or8asZPPMAw/viewform?usp=sf_link" class="btn-lg btn-danger font-weight-bold" target="_blank">
+
+            <span style="color: white;">Înscrie-te aici!</span>
+        </a>
+        <br />
+        <div id="countdown">
+            <ul>
+                <li class="clock"><span id="days"></span>zile</li>
+                <li class="clock"><span id="hours"></span>ore</li>
+                <li class="clock"><span id="minutes"></span>minute</li>
+                <li class="clock"><span id="seconds"></span>secunde</li>
+            </ul>
+        </div>
+        <div id="content" class="emoji">
+            <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
+        </div>
     </div>
-    <div id="content" class="emoji">
-        <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
-    </div>
-</div>
+}
+else
+{<div class="text-center">
+    <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
+    <h3>Fii pe fază pentru următoarea sesiune!</h3>
+ </div>
+}
 
 
 
-<script>
-    (function () {
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
 
-        let birthday = "Oct 13, 2021 23:59:59",
-            countDown = new Date(birthday).getTime(),
-            x = setInterval(function () {
 
-                let now = new Date().getTime(),
-                    distance = countDown - now;
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
 
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            let birthday = "Oct 13, 2021 23:59:59",
+                countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
 
-                //do something later when date is reached
-                if (distance < 0) {
-                    let headline = document.getElementById("headline"),
-                        countdown = document.getElementById("countdown"),
-                        content = document.getElementById("content");
+                    let now = new Date().getTime(),
+                        distance = countDown - now;
 
-                    headline.innerText = "It's my birthday!";
-                    countdown.style.display = "none";
-                    content.style.display = "block";
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-                    clearInterval(x);
-                }
-                //seconds
-            }, 0)
-    }());
-</script>
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        let headline = document.getElementById("headline"),
+                            countdown = document.getElementById("countdown"),
+                            content = document.getElementById("content");
+
+                        headline.innerText = "It's my birthday!";
+                        countdown.style.display = "none";
+                        content.style.display = "block";
+
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
+    </script>
