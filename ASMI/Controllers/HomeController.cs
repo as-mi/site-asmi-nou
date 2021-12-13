@@ -231,11 +231,11 @@ namespace ASMI.Controllers
                     imgs = new List<string>{
                         "images/design/d1.jpg",
                         "images/design/d2.JPG",
-                        "images/design/d3.jpg",
+                        "images/design/d3.png",
                         "images/design/d4.jpeg",
                         "images/design/d5.jpg",
-                        "images/design/d6.jpg",
-                        "images/design/d7.JPG"
+                        "images/design/d6.JPG",
+                        "images/design/d7.jpeg"
                     }
                 },
 
