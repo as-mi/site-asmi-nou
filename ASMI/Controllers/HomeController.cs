@@ -47,7 +47,7 @@ namespace ASMI.Controllers
                 img = "cariere.png",
                 desc = "„Cariere” este un târg de joburi și internship-uri care oferă un sprijin în dezvoltarea pe plan profesional a studenților, realizând o legătură între aceștia și o parte dintre cele mai cunoscute companii de pe piața IT din România.",
                 name = "Cariere",
-                url = "https://cariere.asmi.ro/"
+                url = "https://cariere.vfairs.com/"
             },
             new ProjData {
                 img = "logo-zile-1.png",
