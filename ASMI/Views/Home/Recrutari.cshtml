@@ -16,7 +16,7 @@
 </div>
 
 @{
-    const bool avemRecrutari = false;
+    const bool avemRecrutari = true;
 }
 
 
@@ -24,26 +24,28 @@
 {
 
 
-    <div class="text-center">
-        <h2 class="font-weight-bold">Te așteptăm în echipa noastră!</h2>
-        <h3>Înscrieri disponibile: <span style="color:red;">7 octombrie 2021- 13 octombrie 2021</span></h3>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJV8VIrVOR4UZpK_bN7pI_HpbzNCRGz2rg7n5or8asZPPMAw/viewform?usp=sf_link" class="btn-lg btn-danger font-weight-bold" target="_blank">
+<div class="text-center">
+    <h2 class="font-weight-bold">Te așteptăm în echipa noastră!</h2>
+    <h3>Înscrieri disponibile: <span style="color:red;">Începând cu 30 martie 2022</span></h3>
+    <!---   <a href="https://docs.google.com/forms/d/e/1FAIpQLScJV8VIrVOR4UZpK_bN7pI_HpbzNCRGz2rg7n5or8asZPPMAw/viewform?usp=sf_link" class="btn-lg btn-danger font-weight-bold" target="_blank">
 
-            <span style="color: white;">Înscrie-te aici!</span>
-        </a>
-        <br />
-        <div id="countdown">
-            <ul>
-                <li class="clock"><span id="days"></span>zile</li>
-                <li class="clock"><span id="hours"></span>ore</li>
-                <li class="clock"><span id="minutes"></span>minute</li>
-                <li class="clock"><span id="seconds"></span>secunde</li>
-            </ul>
-        </div>
-        <div id="content" class="emoji">
-            <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
-        </div>
+           <span style="color: white;">Înscrie-te aici!</span>
+       </a>
+       <br />--->
+    
+    <div id="countdown">
+        <h3>Au mai rămas:</h3>
+        <ul>
+            <li class="clock"><span id="days"></span>zile</li>
+            <li class="clock"><span id="hours"></span>ore</li>
+            <li class="clock"><span id="minutes"></span>minute</li>
+            <li class="clock"><span id="seconds"></span>secunde</li>
+        </ul>
     </div>
+    <div id="content" class="emoji">
+        <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
+    </div>
+</div>
 }
 else
 {<div class="text-center">
@@ -63,7 +65,7 @@ else
                 hour = minute * 60,
                 day = hour * 24;
 
-            let birthday = "Oct 13, 2021 23:59:59",
+            let birthday = "Mar 30, 2022 9:59:59",
                 countDown = new Date(birthday).getTime(),
                 x = setInterval(function () {
 
