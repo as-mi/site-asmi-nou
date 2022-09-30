@@ -1,8 +1,20 @@
 ﻿.jumbotronn {
-    padding: 10rem 1rem;
+    padding: 15rem 1rem;
     background-image: url("/images/cover.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: .3rem;
+}
+
+
+div ul{
+    padding: 0px;
+    margin-top:0px;
+}
+
+#amr {
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
