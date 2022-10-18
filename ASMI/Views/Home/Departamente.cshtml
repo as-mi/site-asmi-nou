@@ -55,6 +55,12 @@
                                                             <i class="fab fa-github spaces btn-lg"></i>
                                                         </a>
                                                     }
+                                                    @if (DepData.instagram != null)
+                                                    {
+                                                        <a href="@DepData.instagram" target="_blank">
+                                                            <i class="fab fa-instagram spaces btn-lg"></i>
+                                                        </a>
+                                                    }
                                                 </span> 
                                             </div>
                                     
@@ -67,8 +73,13 @@
 
                 <div class="col-md-6 align-self-center">
                     <h3 class="mt-3">@DepData.title</h3>
-                    <p class="mt-3">@DepData.desc</p>
-                    <p>@DepData.desc1</p>
+                    
+                    <!-- Dumnezeu pe frontend -->
+                    @for(int j = 0; j < @DepData.desc.Count; j++)
+                    {
+                         <p class="mt-3">@DepData.desc[j]</p>
+                    }
+                   
                 </div>
 
                     @if (i % 2 == 0)
@@ -102,6 +113,12 @@
                                                                 <i class="fab fa-github spaces btn-lg"></i>
                                                             </a>
                                                         }
+                                                        @if (DepData.instagram != null)
+                                                    {
+                                                        <a href="@DepData.instagram" target="_blank">
+                                                            <i class="fab fa-instagram spaces btn-lg"></i>
+                                                        </a>
+                                                    }
                                                     </span>
                                                 </div>
 
