@@ -17,13 +17,13 @@ namespace ASMI.Controllers
         {
             public string title;
             public string img;
-            public string desc;
-            public string desc1;
+            public List<String> desc;
             public List<String> imgs;
             public string director;
             public string facebook;
             public string linkedin;
             public string github;
+            public string instagram;
         }
 
         public class ProjData
@@ -199,43 +199,27 @@ namespace ASMI.Controllers
         public IActionResult Departamente()
         {
             List<DepData> pConfig = new List<DepData>() {
-                new DepData
-                {
-                    title = "Management & Fundraising",
-                    img = "images/dd_mf.jpg",
-                    director = "Andreea Gherghescu",
-                    desc = "Principalul nostru obiectiv este să îmbunătățim condițiile în care decurg evenimentele asociației. Acest lucru îl realizăm prin supervizarea desfășurării proiectelor ASMI și dezvoltarea acestora pe mai departe, dar și intrând în contact direct cu diverse firme (din domeniul IT și nu numai), cu care încheiem contracte de sponsorizare. Un alt lucru important pentru noi este feedback-ul, fiind mereu acolo ca să ascultăm ideile și sugestiile voluntarilor noștri. În perioada pandemiei, asociația a continuat să păstreze relația cu mediul de afaceri, și a adus sponsorizări și oportunități pentru studenții FMI. Ce câștigi dacă faci parte din acest departament? Abilități de negociere, contact cu mulți oameni din diverse companii pe care le poți fructifica după facultate și traininguri speciale (project management, Linkedin, fundraising). Simți că ai idei originale și interesante? Îți place să organizezi un eveniment până la cel mai mic detaliu? Dacă răspunsul la oricare din întrebările acestea este da, departamentul Management & Fundraising este pentru tine!",
-                    facebook = "https://www.facebook.com/andreea.gherghescu.94/",
-                    linkedin = null,
-                    github = "https://github.com/AndreeaGherghescu",
-                    imgs = new List<string>{
-                        "images/mf/d1.jpg",
-                        "images/mf/d2.jpg",
-                        "images/mf/d3.jpeg",
-                        "images/mf/d4.jpeg",
-                        "images/mf/d5.JPG",
-                        "images/mf/d6.jpg",
-                        "images/mf/d7.JPG"
-                    }
-                },
+
 
                 new DepData
                 {
                     title = "Design & PR",
                     img = "images/dd_design.jpg",
-                    director = "Andreea Ciurescu",
-                    desc = "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi 'imaginea asociației'. Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram, de exemplu Recrutările sau ce zici de o petrecere? Exact, informația ar ajunge la mult mai puțini oameni, sau cei care ar ști nu ar veni, deoarece nu i-a atras nimic auzind o informație doar prin viu grai. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător. Te pricepi la photoshop/editare video/grafică? Ai talent la desen sau pur și simplu îți dorești să înveți tot ce ți-am enumerat? Înseamnă că ai nimerit unde trebuie, la Design & PR îți poți dezvolta hard skillurile și poți să ajuți la toate proiectele asociației!",
-                    facebook = "https://www.facebook.com/andreea.ciurescu",
-                    linkedin = "https://www.linkedin.com/in/andreea-ciurescu-4527601bb/",
+                    director = "Eduardo Dragomir",
+                    desc =  new List<string>{ "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi \"imaginea Asociației\". Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram. Fie că este vorba de Recrutări sau Petreceri, fără o promovare ca la carte lumea nu ar fi atrasă de evenimentele noastre iar informația ar ajunge la mult mai puțini oameni. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător.", "Te consideri creativ și mereu ți-ai dorit să înveți concepte de bază în editare grafică? Sau deja te pricepi la programe de editare video/foto? Ai talent la desen, pasiune pentru fotografie sau pur și simplu îți dorești să înveți tot ce ți-am enumerat? Înseamnă că ai nimerit unde trebuie! La Design & PR îți poți dezvolta hard skillurile și poți să ajuți la toate proiectele Asociației!"},
+                    facebook = "https://www.facebook.com/eduardo.dragomir.7",
+                    linkedin = null,
+                    instagram = "https://www.instagram.com/dragomireduardo/",
                     github = null,
                     imgs = new List<string>{
                         "images/design/d1.jpg",
                         "images/design/d2.JPG",
                         "images/design/d3.png",
-                        "images/design/d4.jpeg",
+                        "images/design/d4.jpg",
                         "images/design/d5.jpg",
                         "images/design/d6.jpg",
-                        "images/design/d7.jpeg"
+                        "images/design/d7.jpeg",
+                        "images/design/d8.jpeg"
                     }
                 },
 
@@ -243,11 +227,12 @@ namespace ASMI.Controllers
                 {
                     title = "Educațional",
                     img = "images/dd_edu.jpeg",
-                    director = "Liviu Păun",
-                    desc = "Departamentul Educațional are ca scop îmbunătățirea calității vieții academice a studenților, reprezentând o punte de legătură între aceștia și Conducerea Facultății. Cu ce se ocupă mai exact Edu? Proiecte precum Admiterea, Tutoriate, Ziua Porților Deschise, Rățușca și, mai recent, Practica sunt organizate de voluntarii noștri, care sunt motivați să ajute studenții să aibă o experiență a anilor de Facultate cât mai plăcută. Membrii departamentului facilitează comunicarea cu Decanatul, învață public speaking, organizează evenimentele vitale desfășurării anului universitar și lucrează activ la identificarea și soluționarea problemelor studențești. Deci, dacă vrei să-ți ajuți colegii, ți-ar plăcea să îi reprezinți sau să contribui la organizarea proiectelor care îi influențează pe plan academic, Edu este pentru tine!",
-                    facebook = "https://www.facebook.com/liviu.paun.779",
-                    linkedin = "https://www.linkedin.com/in/liviu-p%C4%83un-149813222",
+                    director = "Eric Alexandru Moroșan",
+                    desc = new List<string>{"Departamentul Educațional se ocupă direct de întreaga interacțiune atât cu studenții facultății noastre, cât și cu elevi care și-ar dori să urmeze FMI. Noi coordonăm voluntarii din întreaga Asociație în gestionarea proiectelor precum: Rățușca, Admiterea, Caravana Educațională, Ziua Porților Deschise. Cu ajutorul acestora reușim să motivăm și să oferim ajutor constant studenților pentru a le crea o experiență de neuitat într-una din cele mai semnificative perioade a vieții lor.", "Membrii departamentului dezvoltă abilităţi de public speaking, project management, teamwork şi leadership pe care le pot folosi în proiectele Asociaţiei și nu numai.", "În câteva cuvinte, Edu este cu şi pentru studenţi!", "Dacă şi tu vrei să îţi ajuţi colegii şi să încerci să faci anii petrecuţi în facultate mai buni, hai în echipa Edu!"},
+                    facebook = "https://www.facebook.com/eric.morosan24/",
+                    linkedin = null,
                     github = null,
+                    instagram = "https://www.instagram.com/eric.morosan.24/",
                     imgs = new List<string>{
                         "images/edu/d1.jpeg",
                         "images/edu/d2.jpeg",
@@ -264,11 +249,12 @@ namespace ASMI.Controllers
                 {
                     title = "Human Resources",
                     img = "images/dd_hr.jpeg",
-                    director = "Miruna Vasiliu",
-                    desc = "Noi suntem, în câteva cuvinte, 'inima asociației'! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât ei să ajungă să se simtă cu adevărat parte din familia noastră, dar și de bunăstarea tuturor voluntarilor, prin organizarea de joculețe interactive și de activități de socializare. În timpul pandemiei, am adaptat aceste activități de socializare în mediul online prin intermediul unor seri de jocuri sau de trivia. În plus, asigurăm dezvoltarea și motivarea constanta a voluntarilor noștri. Așa că, dacă îți place să comunici cu oamenii, să organizezi activități și să ajuți persoane, departamentul de Resurse Umane este pentru tine!",
-                    facebook = "https://www.facebook.com/miruna.vasiliu.39/",
-                    linkedin = "https://www.linkedin.com/in/miruna-vasiliu-258064215/",
+                    director = "Cosmina Elena Duca",
+                    desc = new List<string>{ "Noi suntem, pe scurt, „inima Asociației”! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât ei să ajungă să se simtă cu adevărat parte din familia noastră. De asemenea, asigurăm dezvoltarea și motivarea constantă a voluntarilor noștri prin organizarea activităților de socializare. ", "Pe lângă procesul de recrutare, proiecte precum Marea Ieșeală, Tre' să Caut, chiar și Petrecerile, sunt organizate de voluntarii acestui departament. Așa că, dacă ești o persoană empatică, îți place să ajuți, să comunici cu oamenii și să organizezi activități, departamentul Human Resources este pentru tine!" },
+                    facebook = "https://www.facebook.com/cosminaelena.duca/",
+                    linkedin = null,
                     github = null,
+                    instagram = "https://www.instagram.com/cosminnaduca/",
                     imgs = new List<string>{
                         "images/hr/d1.jpg",
                         "images/hr/d2.JPG",
@@ -278,10 +264,30 @@ namespace ASMI.Controllers
                         "images/hr/d6.jpg",
                         "images/hr/d7.jpeg",
                         "images/hr/d8.jpeg"
-                       
-                    }
-                }
 
+                    }
+                },
+
+
+                new DepData{
+                    title = "Management & Fundraising",
+                    img = "images/dd_mf.jpg",
+                    director = "Marius Petru Tillinger",
+                    desc = new List<string> { "Pentru ca un proiect să decurgă cum ne dorim este nevoie de muncă, dedicare și comunicare, însă pentru a crea ceva memorabil este nevoie de un element special, ceva să unească efortul comun și să ne dea aripi viselor. Aici intervin sponsorii noștrii care ne susțin în încercarea de a-i ajuta pe studenți. Noi suntem reprezentanții externi fiind primii cu care iau legătura firmele atunci când ne oferă sprijinul lor. De asemenea noi oferim o voce oamenilor dornici să spună ce le-a plăcut în cadrul evenimentelor, dar și ce trebuie îmbunătățit, astfel încât edițiile următoare să fie din ce în ce mai bune. În cadrul departamentului vei învăța ce înseamnă să organizezi un proiect, cum să discuți și să negociezi cu firme mari din domeniul IT și nu numai, dar și ce înseamnă munca în echipa, gestionarea resurselor și distracția alături de colegi. Dacă te interesează legătura dintre Asociație și companiile partenere și îți dorești să consolidezi mai departe aceste relații, dar și să creezi unele noi, atunci Management & Fundraising te așteaptă!" },
+                    facebook = "https://www.facebook.com/mariuspetru.tillinger",
+                    linkedin = "https://www.linkedin.com/in/marius-petru-tillinger-912609231",
+                    github = null,
+                    instagram = "https://www.instagram.com/mariuspetrutillinger",
+                    imgs = new List<string>{
+                            "images/mf/d1.jpg",
+                            "images/mf/d2.jpg",
+                            "images/mf/d3.jpeg",
+                            "images/mf/d4.jpeg",
+                            "images/mf/d5.JPG",
+                            "images/mf/d6.jpg",
+                            "images/mf/d7.JPG"
+                        }
+                }
             };
 
             ViewData["DepData"] = pConfig;
