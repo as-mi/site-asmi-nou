@@ -227,7 +227,7 @@ namespace ASMI.Controllers
                 {
                     title = "Educațional",
                     img = "images/dd_edu.jpeg",
-                    director = "Eric Alexandru Moroșan",
+                    director = "Eric Moroșan",
                     desc = new List<string>{"Departamentul Educațional se ocupă direct de întreaga interacțiune atât cu studenții facultății noastre, cât și cu elevi care și-ar dori să urmeze FMI. Noi coordonăm voluntarii din întreaga Asociație în gestionarea proiectelor precum: Rățușca, Admiterea, Caravana Educațională, Ziua Porților Deschise. Cu ajutorul acestora reușim să motivăm și să oferim ajutor constant studenților pentru a le crea o experiență de neuitat într-una din cele mai semnificative perioade a vieții lor.", "Membrii departamentului dezvoltă abilităţi de public speaking, project management, teamwork şi leadership pe care le pot folosi în proiectele Asociaţiei și nu numai.", "În câteva cuvinte, Edu este cu şi pentru studenţi!", "Dacă şi tu vrei să îţi ajuţi colegii şi să încerci să faci anii petrecuţi în facultate mai buni, hai în echipa Edu!"},
                     facebook = "https://www.facebook.com/eric.morosan24/",
                     linkedin = null,
@@ -249,7 +249,7 @@ namespace ASMI.Controllers
                 {
                     title = "Human Resources",
                     img = "images/dd_hr.jpeg",
-                    director = "Cosmina Elena Duca",
+                    director = "Cosmina Duca",
                     desc = new List<string>{ "Noi suntem, pe scurt, „inima Asociației”! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât ei să ajungă să se simtă cu adevărat parte din familia noastră. De asemenea, asigurăm dezvoltarea și motivarea constantă a voluntarilor noștri prin organizarea activităților de socializare. ", "Pe lângă procesul de recrutare, proiecte precum Marea Ieșeală, Tre' să Caut, chiar și Petrecerile, sunt organizate de voluntarii acestui departament. Așa că, dacă ești o persoană empatică, îți place să ajuți, să comunici cu oamenii și să organizezi activități, departamentul Human Resources este pentru tine!" },
                     facebook = "https://www.facebook.com/cosminaelena.duca/",
                     linkedin = null,
@@ -272,7 +272,7 @@ namespace ASMI.Controllers
                 new DepData{
                     title = "Management & Fundraising",
                     img = "images/dd_mf.jpg",
-                    director = "Marius Petru Tillinger",
+                    director = "Marius Tillinger",
                     desc = new List<string> { "Pentru ca un proiect să decurgă cum ne dorim este nevoie de muncă, dedicare și comunicare, însă pentru a crea ceva memorabil este nevoie de un element special, ceva să unească efortul comun și să ne dea aripi viselor. Aici intervin sponsorii noștrii care ne susțin în încercarea de a-i ajuta pe studenți. Noi suntem reprezentanții externi fiind primii cu care iau legătura firmele atunci când ne oferă sprijinul lor. De asemenea noi oferim o voce oamenilor dornici să spună ce le-a plăcut în cadrul evenimentelor, dar și ce trebuie îmbunătățit, astfel încât edițiile următoare să fie din ce în ce mai bune. În cadrul departamentului vei învăța ce înseamnă să organizezi un proiect, cum să discuți și să negociezi cu firme mari din domeniul IT și nu numai, dar și ce înseamnă munca în echipa, gestionarea resurselor și distracția alături de colegi. Dacă te interesează legătura dintre Asociație și companiile partenere și îți dorești să consolidezi mai departe aceste relații, dar și să creezi unele noi, atunci Management & Fundraising te așteaptă!" },
                     facebook = "https://www.facebook.com/mariuspetru.tillinger",
                     linkedin = "https://www.linkedin.com/in/marius-petru-tillinger-912609231",
