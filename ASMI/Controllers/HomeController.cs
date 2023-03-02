@@ -73,12 +73,7 @@ namespace ASMI.Controllers
                 name = "PRACTICA",
                 url = null
             },
-            new ProjData {
-                img = "SOS-LOGO-FINAL.png",
-                desc = "„Students' Organizations Showdown” este un campionat caritabil de CS:GO între asociațiile studențești, în cadrul căruia strângem donații pentru o cauză nobilă.",
-                name = "Students’ Organizations Showdown",
-                url = null
-            },
+            
             new ProjData {
                 img = "logo-marea-ieseala.png",
                 desc = "„Marea Ieșeală” este unul dintre primele proiecte ale asociației cu care te întâlnești ca boboc la Facultatea de Matematică și Informatică.",
@@ -142,7 +137,7 @@ namespace ASMI.Controllers
              new ProjData
              {
                 img = null,
-                desc = "Sunt o oportunitate de practică pentru studenții de ani mai mari, de a-i ajuta pe cei de anul I sau II pe parcursul semestrului prin lecții organizate online. În cadrul acestora se lucrează exerciții pentru fixarea și însușirea noțiunilor studiate la curs, seminar sau laborator.",
+                desc = "Sunt o oportunitate de practică pentru studenții de ani mai mari, de a-i ajuta pe cei de anul I sau II pe parcursul semestrului prin lecții organizate fizic în facultate. În cadrul acestora se lucrează exerciții pentru fixarea și însușirea noțiunilor studiate la curs, seminar sau laborator.",
                 name = "Tutoriate",
                 url = null
              },
