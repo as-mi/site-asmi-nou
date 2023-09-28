@@ -16,7 +16,7 @@
 </div>
 
 @{
-    const bool avemRecrutari = false;
+    const bool avemRecrutari = true;
 }
 
 
@@ -27,10 +27,10 @@
 <div class="text-center">
     <h2 class="font-weight-bold">Te așteptăm în echipa noastră!</h2>
 
-    <h3>Înscrieri disponibile: <span style="color:red;">Începând cu 20 martie 2023</span></h3>
-    
-    
-       <a href="https://forms.gle/ACBpFgPYwYJxxiKh9" class="btn-lg btn-danger font-weight-bold" target="_blank">
+    <h3>Înscrieri disponibile: <span style="color:rgb(49, 144, 191);">Începând cu 29 septembrie 2023</span></h3>
+
+
+        <a href="https://forms.gle/ob1ZABKpKZryFJB5A" class="btn-lg btn-primary font-weight-bold" target="_blank">
 
            <span style="color: white;">Înscrie-te aici!</span>
        </a>
@@ -71,7 +71,7 @@ else
                 day = hour * 24;
 
 
-            let birthday = "Mar 29, 2023 23:59:59",
+            let birthday = "Oct 10, 2023 23:59:59",
 
                 countDown = new Date(birthday).getTime(),
                 x = setInterval(function () {
@@ -79,22 +79,17 @@ else
                     let now = new Date().getTime(),
                         distance = countDown - now;
 
-                    document.getElementById("days").innerText = Math.floor(distance / (day)),
-                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                       
 
                     //do something later when date is reached
                     if (distance < 0) {
-                        let headline = document.getElementById("headline"),
-                            countdown = document.getElementById("countdown"),
-                            content = document.getElementById("content");
-
-                        headline.innerText = "It's my birthday!";
-                        countdown.style.display = "none";
-                        content.style.display = "block";
-
+                        
                         clearInterval(x);
+                    }else{
+                        document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
                     }
                     //seconds
                 }, 0)
