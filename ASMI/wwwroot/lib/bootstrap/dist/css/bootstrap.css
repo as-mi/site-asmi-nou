@@ -2561,11 +2561,17 @@ fieldset:disabled a.btn {
   background-color: #dc3545;
   border-color: #dc3545;
 }
+.btn-danger-large {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-size: 18px;
+}
 
 .btn-danger:hover {
-  color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
 }
 
 .btn-danger:focus, .btn-danger.focus {
