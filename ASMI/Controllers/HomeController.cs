@@ -316,6 +316,13 @@ namespace ASMI.Controllers
         {
             return View();
         }
+
+
+        public IActionResult ButonulRosu()
+        {
+            return View();
+        }
+
         public IActionResult Studenti()
         {
             return View();

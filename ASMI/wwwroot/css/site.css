@@ -69,6 +69,13 @@ button.accept-policy {
     line-height: inherit;
 }
 
+
+.red-button {
+    background-color: red !important;
+    color: white !important;
+    border-radius: 50% !important;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -117,11 +124,18 @@ body {
     background-color: var(--asmi-light-blue) !important;
 }
 
-    #asmi-navbar a {
-        color: var(--asmi-white);
-        font-size: 1.2rem;
-    }
+#asmi-navbar a {
+    color: var(--asmi-white);
+    font-size: 1.2rem;
+}
 
+#asmi-navbar a.red-button {
+    border-radius: 20px !important; 
+    background-color: var(--red) !important; 
+    color: var(--asmi-white) !important;
+    border: none !important;
+    padding: 10px 20px !important;
+}
 .separator {
     display: flex;
     align-items: center;
