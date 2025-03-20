@@ -12,7 +12,7 @@
 
 - [ ] * *Setări accesibilitate, model aici: [Model](https://osut.ro/).* 
 - [ ] * *Dark mode.* 
-- [ ] * *De verificat diacriticele și gramatica.*
+- [X] * *De verificat diacriticele și gramatica.*
 - [ ] * *Comprimare imagini/video pentru o încărcare rapidă a site-ului.*
 
 
