@@ -8,9 +8,51 @@
 }
 
 
-div ul{
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+    /* Move up */
+    100% {
+        transform: translateY(500px);
+    }
+    /* Move down */
+}
+
+.mario {
+    background-image: url('/images/mario.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -160px;
+    margin-top: 30px;
+    animation: alternate 1s moveUpDown;
+}
+
+
+
+.mario_tunnels {
+    background-image: url('/images/mario_tunnels.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+div ul {
     padding: 0px;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 #amr {
@@ -18,3 +60,14 @@ div ul{
     margin-bottom: 0px;
 }
 
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+body {
+    background-color: #005987;
+}
