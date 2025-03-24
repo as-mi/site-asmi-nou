@@ -78,6 +78,8 @@ body, containerMain {
 
 #navbarRecrutari {
     background-image: url(../images/headerbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     -webkit-box-shadow: inset 0px 0px 133px 106px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 133px 106px rgba(0,0,0,0.75);
     box-shadow: inset 0px 0px 133px 106px rgba(0,0,0,0.75);
@@ -147,4 +149,24 @@ ul{
 
 .fitcontent{
     width: fit-content !important;
+}
+
+.gameBorder{
+    background-image: url(../images/bordertop.png);
+    height: 100px;
+}
+
+.flipBorder{
+    transform: rotateX(180deg);
+}
+
+.gameBorderLeft {
+    background-image: url(../images/sideBorder.png);
+    width: 100px;
+}
+
+.gameBorderRight {
+    background-image: url(../images/sideBorder.png);
+    width: 100px;
+    transform: rotateX(180deg);
 }
