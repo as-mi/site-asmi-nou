@@ -95,7 +95,7 @@ form div:nth-child(3) label:before{
 form div:nth-child(5) label:before {
     content: url("../images/sleepingCat.gif");
     position: absolute;
-    transform: translateX(-50%) scale(60%);
+    transform: translate(-60%, -20%) scale(60%);
     z-index: -1;
 }
 

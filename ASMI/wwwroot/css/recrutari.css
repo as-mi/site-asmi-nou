@@ -131,7 +131,7 @@ body, containerMain {
     color: white;
     font-size: 2rem;
 }
-
+/*
     #navLinkList a:before {
         background-image: url("../images/beforeArrow.png");
         content:"";
@@ -139,7 +139,7 @@ body, containerMain {
         display: inline-block;
         width: 10px;
         height: 20px;
-    }
+    }*/
 
 ul{
     list-style-type: none;
@@ -200,4 +200,13 @@ ul{
 
 h2 {
     color: white !important;
+}
+
+.norisorMic{
+    width: 20vw;
+    max-width: 10rem;
+}
+.norisorMare {
+    width: 20vw;
+    max-width: 20rem;
 }
