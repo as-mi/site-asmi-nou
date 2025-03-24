@@ -12,32 +12,32 @@
 	@if(Model != null)
 	{
 
-		<h1 class=" display-3 mt-4 mr-2 text-white">CE DEPARTAMENT ESTI</h1>
+		<h1 class=" display-3 mt-4 mr-2 text-white">CE DEPARTAMENT EȘTI?</h1>
 		<form class="w-75" method="post">
 			<div asp-validation-summary="All" class="text-danger" role="alert"></div>
 			@{
 				var id = 0;
 				foreach (var question in Model.questions)
 				{
-					<div class="form-group">
-						<label for="" id="formQuestion">@question.Question</label>
-						<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
-						<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
+						<div class="form-group">
+							<label for="" id="formQuestion">@question.Question</label>
+							<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
+							<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
 
-						<select multiple asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
+							<select multiple asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
 
-							@{
+								@{
 								var index = 1;
 								foreach (var option in question.Options)
 								{
-									<option>@(index +". " + option)</option>
+											<option>@(index +". " + option)</option>
 									index++;
 								}
 
-							}
-						</select>
+								}
+							</select>
 
-					</div>
+						</div>
 					id++;
 				}
 			}
@@ -61,9 +61,14 @@
 		@* <p>@Hr</p> *@
 		@* <p>@Mf</p> *@
 
+		<img src="~/images/redghost.png" class="ghost"/>
 		<h2 class="mb-0">MF</h2>
 		<div class="w-100 d-flex align-items-center justify-content-center">
-			<h2 class="mb-0">HR</h2>
+			
+				<img src="~/images/blueGhost.png" class="ghost"/>
+				<h2 class="mb-0">HR</h2>
+			
+			
 			<div id="stats" class="w-50 m-0">
 				<svg height="100%" width="100%" viewBox="0 0 100 100">
 					@* <line x1="0" y1="50%" x2="100%" y2="50%"></line> *@
@@ -89,15 +94,17 @@
 				</svg>
 			</div>
 			<h2 class="mb-0">EDU</h2>
+			<img src="~/images/orangeGhost.png" class="ghost" />
 		</div>
 
 		<h2>DESIGN & PR</h2>
+		<img src="~/images/purpleGhost.png" class="ghost" />
 		<script>
 			var path = document.getElementById("pathStat");
 			path.addEventListener("animationend", (event) => {path.style.opacity = "100";});
 		</script>
 
-		<div class="align-self-lg-start">
+		<div class="align-self-lg-start" id="explicatii">
 			<h2 class="text-white">Ce zice asta despre tine?</h2>
 			@{
 				List<Tuple<float, string, string>> messages = new List<Tuple<float, string, string>> { };
@@ -149,8 +156,14 @@
 
 		<div>
 			<button type="button" onclick="location.href='@Url.Action("Index","Quiz")'" class="btn">Again!</button>
-			<button class="btn btn-info">Hai in Asociatie!</button>
+			<button class="btn btn-info">Hai în Asociație!</button>
 		</div>
+
+		<script>
+			setTimeout(() => {
+				window.location.href = "#explicatii"
+			}, 2000);
+		</script>
 	}
 
 </div>

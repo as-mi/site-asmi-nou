@@ -5,66 +5,106 @@
 @section Styles {
     <link rel="stylesheet" href="~/css/studenti.css" />
     <link rel="stylesheet" href="~/css/recrutari.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 }
 
-<div class="py-4">
-    <div class="lightbox-gallery">
-        <div class="container">
-            <div class="jumbotronn">
+<nav id="navbarRecrutari" class="pixelFont p-5 d-flex flex-column justify-content-around navbar-expand-lg">
+    <div class=" pixelFont d-flex justify-content-around">
+        <div>
+            <h1 class="text-white" id="headerRecrutari">Recrutări<br />Primăvară</h1>
+            <div id="navLinks collapse navbar-collapse" class="fitcontent">
+                <ul class="d-flex navbar-nav flex-wrap fitcontent" id="navLinkList">
+                    <li class="mr-3 fitcontent"><a href="/home" class="d-flex">Acasă</a></li>
+                    <li class="mr-3 fitcontent"><a href="/departamente" class="d-flex">Departamente</a></li>
+                    <li class="mr-3 fitcontent"><a href="/studenti" class="d-flex">Studenți</a></li>
+                    <li class="mr-3 fitcontent"><a href="/proiecte" class="d-flex">Proicte</a></li>
+                </ul>
             </div>
         </div>
+
+        <div id="pacmanWrapper">
+            <img src="~/images/pacmaniAnimati.gif" id="pacmanAnimat" />
+        </div>
     </div>
-</div>
+</nav>
+
 
 @{
     bool avemRecrutari = true;
 }
 
-@if (avemRecrutari)
-{
-    
-    <div class="text-center">
-        <div class="mario-info" style="margin-bottom:40px">
-            <h2>Mario<br />000000</h2>
-            <h2> <br /><img src="~/images/coin_recrutari.png" style="width:30px" /> x 00</h2>
-            <h2>World<br />1 - 1</h2>
-            <h2>Time<br />382</h2>
-        </div>
+<div id="containerMain" class="container m-0 mw-100 p-0 h-100">
+    <div class="w-100 gameBorder">
+    </div>
+    <div class="d-flex justify-content-between pixelFont">
+        <div class=" gameBorderRight"></div>
+        <div class="w-100" id="between">
+            @if (avemRecrutari)
+            {
 
+                <div class="text-center w-100 mt-3">
+                    <div class="w-100 d-flex justify-content-around ">
+                        <h2>Mario<br />000000</h2>
+                        <h2> <br /><img src="~/images/coin_recrutari.png" style="width:30px" /> x 00</h2>
+                        <h2>World<br />1 - 1</h2>
+                        <h2>Time<br />382</h2>
+                    </div>
 
-        <h2 class="font-weight-bold" style="color:white">Te așteptăm în echipa noastră!</h2>
+                <div class="d-flex justify-content-around">
+                        <div class="mt-4"><img src="~/images/nor.png" class="norisorMic"/></div>
 
-        <div class="text-center d-flex align-content-center justify-content-center">
-            <div class="flex-container">
-                <div class="text" style="margin-top:15px">
-                    <h2>Înscrie-te aici!</h2>
+                        <div><img src="~/images/nor2.png" class="norisorMare"/></div>
                 </div>
 
-                <div>
-                    <img src="/images//beforeArrow.png"/>
+
+                    <h2 class="font-weight-bold" style="color:white">Te așteptăm în echipa noastră!</h2>
+
+                    <div class="text-center d-flex align-content-center justify-content-center">
+                        <div class="flex-container">
+                            <div class="text" style="margin-top:15px">
+                                <h2>Înscrie-te aici!</h2>
+                            </div>
+
+                            <div>
+                                <img src="/images//beforeArrow.png" />
+                            </div>
+
+                            <div class="button-container">
+                                <a href="https://forms.gle/ob1ZABKpKZryFJB5A" target="_blank">
+                                    <img src="/images/cutie.png" alt="Link pentru Formularul de înscriere!" style="width: 70px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="countdown" style="margin-top:30px">
+                        <h3 id="amr" style="font-size: 28px; font-weight: bold; color: white;">Au mai rămas:</h3>
+                        <ul style="color: white">
+                            <li class="clock"><span id="days"></span>zile</li>
+                            <li class="clock"><span id="hours"></span>ore</li>
+                            <li class="clock"><span id="minutes"></span>minute</li>
+                            <li class="clock"><span id="seconds"></span>secunde</li>
+                        </ul>
+                    </div>
+                    <div id="content" class="emoji">
+                        <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
+                    </div>
                 </div>
-
-                <div class="button-container">
-                    <a href="https://forms.gle/ob1ZABKpKZryFJB5A" target="_blank">
-                    <img src="/images/cutie.png" alt="Link pentru Formularul de înscriere!" style="width: 70px;">
-                    </a>
+            }
+            else
+            {
+                <div class="text-center">
+                    <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
+                    <h3>Fii pe fază pentru următoarea sesiune!</h3>
                 </div>
-            </div>
+            }
+
         </div>
 
-
-        <div id="countdown" style="margin-top:30px">
-            <h3 id="amr" style="font-size: 28px; font-weight: bold; color: white;">Au mai rămas:</h3>
-            <ul style="color: white">
-                <li class="clock"><span id="days"></span>zile</li>
-                <li class="clock"><span id="hours"></span>ore</li>
-                <li class="clock"><span id="minutes"></span>minute</li>
-                <li class="clock"><span id="seconds"></span>secunde</li>
-            </ul>
-        </div>
-        <div id="content" class="emoji">
-            <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
-        </div>
     </div>
     <div class="text-center" id="quizDepartamente">
         <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
@@ -134,4 +174,7 @@ else
                 }
             }, 0)
     }());
-</script>
+        <div class=" gameBorderRight"></div>
+
+    </div>
+    <div class="w-100 gameBorder flipBorder"></div>
