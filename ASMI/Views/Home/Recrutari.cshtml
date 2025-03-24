@@ -37,22 +37,15 @@
     bool avemRecrutari = true;
 }
 
-@if (avemRecrutari)
-{
-    
-
 <div id="containerMain" class="container m-0 mw-100 p-0">
     <div class="w-100 gameBorder">
     </div>
-
     <div class="d-flex justify-content-between pixelFont">
-        <div class=" gameBorderLeft">
-        </div>
-        <div>
-            @if (avemRecrutari)
-            {
-                <div class="text-center">
-                        <div class="text-center">
+        <div class=" gameBorderLeft"></div>
+@if (avemRecrutari)
+{
+
+    <div class="text-center">
         <div class="mario-info" style="margin-bottom:40px">
             <h2>Mario<br />000000</h2>
             <h2> <br /><img src="~/images/coin_recrutari.png" style="width:30px" /> x 00</h2>
@@ -70,12 +63,12 @@
                 </div>
 
                 <div>
-                    <img src="/images//beforeArrow.png"/>
+                    <img src="/images//beforeArrow.png" />
                 </div>
 
                 <div class="button-container">
                     <a href="https://forms.gle/ob1ZABKpKZryFJB5A" target="_blank">
-                    <img src="/images/cutie.png" alt="Link pentru Formularul de înscriere!" style="width: 70px;">
+                        <img src="/images/cutie.png" alt="Link pentru Formularul de înscriere!" style="width: 70px;">
                     </a>
                 </div>
             </div>
@@ -104,68 +97,62 @@ else
     </div>
 }
 
-            <div class="text-center">
-                <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
-                <button id="revealButton" class="btn btn-primary mb-5">
-                    <span style="color: white;">Descoperă-ți locul potrivit în echipa noastră!</span>
-                </button>
-                <div class="lightbox-gallery overflow-hidden">
-                    <div id="hiddenPic" style="display: none">
-                        <div class="lightbox-gallery">
-                            <div class="container">
-                                <div class="mario"></div>
-                                <div class="mario_tunnels"></div>
-                            </div>
-                        </div>
-                    </div>
+<div class="text-center">
+    <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
+    <button id="revealButton" class="btn btn-primary mb-5">
+        <span style="color: white;">Descoperă-ți locul potrivit în echipa noastră!</span>
+    </button>
+    <div class="lightbox-gallery overflow-hidden">
+        <div id="hiddenPic" style="display: none">
+            <div class="lightbox-gallery">
+                <div class="container">
+                    <div class="mario"></div>
+                    <div class="mario_tunnels"></div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <script>
-                document.getElementById("revealButton").addEventListener("click", function () {
-                    var hiddenPic = document.getElementById("hiddenPic");
-                    var mario = document.querySelector(".mario");
-                    hiddenPic.style.display = "block";
+<script>
+    document.getElementById("revealButton").addEventListener("click", function () {
+        var hiddenPic = document.getElementById("hiddenPic");
+        var mario = document.querySelector(".mario");
+        hiddenPic.style.display = "block";
 
         mario.addEventListener("animationend", function () {
-            window.open("/quiz", target= "_blank");
+            window.open("/quiz", target = "_blank");
         }, { once: true });
     });
 </script>
 
-            <script>
-                (function () {
-                    const second = 1000,
-                        minute = second * 60,
-                        hour = minute * 60,
-                        day = hour * 24;
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
 
-                    let birthday = "28 Martie, 2025 23:59:59",
-                        countDown = new Date(birthday).getTime(),
-                        x = setInterval(function () {
+        let birthday = "2 Aprilie, 2025 23:59:59",
+            countDown = new Date(birthday).getTime(),
+            x = setInterval(function () {
 
-                            let now = new Date().getTime(),
-                                distance = countDown - now;
+                let now = new Date().getTime(),
+                    distance = countDown - now;
 
-                            //do something later when date is reached
-                            if (distance < 0) {
-                                clearInterval(x);
-                            } else {
-                                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-                            }
-                            //seconds
-                        }, 0)
-                }());
-            </script>
-        </div>
-        <div class=" gameBorderRight">
-    </div>
 
-    
-    </div>
-    <div class="w-100 gameBorder flipBorder">
+                if (distance < 0) {
+                    clearInterval(x);
+                } else {
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                }
+            }, 0)
+    }());
+</script>
 </div>
-
+        <div class=" gameBorderRight">
+</div>
+        <div class="w-100 gameBorder flipBorder">
