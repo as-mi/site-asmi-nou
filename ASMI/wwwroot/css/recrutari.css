@@ -41,7 +41,7 @@
     background-image: url('/images/mario_tunnels - Copy.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0% 100%;
     width: 400px;
     height: 400px;
     display: block;
@@ -61,6 +61,7 @@ div ul {
 
 body {
     background-image:url('/images/bg_pagina recrutari.png');
+    scroll-behavior:smooth;
 }
 
 .flex-container {
@@ -97,3 +98,7 @@ body {
     .mario-info h2 {
         margin: 0;
     }
+
+#pamant{
+    width: 100%;
+}

@@ -66,15 +66,15 @@
             <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
         </div>
     </div>
-    <div class="text-center">
+    <div class="text-center" id="quizDepartamente">
         <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
 
 
         <a id="revealButton">
             <img src="/images/cutie.png" alt="Descoperă locul tău!">
         </a>
-    
-        <div class="lightbox-gallery overflow-hidden">
+
+        <div class="lightbox-gallery overflow-hidden marioContainer">
             <div id="hiddenPic" style="display: none">
                 <div class="lightbox-gallery">
                     <div class="container">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <img src="~/images/copac_pamant.png"/>
+        <img src="~/images/copac_pamant.png" id="pamant"/>
     </div>
 }
 else
@@ -98,13 +98,14 @@ else
 
 <script>
     document.getElementById("revealButton").addEventListener("click", function () {
+        window.location.href = "#quizDepartamente"
         var hiddenPic = document.getElementById("hiddenPic");
         var mario = document.querySelector(".mario");
         hiddenPic.style.display = "block";
 
-        // mario.addEventListener("animationend", function () {
-        //     window.open("/quiz", target= "_blank");
-        // }, { once: true });
+        mario.addEventListener("animationend", function () {
+            window.open("/quiz", target= "_blank");
+        }, { once: true });
     });
 </script>
 
