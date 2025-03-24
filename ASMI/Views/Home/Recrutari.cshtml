@@ -128,7 +128,7 @@
     </div>
 
 <script>
-    if (!sessionStorage.getItem('reloaded')) {location.reload(true);} 
+    if (!sessionStorage.getItem('reloaded')) {sessionStorage.setItem('reloaded', 'true'); location.reload(true);} 
     else {sessionStorage.setItem('reloaded', 'true');}
 </script>
 
