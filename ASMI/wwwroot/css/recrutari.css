@@ -60,14 +60,41 @@ div ul {
     margin-bottom: 0px;
 }
 
-h2 {
-    color: white;
-}
-
-h3 {
-    color: white;
-}
-
 body {
-    background-color: #005987;
+    background-image:url('/images/bg_pagina recrutari.png');
 }
+
+.flex-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.text {
+    color: white;
+    font-size: 24px; 
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the button */
+}
+
+
+.mario-info {
+    display: flex;
+    justify-content: center; 
+    gap: 250px;
+    color: white;
+    font-size: 16px;
+    text-align: center; 
+}
+
+    .mario-info h2 {
+        margin: 0;
+    }
