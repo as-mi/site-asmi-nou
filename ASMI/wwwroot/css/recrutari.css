@@ -60,7 +60,11 @@ div ul {
 }
 
 body {
-    background-image:url('/images/bg_pagina recrutari.png');
+    background-color: #5c94fc;
+}
+
+.body {
+    background-color: #5c94fc;
 }
 
 html {
