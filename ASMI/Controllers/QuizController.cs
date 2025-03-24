@@ -47,7 +47,7 @@ namespace ASMI.Controllers
                 });
 
             QuizQuestion question5 = new QuizQuestion(
-                "Ce ai face dacă ai fi blocat(ă) pe o insulă pustie?",
+                "Ce ai face dacă ai fi blocatx pe o insulă pustie?",
                 new List<string> {
                 "Aș sculpta niște semne artistice pe copaci, poate mă salvează cineva",
                 "Aș scrie un jurnal detaliat despre fiecare zi",

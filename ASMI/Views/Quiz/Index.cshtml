@@ -5,9 +5,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 }
 
-<div class="container min-vh-75 d-flex flex-column align-items-center ">
+<div class="pixelFont container min-vh-75 d-flex flex-column align-items-center ">
 	@if(Model != null)
 	{
 
@@ -23,7 +24,7 @@
 						<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
 						<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
 
-						<select multiple asp-for="answers[id]" class="form-control overflow-hidden" size="4" required>
+						<select multiple asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
 
 							@{
 								var index = 1;
@@ -32,7 +33,7 @@
 									<option>@(index +". " + option)</option>
 									index++;
 								}
-								
+
 							}
 						</select>
 
@@ -50,47 +51,106 @@
 	{
 		List<int> scores = ViewBag.scores;
 
-		@* <p>Design: @(scores[0])</p>  *@
-		@*  <p>Edu: @(scores[1])</p>  *@
-		@*  <p>Hr: @(scores[2] )</p>  *@
-		@*  <p>Mf: @(scores[3] )</p> *@
+		var Design = scores[0];
+		var Edu = scores[1];
+		var Hr = scores[2];
+		var Mf = scores[3];
 		<h1 class=" display-3 mt-4 mr-2 text-white">Ce departament te fură...</h1>
+		@* <p>@Design</p> *@
+		@* <p>@Edu</p> *@
+		@* <p>@Hr</p> *@
+		@* <p>@Mf</p> *@
 
 		<h2 class="mb-0">MF</h2>
 		<div class="w-100 d-flex align-items-center justify-content-center">
 			<h2 class="mb-0">HR</h2>
-			<div id="stats" class="w-75 m-0">
+			<div id="stats" class="w-50 m-0">
 				<svg height="100%" width="100%" viewBox="0 0 100 100">
 					@* <line x1="0" y1="50%" x2="100%" y2="50%"></line> *@
 					@* <line x1="50%" y1="0" x2="50%" y2="100%"></line> *@
 
-					<path id="pathStat" d="M50 @(Math.Min(50 - scores[3]/7.0f * 100, 100)) L@(Math.Min(100, 50 + scores[1]/7.0f * 50)) 50 L50 @(Math.Min(50 + scores[0]/7.0f * 100, 100)) L@(Math.Max(50 - scores[2]/7.0f * 100, 0)) 50 L50 @(Math.Max(50 - scores[3]/7.0f * 100, 0))">
+					<path id="pathStat" d="M50 @(Math.Max(50 - scores[3]/7.0f * 100, 0)) L@(Math.Min(100, 50 + scores[1]/7.0f * 100)) 50 L50 @(Math.Min(50 + scores[0]/7.0f * 100, 100)) L@(Math.Max(50 - scores[2]/7.0f * 100, 0)) 50 L50 @(Math.Max(50 - scores[3]/7.0f * 100, 0))">
 					</path>
 
-						@* <!--Design--> *@
-						@* <circle r="2" cx="50%" cy="@(50 + scores[0]/7.0f * 100)%" fill="blue" id="designPoint"></circle> *@
+					@* <!--Design--> *@
+					@* <circle r="2" cx="50%" cy="@(50 + scores[0]/7.0f * 100)%" fill="blue" id="designPoint"></circle> *@
 
-						@* <!--MF--> *@
-						@* <circle r="2" cx="50%" cy="@(50 - scores[3]/7.0f * 100)%" fill="red" id="designPoint"></circle> *@
+					@* <!--MF--> *@
+					@* <circle r="2" cx="50%" cy="@(50 - scores[3]/7.0f * 100)%" fill="red" id="designPoint"></circle> *@
 
-						@* <!--HR--> *@
-						@* <circle r="2" cx="@(50 - scores[2]/7.0f * 100)%" cy="50%" fill="purple" id="designPoint"></circle> *@
+					@* <!--HR--> *@
+					@* <circle r="2" cx="@(50 - scores[2]/7.0f * 100)%" cy="50%" fill="purple" id="designPoint"></circle> *@
 
-						@* <!--EDU--> *@
-						@* <circle r="2" cx="@(50 + scores[1]/7.0f * 100)%" cy="50%" fill="pink" id="designPoint"></circle> *@
+					@* <!--EDU--> *@
+					@* <circle r="2" cx="@(50 + scores[1]/7.0f * 100)%" cy="50%" fill="pink" id="designPoint"></circle> *@
 
 
-					
+
 				</svg>
 			</div>
 			<h2 class="mb-0">EDU</h2>
 		</div>
-		
+
 		<h2>DESIGN & PR</h2>
 		<script>
 			var path = document.getElementById("pathStat");
 			path.addEventListener("animationend", (event) => {path.style.opacity = "100";});
 		</script>
+
+		<div class="align-self-lg-start">
+			<h2 class="text-white">Ce zice asta despre tine?</h2>
+			@{
+				List<Tuple<float, string, string>> messages = new List<Tuple<float, string, string>> { };
+				messages.Add(new Tuple<float, string, string>
+				(
+					scores[0],
+					"Design&PR",
+				"Creativitatea și simțul estetic sunt punctele tale forte! În departamentul de Design vei avea ocazia să creezi materiale vizuale atractive, să dezvolți identitatea vizuală a proiectelor și să îți pui în valoare talentul artistic!"
+				));
+
+				messages.Add(new Tuple<float, string, string>(
+				scores[1] ,
+					"Educational",
+				"În departamentul Edu vei fi vocea studenților, menținând legătura cu decanatul și asigurându-te că toți colegii au acces la informațiile esențiale despre facultate. Vei putea contribui la organizarea tutoratelor, sesiuni de pregătire susținute de studenți mai mari, și la crearea unui mediu universitar mai clar și prietenos pentru toată lumea!"
+				));
+
+				messages.Add(new Tuple<float, string, string>(
+				scores[2],
+					"HR",
+				"Ești un bun comunicator și știi să lucrezi cu oamenii! Ai abilități excelente de organizare și empatie, ceea ce te face potrivit pentru departamentul de Resurse Umane. Aici vei putea contribui la recrutare, gestionarea relațiilor dintre membri și organizarea echipei!"
+				));
+
+				messages.Add(new Tuple<float, string, string>(
+				scores[3],
+					"MF",
+				"Ai un spirit antreprenorial și știi cum să convingi oamenii? Departamentul de Marketing & Fundraising are nevoie de tine! Vei putea contribui la promovarea proiectelor, atragerea de sponsorizări și crearea de strategii de comunicare eficiente!"
+				));
+
+				messages.Sort();
+			}
+
+			<ul id="depInfo">
+				<li>
+					<p><strong class="hr">@messages[3].Item2</strong> - @messages[3].Item3</p>
+				</li>
+
+				<li>
+					<p><strong class="hr">@messages[2].Item2</strong> - @messages[2].Item3</p>
+				</li>
+				@if(messages[1].Item1 == messages[2].Item1)
+				{
+					<li>
+						<p><strong class="hr">@messages[1].Item2</strong> - @messages[1].Item3</p>
+					</li>
+				}
+			</ul>
+
+		</div>
+
+		<div>
+			<button type="button" onclick="location.href='@Url.Action("Index","Quiz")'" class="btn">Again!</button>
+			<button class="btn btn-info">Hai in Asociatie!</button>
+		</div>
 	}
 
 </div>

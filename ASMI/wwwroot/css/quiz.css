@@ -13,7 +13,7 @@ body {
     background-color: #000;
 }
 
-* {
+.pixelFont {
     font-family: "Pixelify Sans", sans-serif !important;
     font-optical-sizing: auto !important;
     /*    font-weight: <weight>;*/
@@ -119,4 +119,20 @@ form div:nth-child(6) label:after {
 
 h1{
     font-size: 10vmin !important;
+}
+
+#depInfo{
+    color: white;
+    font-size: 2vmin !important;
+}
+
+.hr {
+    color: #89CFF0 !important;
+}
+
+#asmi-navbar, #footer {
+    font-family: "Pixelify Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    /*    font-weight: <weight>;*/
+    font-style: normal !important;
 }
