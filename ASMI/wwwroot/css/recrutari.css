@@ -98,10 +98,6 @@ html {
     text-align: center; 
 }
 
-body, containerMain {
-    background-color: black;
-}
-
 #asmi-navbar{
     display: none !important;
 }
