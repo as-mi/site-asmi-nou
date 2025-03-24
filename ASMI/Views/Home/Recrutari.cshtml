@@ -126,13 +126,10 @@
         <div class=" gameBorderRight"></div>
 
     </div>
-    
 
 <script>
-    // Force a reload every time the page is visited
-    location.reload(true); // This forces the page to reload from the server
-
-    console.log('Script loaded and page is being reloaded.');
+    if (!sessionStorage.getItem('reloaded')) {location.reload(true);} 
+    else {sessionStorage.setItem('reloaded', 'true');}
 </script>
 
 <script>
