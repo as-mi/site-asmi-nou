@@ -136,3 +136,14 @@ h1{
     /*    font-weight: <weight>;*/
     font-style: normal !important;
 }
+
+
+.ghost {
+    width: 10vmin;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;    
+}
+
+html{
+    scroll-behavior: smooth;
+}
