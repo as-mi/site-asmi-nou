@@ -197,3 +197,7 @@ ul{
     width: 100px;
     transform: rotateX(180deg);
 }
+
+h2 {
+    color: white !important;
+}
