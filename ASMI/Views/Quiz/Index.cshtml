@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 }
 
 <nav id="navbarRecrutari" class="pixelFont p-5 d-flex flex-column justify-content-around navbar-expand-lg">
@@ -39,25 +39,25 @@
 				var id = 0;
 				foreach (var question in Model.questions)
 				{
-						<div class="form-group">
-							<label for="" id="formQuestion">@question.Question</label>
-							<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
-							<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
+					<div class="form-group">
+						<label for="" id="formQuestion">@question.Question</label>
+						<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
+						<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
 
-							<select multiple asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
+						<select multiple asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
 
-								@{
-								var index = 1;
-								foreach (var option in question.Options)
+							@{
+								int index = 1;
+								foreach (var depOption in question.depOptions)
 								{
-											<option>@(index +". " + option)</option>
+									<option value="@depOption">@(index +". " + question.Options[depOption-1])</option>
 									index++;
 								}
 
-								}
-							</select>
+							}
+						</select>
 
-						</div>
+					</div>
 					id++;
 				}
 			}
@@ -76,19 +76,19 @@
 		var Hr = scores[2];
 		var Mf = scores[3];
 		<h1 class=" display-3 mt-4 mr-2 text-white">Ce departament te fură...</h1>
-		@* <p>@Design</p> *@
-		@* <p>@Edu</p> *@
-		@* <p>@Hr</p> *@
-		@* <p>@Mf</p> *@
+		@* <p>@Design</p>  *@
+		@* <p>@Edu</p>  *@
+		@* <p>@Hr</p>  *@
+		@* <p>@Mf</p>  *@
 
 		<img src="~/images/redghost.png" class="ghost"/>
 		<h2 class="mb-0">MF</h2>
 		<div class="w-100 d-flex align-items-center justify-content-center">
-			
-				<img src="~/images/blueGhost.png" class="ghost"/>
-				<h2 class="mb-0">HR</h2>
-			
-			
+
+			<img src="~/images/blueGhost.png" class="ghost"/>
+			<h2 class="mb-0">HR</h2>
+
+
 			<div id="stats" class="w-50 m-0">
 				<svg height="100%" width="100%" viewBox="0 0 100 100">
 					@* <line x1="0" y1="50%" x2="100%" y2="50%"></line> *@
@@ -161,15 +161,19 @@
 					<p><strong class="hr">@messages[3].Item2</strong> - @messages[3].Item3</p>
 				</li>
 
-				<li>
-					<p><strong class="hr">@messages[2].Item2</strong> - @messages[2].Item3</p>
-				</li>
-				@if(messages[1].Item1 == messages[2].Item1)
+				@if (messages[2].Item1 != 0)
 				{
 					<li>
-						<p><strong class="hr">@messages[1].Item2</strong> - @messages[1].Item3</p>
+						<p><strong class="hr">@messages[2].Item2</strong> - @messages[2].Item3</p>
 					</li>
+					@if (messages[1].Item1 == messages[2].Item1)
+					{
+						<li>
+							<p><strong class="hr">@messages[1].Item2</strong> - @messages[1].Item3</p>
+						</li>
+					}
 				}
+				
 			</ul>
 
 		</div>
