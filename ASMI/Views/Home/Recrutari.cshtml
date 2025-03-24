@@ -126,9 +126,11 @@
         <div class=" gameBorderRight"></div>
 
     </div>
-    
 
-
+<script>
+    if (!sessionStorage.getItem('reloaded')) {sessionStorage.setItem('reloaded', 'true'); location.reload(true);} 
+    else {sessionStorage.setItem('reloaded', 'true');}
+</script>
 
 <script>
     document.getElementById("revealButton").addEventListener("click", function () {
