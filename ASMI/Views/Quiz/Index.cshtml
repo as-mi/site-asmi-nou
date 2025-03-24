@@ -176,8 +176,14 @@
 
 		<div>
 			<button type="button" onclick="location.href='@Url.Action("Index","Quiz")'" class="btn">Again!</button>
-			<button class="btn btn-info">Hai în Asociație!</button>
+			<button class="btn btn-info" onclick="formularInscriere()">Hai în Asociație!</button>
 		</div>
+
+		<script>
+			function formularInscriere() {
+				window.location.href = "https://forms.gle/CjDsubp4q9N9KYgV6"
+			}
+		</script>
 
 		<script>
 			setTimeout(() => {

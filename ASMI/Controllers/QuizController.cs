@@ -32,7 +32,7 @@ namespace ASMI.Controllers
                 "Ce superputere ai vrea să ai?",
                 new List<string> {
                 "Să creez orice din aer",
-                "Să absorb instant orice informație",
+                "Să rețin instant orice informație",
                 "Să citesc gândurile oamenilor",
                 "Să conving pe oricine să-mi dea ce vreau"
                 });
@@ -59,7 +59,7 @@ namespace ASMI.Controllers
                 "Ce fel de pâine ai fi?",
                 new List<string> {
                 "O pâine artizanală cu forme ciudate",
-                "O pâine integrală, plină de semințe",
+                "O pâine integrală cu semințe",
                 "O pâine pufoasă și caldă",
                 "O baghetă franțuzească"
                 });

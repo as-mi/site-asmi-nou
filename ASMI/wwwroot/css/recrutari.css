@@ -61,7 +61,10 @@ div ul {
 
 body {
     background-image:url('/images/bg_pagina recrutari.png');
-    scroll-behavior:smooth;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .flex-container {
