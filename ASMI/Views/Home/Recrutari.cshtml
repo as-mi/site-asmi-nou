@@ -103,62 +103,77 @@
                 </div>
             }
 
-            <div class="text-center">
-                <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
-                <button id="revealButton" class="btn btn-primary mb-5">
-                    <span style="color: white;">Descoperă-ți locul potrivit în echipa noastră!</span>
-                </button>
-                <div class="lightbox-gallery overflow-hidden">
-                    <div id="hiddenPic" style="display: none">
-                        <div class="lightbox-gallery">
-                            <div class="container">
-                                <div class="mario"></div>
-                                <div class="mario_tunnels"></div>
-                            </div>
-                        </div>
+        </div>
+
+    </div>
+    <div class="text-center" id="quizDepartamente">
+        <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
+
+
+        <a id="revealButton">
+            <img src="/images/cutie.png" alt="Descoperă locul tău!">
+        </a>
+
+        <div class="lightbox-gallery overflow-hidden marioContainer">
+            <div id="hiddenPic" style="display: none">
+                <div class="lightbox-gallery">
+                    <div class="container">
+                        <div class="mario"></div>
+                        <div class="mario_tunnels"></div>
                     </div>
                 </div>
             </div>
-
-            <script>
-                document.getElementById("revealButton").addEventListener("click", function () {
-                    var hiddenPic = document.getElementById("hiddenPic");
-                    var mario = document.querySelector(".mario");
-                    hiddenPic.style.display = "block";
-
-                    mario.addEventListener("animationend", function () {
-                        window.open("/quiz", target = "_blank");
-                    }, { once: true });
-                });
-            </script>
-
-            <script>
-                (function () {
-                    const second = 1000,
-                        minute = second * 60,
-                        hour = minute * 60,
-                        day = hour * 24;
-
-                    let birthday = "2 Aprilie, 2025 23:59:59",
-                        countDown = new Date(birthday).getTime(),
-                        x = setInterval(function () {
-
-                            let now = new Date().getTime(),
-                                distance = countDown - now;
-
-
-                            if (distance < 0) {
-                                clearInterval(x);
-                            } else {
-                                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-                            }
-                        }, 0)
-                }());
-            </script>
         </div>
+        <img src="~/images/copac_pamant.png" id="pamant"/>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
+        <h3>Fii pe fază pentru următoarea sesiune!</h3>
+    </div>
+}
+
+
+<script>
+    document.getElementById("revealButton").addEventListener("click", function () {
+        window.location.href = "#quizDepartamente"
+        var hiddenPic = document.getElementById("hiddenPic");
+        var mario = document.querySelector(".mario");
+        hiddenPic.style.display = "block";
+
+        mario.addEventListener("animationend", function () {
+            window.open("/quiz", target= "_blank");
+        }, { once: true });
+    });
+</script>
+
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        let birthday = "2 Aprilie, 2025 23:59:59",
+            countDown = new Date(birthday).getTime(),
+            x = setInterval(function () {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+
+                if (distance < 0) {
+                    clearInterval(x);
+                } else {
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                }
+            }, 0)
+    }());
         <div class=" gameBorderRight"></div>
 
     </div>

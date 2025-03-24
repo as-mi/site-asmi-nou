@@ -37,18 +37,17 @@
     animation: alternate 1s moveUpDown;
 }
 
-
-
 .mario_tunnels {
-    background-image: url('/images/mario_tunnels.png');
+    background-image: url('/images/mario_tunnels - Copy.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 600px;
-    height: 600px;
+    background-position: 0% 100%;
+    width: 400px;
+    height: 400px;
     display: block;
     margin: 0 auto;
 }
+
 
 div ul {
     padding: 0px;
@@ -62,6 +61,7 @@ div ul {
 
 body {
     background-image:url('/images/bg_pagina recrutari.png');
+    scroll-behavior:smooth;
 }
 
 .flex-container {
@@ -82,7 +82,7 @@ body {
 .button-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the button */
+    justify-content: center; 
 }
 
 
@@ -172,6 +172,11 @@ ul{
     .sm{
         display: block !important;
     }
+
+#pamant{
+    width: 100%;
+}
+
 }
 
 .fitcontent{
