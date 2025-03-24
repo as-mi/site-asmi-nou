@@ -5,110 +5,129 @@
 @section Styles {
     <link rel="stylesheet" href="~/css/studenti.css" />
     <link rel="stylesheet" href="~/css/recrutari.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 }
 
-<div class="py-4">
-    <div class="lightbox-gallery">
-        <div class="container">
-            <div class="jumbotronn">
+<nav id="navbarRecrutari" class="pixelFont p-5 d-flex flex-column justify-content-around navbar-expand-lg">
+    <div class=" pixelFont d-flex justify-content-around">
+        <div>
+            <h1 class="text-white" id="headerRecrutari">Recrutari<br />Primavara</h1>
+            <div id="navLinks collapse navbar-collapse" class="fitcontent">
+                <ul class="d-flex navbar-nav flex-wrap fitcontent" id="navLinkList">
+                    <li class="mr-3 fitcontent"><a href="#" class="d-flex">Acasa</a></li>
+                    <li class="mr-3 fitcontent"><a href="#" class="d-flex">Acasa</a></li>
+                    <li class="mr-3 fitcontent"><a href="#" class="d-flex">Acasa</a></li>
+                    <li class="mr-3 fitcontent"><a href="#" class="d-flex">Acasa</a></li>
+                    <li><a href="#" class=" d-flex">Acasa</a></li>
+                </ul>
             </div>
         </div>
+
+        <div id="pacmanWrapper">
+            <img src="~/images/pacmaniAnimati.gif" id="pacmanAnimat" />
+        </div>
     </div>
-</div>
+</nav>
+
 
 @{
     bool avemRecrutari = true;
 }
 
-@if (avemRecrutari)
-{
-    <div class="text-center">
-        <h2 class="font-weight-bold" style="color:white">Te așteptăm în echipa noastră!</h2>
+<div id="containerMain" class="container m-0 mw-100">
+    @if (avemRecrutari)
+    {
+        <div class="text-center">
+            <h2 class="font-weight-bold" style="color:white">Te așteptăm în echipa noastră!</h2>
 
-        <h3>Înscrieri disponibile: <span style="color:rgb(49, 144, 191);">Începând cu 24 martie 2025</span></h3>
+            <h3>Înscrieri disponibile: <span style="color:rgb(49, 144, 191);">Începând cu 24 martie 2025</span></h3>
 
-        <a href="https://forms.gle/ob1ZABKpKZryFJB5A" class="btn-lg btn-primary font-weight-bold" target="_blank">
-            <span style="color: white;">Înscrie-te aici!</span>
-        </a>
+            <a href="https://forms.gle/ob1ZABKpKZryFJB5A" class="btn-lg btn-primary font-weight-bold" target="_blank">
+                <span style="color: white;">Înscrie-te aici!</span>
+            </a>
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        <div id="countdown">
-            <h3 id="amr">Au mai rămas:</h3>
-            <ul style="color: white">
-                <li class="clock"><span id="days"></span>zile</li>
-                <li class="clock"><span id="hours"></span>ore</li>
-                <li class="clock"><span id="minutes"></span>minute</li>
-                <li class="clock"><span id="seconds"></span>secunde</li>
-            </ul>
+            <div id="countdown">
+                <h3 id="amr">Au mai rămas:</h3>
+                <ul style="color: white">
+                    <li class="clock"><span id="days"></span>zile</li>
+                    <li class="clock"><span id="hours"></span>ore</li>
+                    <li class="clock"><span id="minutes"></span>minute</li>
+                    <li class="clock"><span id="seconds"></span>secunde</li>
+                </ul>
+            </div>
+            <div id="content" class="emoji">
+                <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
+            </div>
         </div>
-        <div id="content" class="emoji">
-            <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
+    }
+    else
+    {
+        <div class="text-center">
+            <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
+            <h3>Fii pe fază pentru următoarea sesiune!</h3>
         </div>
-    </div>
-}
-else
-{
-    <div class="text-center">
-        <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
-        <h3>Fii pe fază pentru următoarea sesiune!</h3>
-    </div>
-}
+    }
 
-<div class="text-center">
-    <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
-    <button id="revealButton" class="btn btn-primary mb-5">
-        <span style="color: white;">Descoperă-ți locul potrivit în echipa noastră!</span>
-    </button>
-    <div class="lightbox-gallery overflow-hidden">
-        <div id="hiddenPic" style="display: none">
-            <div class="lightbox-gallery">
-                <div class="container">
-                    <div class="mario"></div>
-                    <div class="mario_tunnels"></div>
+    <div class="text-center">
+        <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
+        <button id="revealButton" class="btn btn-primary mb-5">
+            <span style="color: white;">Descoperă-ți locul potrivit în echipa noastră!</span>
+        </button>
+        <div class="lightbox-gallery overflow-hidden">
+            <div id="hiddenPic" style="display: none">
+                <div class="lightbox-gallery">
+                    <div class="container">
+                        <div class="mario"></div>
+                        <div class="mario_tunnels"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("revealButton").addEventListener("click", function () {
+            var hiddenPic = document.getElementById("hiddenPic");
+            var mario = document.querySelector(".mario");
+            hiddenPic.style.display = "block";
+
+            mario.addEventListener("animationend", function () {
+                window.location.href = "https:www.remove.bg/ro/uploads";
+            }, { once: true });
+        });
+    </script>
+
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            let birthday = "28 Martie, 2025 23:59:59",
+                countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
+
+                    let now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        clearInterval(x);
+                    } else {
+                        document.getElementById("days").innerText = Math.floor(distance / (day)),
+                            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                    }
+                    //seconds
+                }, 0)
+        }());
+    </script>
 </div>
-
-<script>
-    document.getElementById("revealButton").addEventListener("click", function () {
-        var hiddenPic = document.getElementById("hiddenPic");
-        var mario = document.querySelector(".mario");
-        hiddenPic.style.display = "block";
-
-        mario.addEventListener("animationend", function () {
-            window.location.href = "https:www.remove.bg/ro/uploads";
-        }, { once: true });
-    });
-</script>
-
-<script>
-    (function () {
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
-
-        let birthday = "28 Martie, 2025 23:59:59",
-            countDown = new Date(birthday).getTime(),
-            x = setInterval(function () {
-
-                let now = new Date().getTime(),
-                    distance = countDown - now;
-
-                //do something later when date is reached
-                if (distance < 0) {
-                    clearInterval(x);
-                } else {
-                    document.getElementById("days").innerText = Math.floor(distance / (day)),
-                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-                }
-                //seconds
-            }, 0)
-    }());
-</script>
