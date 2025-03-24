@@ -1,0 +1,122 @@
+﻿option:checked {
+    background-color: #a28625 !important;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    background-color: #000;
+}
+
+* {
+    font-family: "Pixelify Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    /*    font-weight: <weight>;*/
+    font-style: normal !important;
+}
+
+#stats {
+    aspect-ratio: 1;
+    background-image: url("../images/panza-paianjen.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#stats line {
+    fill: none;
+    stroke: green;
+    stroke-width: 0.5;
+}
+
+    #stats path {
+        opacity: 0;
+        fill: rgba(105,0,255,0.2);
+        stroke: #8b1b2e;
+        stroke-width: 1;
+        animation-name: fadein;
+        animation-duration: 0.3s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+    }
+
+@keyframes fadein{
+    from{ opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+#designPoint{
+    transform: translateY()
+}
+
+select, option {
+    background-color: #c4a22c !important;
+    color: white !important;
+    font-size: 1.7rem !important;
+}
+option{
+    text-wrap: wrap;
+}
+
+select {
+    border: none !important;
+    -webkit-box-shadow: 0px 0px 59px 2px rgb(97 72 46) !important;
+    -moz-box-shadow: 0px 0px 59px 2px rgb(97 72 46) !important;
+    box-shadow: 0px 0px 59px 2px rgb(97 72 46) !important;
+}
+
+
+.innerShadow {
+    
+}
+
+label{
+    font-size: 1.4rem !important;
+}
+
+#formQuestion{
+    color: white !important;
+}
+
+.cutie{
+    max-height: 3rem;
+}
+
+form div:nth-child(3) label:before{
+    content:url("../images/blueGhost.png");
+    position: absolute;
+    transform:translateX(-50%);
+    z-index: -1;
+}
+form div:nth-child(5) label:before {
+    content: url("../images/sleepingCat.gif");
+    position: absolute;
+    transform: translateX(-50%) scale(60%);
+    z-index: -1;
+}
+
+
+form div:nth-child(3) label:after {
+    content: url("../images/ozn.png");
+    position: absolute;
+    transform: scale(120%);
+    right: 10%;
+    z-index: -1;
+}
+
+form div:nth-child(6) label:after {
+    content: url("../images/pixelStar.png");
+
+    position: absolute;
+    right: 20%;
+    transform: scale(30%);
+    z-index: -1;
+}
+
+h1{
+    font-size: 10vmin !important;
+}

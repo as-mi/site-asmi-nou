@@ -330,6 +330,8 @@ namespace ASMI.Controllers
         public IActionResult Galerie()
         {
             return View();
-        }     
+        }
+
+
     }
 }

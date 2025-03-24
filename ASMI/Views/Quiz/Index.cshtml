@@ -1,0 +1,98 @@
+﻿@model ASMI.Models.Quiz
+
+@section Styles {
+<link rel="stylesheet" href="~/css/quiz.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+}
+
+<div class="container min-vh-75 d-flex flex-column align-items-center ">
+	@if(Model != null)
+	{
+
+		<h1 class=" display-3 mt-4 mr-2 text-white">CE DEPARTAMENT ESTI</h1>
+		<form class="w-75" method="post">
+			<div asp-validation-summary="All" class="text-danger" role="alert"></div>
+			@{
+				var id = 0;
+				foreach (var question in Model.questions)
+				{
+					<div class="form-group">
+						<label for="" id="formQuestion">@question.Question</label>
+						<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
+						<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
+
+						<select multiple asp-for="answers[id]" class="form-control overflow-hidden" size="4" required>
+
+							@{
+								var index = 1;
+								foreach (var option in question.Options)
+								{
+									<option>@(index +". " + option)</option>
+									index++;
+								}
+								
+							}
+						</select>
+
+					</div>
+					id++;
+				}
+			}
+
+
+			<button type="submit">Submit</button>
+
+		</form>
+	}
+	else
+	{
+		List<int> scores = ViewBag.scores;
+
+		@* <p>Design: @(scores[0])</p>  *@
+		@*  <p>Edu: @(scores[1])</p>  *@
+		@*  <p>Hr: @(scores[2] )</p>  *@
+		@*  <p>Mf: @(scores[3] )</p> *@
+		<h1 class=" display-3 mt-4 mr-2 text-white">Ce departament te fură...</h1>
+
+		<h2 class="mb-0">MF</h2>
+		<div class="w-100 d-flex align-items-center justify-content-center">
+			<h2 class="mb-0">HR</h2>
+			<div id="stats" class="w-75 m-0">
+				<svg height="100%" width="100%" viewBox="0 0 100 100">
+					@* <line x1="0" y1="50%" x2="100%" y2="50%"></line> *@
+					@* <line x1="50%" y1="0" x2="50%" y2="100%"></line> *@
+
+					<path id="pathStat" d="M50 @(Math.Min(50 - scores[3]/7.0f * 100, 100)) L@(Math.Min(100, 50 + scores[1]/7.0f * 50)) 50 L50 @(Math.Min(50 + scores[0]/7.0f * 100, 100)) L@(Math.Max(50 - scores[2]/7.0f * 100, 0)) 50 L50 @(Math.Max(50 - scores[3]/7.0f * 100, 0))">
+					</path>
+
+						@* <!--Design--> *@
+						@* <circle r="2" cx="50%" cy="@(50 + scores[0]/7.0f * 100)%" fill="blue" id="designPoint"></circle> *@
+
+						@* <!--MF--> *@
+						@* <circle r="2" cx="50%" cy="@(50 - scores[3]/7.0f * 100)%" fill="red" id="designPoint"></circle> *@
+
+						@* <!--HR--> *@
+						@* <circle r="2" cx="@(50 - scores[2]/7.0f * 100)%" cy="50%" fill="purple" id="designPoint"></circle> *@
+
+						@* <!--EDU--> *@
+						@* <circle r="2" cx="@(50 + scores[1]/7.0f * 100)%" cy="50%" fill="pink" id="designPoint"></circle> *@
+
+
+					
+				</svg>
+			</div>
+			<h2 class="mb-0">EDU</h2>
+		</div>
+		
+		<h2>DESIGN & PR</h2>
+		<script>
+			var path = document.getElementById("pathStat");
+			path.addEventListener("animationend", (event) => {path.style.opacity = "100";});
+		</script>
+	}
+
+</div>
+
+
