@@ -44,7 +44,7 @@
 						<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
 						<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
 
-						<select multiple asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
+						<select asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
 
 							@{
 								int index = 1;
