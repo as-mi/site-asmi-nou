@@ -40,7 +40,6 @@
     <div class="w-100 gameBorder">
     </div>
     <div class="d-flex justify-content-between pixelFont">
-        <div class=" gameBorderRight"></div>
         <div class="w-100" id="between">
             @if (avemRecrutari)
             {
@@ -105,11 +104,11 @@
             <div class="text-center" id="quizDepartamente">
                 <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
 
-
-                <a id="revealButton" href="">
-                    <img src="/images/cutie.png" alt="Descoperă locul tău!" class="cutie">
-                </a>
-
+                <div>
+                    <a id="revealButton">
+                        <img src="/images/cutie.png" alt="Descoperă locul tău!" class="cutie">
+                    </a>
+                </div>
                 <div class="lightbox-gallery overflow-hidden marioContainer">
                     <div id="hiddenPic" style="display: none">
                         <div class="lightbox-gallery">
@@ -124,9 +123,9 @@
                 
             </div>
         </div>
-        <div class=" gameBorderRight"></div>
 
     </div>
+</div>
 
 <script>
     if (!sessionStorage.getItem('reloaded')) {sessionStorage.setItem('reloaded', 'true'); location.reload(true);} 
