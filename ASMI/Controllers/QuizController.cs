@@ -11,13 +11,34 @@ namespace ASMI.Controllers
     public class QuizController : Controller
     {
 
+        private readonly Random _rand;
+        public QuizController()
+        {
+            _rand = new Random();
+        }
+
+        private List<int> GenerateRandomLoop(List<int> listToShuffle)
+        {
+            for (int i = listToShuffle.Count - 1; i > 0; i--)
+            {
+                var k = _rand.Next(i + 1);
+                var value = listToShuffle[k];
+                listToShuffle[k] = listToShuffle[i];
+                listToShuffle[i] = value;
+            }
+            return listToShuffle;
+        }
+
         private Quiz getQuiz()
         {
             Quiz quiz = new Quiz();
 
             QuizQuestion question1 = new QuizQuestion(
                 "Dacă ai fi un animal de companie, ce ai fi?",
-                new List<string> { "O pisică", "O bufniță", "Un golden retriever", "O vulpe" });
+                new List<string> { "O pisică", "O bufniță", "Un golden retriever", "O vulpe" },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
+
+            
 
             QuizQuestion question2 = new QuizQuestion(
             "Ești într-un film horror. Ce faci?",
@@ -26,7 +47,8 @@ namespace ASMI.Controllers
                 "Sun un prieten și îi explic toată situația logic, poate are o idee bună",
                 "Îi conving pe toți să ne ținem aproape și să nu ne despărțim",
                 "Negociez cu fantoma"
-            });
+            },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
 
             QuizQuestion question3 = new QuizQuestion(
                 "Ce superputere ai vrea să ai?",
@@ -35,7 +57,8 @@ namespace ASMI.Controllers
                 "Să rețin instant orice informație",
                 "Să citesc gândurile oamenilor",
                 "Să conving pe oricine să-mi dea ce vreau"
-                });
+                },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
 
             QuizQuestion question4 = new QuizQuestion(
                 "Ce emoji te reprezintă cel mai bine?",
@@ -44,7 +67,8 @@ namespace ASMI.Controllers
                 "🧐",
                 "🤗",
                 "💰"
-                });
+                },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
 
             QuizQuestion question5 = new QuizQuestion(
                 "Ce ai face dacă ai fi blocatx pe o insulă pustie?",
@@ -53,7 +77,8 @@ namespace ASMI.Controllers
                 "Aș scrie un jurnal detaliat despre fiecare zi",
                 "Aș găsi un mod de a face totul distractiv și să păstrez moralul sus",
                 "Aș negocia cu un pirat să mă ducă înapoi la civilizație"
-                });
+                },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
 
             QuizQuestion question6 = new QuizQuestion(
                 "Ce fel de pâine ai fi?",
@@ -62,7 +87,8 @@ namespace ASMI.Controllers
                 "O pâine integrală cu semințe",
                 "O pâine pufoasă și caldă",
                 "O baghetă franțuzească"
-                });
+                },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
 
             QuizQuestion question7 = new QuizQuestion(
                 "Dacă ai putea trăi într-un alt timp, unde ai merge?",
@@ -71,7 +97,8 @@ namespace ASMI.Controllers
                 "În viitor",
                 "În anii ‘70",
                 "În perioada regilor și reginelor"
-                });
+                },
+                GenerateRandomLoop(new List<int> { 1, 2, 3, 4 }));
 
             quiz.questions = new List<QuizQuestion>{ question1, question2, question3, question4, question5, question6, question7};
 
@@ -99,17 +126,17 @@ namespace ASMI.Controllers
 
             int design = 0, edu = 0, hr = 0, mf = 0;
 
-            foreach (string answer in answers)
+            foreach (var answer in answers)
             {
-                if (answer[0] == '1')
+                if (answer == "1")
                 {
                     design++;
                 }
-                else if (answer[0] == '2')
+                else if (answer == "2")
                 {
                     edu++;
                 }
-                else if (answer[0] == '3')
+                else if (answer == "3")
                 {
                     hr++;
                 }

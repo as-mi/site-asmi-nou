@@ -60,7 +60,11 @@ div ul {
 }
 
 body {
-    background-image:url('/images/bg_pagina recrutari.png');
+    background-color: #5c94fc;
+}
+
+.body {
+    background-color: #5c94fc;
 }
 
 html {
@@ -96,10 +100,6 @@ html {
     color: white;
     font-size: 16px;
     text-align: center; 
-}
-
-body, containerMain {
-    background-color: black;
 }
 
 #asmi-navbar{
@@ -217,4 +217,21 @@ h2 {
 .norisorMare {
     width: 20vw;
     max-width: 20rem;
+}
+
+.cutie {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
