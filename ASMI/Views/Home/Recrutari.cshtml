@@ -12,7 +12,7 @@
 }
 
 <nav id="navbarRecrutari" class="pixelFont p-5 d-flex flex-column justify-content-around navbar-expand-lg">
-    <div class=" pixelFont d-flex justify-content-around">
+    <div class="pixelFont d-flex justify-content-around">
         <div>
             <h1 class="text-white" id="headerRecrutari">Recrutări<br />Primăvară</h1>
             <div id="navLinks collapse navbar-collapse" class="fitcontent">
@@ -20,7 +20,7 @@
                     <li class="mr-3 fitcontent"><a href="/home" class="d-flex">Acasă</a></li>
                     <li class="mr-3 fitcontent"><a href="/departamente" class="d-flex">Departamente</a></li>
                     <li class="mr-3 fitcontent"><a href="/studenti" class="d-flex">Studenți</a></li>
-                    <li class="mr-3 fitcontent"><a href="/proiecte" class="d-flex">Proicte</a></li>
+                    <li class="mr-3 fitcontent"><a href="/proiecte" class="d-flex">Proiecte</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="w-100" id="between">
             @if (avemRecrutari)
             {
-
+               
                 <div class="text-center w-100 mt-3">
                     <div class="w-100 d-flex justify-content-around ">
                         <h2>Mario<br />000000</h2>
@@ -60,12 +60,12 @@
                 </div>
 
 
-                    <h2 class="font-weight-bold" style="color:white">Te așteptăm în echipa noastră!</h2>
+                    <h2 class="font-weight-bold display-3" style="color:white">Te așteptăm în echipa noastră!</h2>
 
                     <div class="text-center d-flex align-content-center justify-content-center">
                         <div class="flex-container">
                             <div class="text" style="margin-top:15px">
-                                <h2>Înscrie-te aici!</h2>
+                                <h2><strong class="text-white">Înscrie-te aici!</strong></h2>
                             </div>
 
                             <div>
@@ -73,8 +73,8 @@
                             </div>
 
                             <div class="button-container">
-                                <a href="https://forms.gle/ob1ZABKpKZryFJB5A" target="_blank">
-                                    <img src="/images/cutie.png" alt="Link pentru Formularul de înscriere!" style="width: 70px;">
+                                <a href="https://forms.gle/CjDsubp4q9N9KYgV6" target="_blank">
+                                    <img src="/images/cutie.png" alt="Link pentru Formularul de înscriere!" style="width: 70px;" class="cutie">
                                 </a>
                             </div>
                         </div>
@@ -102,39 +102,37 @@
                     <h3>Fii pe fază pentru următoarea sesiune!</h3>
                 </div>
             }
+            <div class="text-center" id="quizDepartamente">
+                <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
 
-        </div>
-
-    </div>
-    <div class="text-center" id="quizDepartamente">
-        <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
-
-
-        <a id="revealButton">
-            <img src="/images/cutie.png" alt="Descoperă locul tău!">
-        </a>
-
-        <div class="lightbox-gallery overflow-hidden marioContainer">
-            <div id="hiddenPic" style="display: none">
-                <div class="lightbox-gallery">
-                    <div class="container">
-                        <div class="mario"></div>
-                        <div class="mario_tunnels"></div>
+                <div>
+                    <a id="revealButton">
+                        <img src="/images/cutie.png" alt="Descoperă locul tău!" class="cutie buttonquiz">
+                    </a>
+                </div>
+                <div class="lightbox-gallery overflow-hidden marioContainer">
+                    <div id="hiddenPic" style="display: none">
+                        <div class="lightbox-gallery">
+                            <div class="container">
+                                <div class="mario"></div>
+                                <div class="mario_tunnels"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                    <img class="w-100" src="~/images/copac_pamant.png" id="pamant" />
+                
             </div>
         </div>
-        <img src="~/images/copac_pamant.png" id="pamant"/>
-    </div>
-}
-else
-{
-    <div class="text-center">
-        <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
-        <h3>Fii pe fază pentru următoarea sesiune!</h3>
-    </div>
-}
 
+    <div class=" gameBorderRight"></div>
+    </div>
+</div>
+
+<script>
+    if (!sessionStorage.getItem('reloaded')) {sessionStorage.setItem('reloaded', 'true'); location.reload(true);} 
+    else {sessionStorage.setItem('reloaded', 'true');}
+</script>
 
 <script>
     document.getElementById("revealButton").addEventListener("click", function () {
@@ -144,7 +142,7 @@ else
         hiddenPic.style.display = "block";
 
         mario.addEventListener("animationend", function () {
-            window.open("/quiz", target= "_blank");
+                window.location.href = "/quiz"
         }, { once: true });
     });
 </script>
@@ -174,7 +172,6 @@ else
                 }
             }, 0)
     }());
-        <div class=" gameBorderRight"></div>
+</script>
 
-    </div>
     <div class="w-100 gameBorder flipBorder"></div>
