@@ -48,6 +48,9 @@
     margin: 0 auto;
 }
 
+.buttonquiz{
+    cursor:pointer;
+}
 
 div ul {
     padding: 0px;
