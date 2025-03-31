@@ -34,24 +34,23 @@
 	</div>
 </nav>
 
-<div class="pixelFont container min-vh-75 d-flex flex-column align-items-center ">
+<div class="pixelFont container min-vh-75 d-flex flex-column align-items-center" style="letter-spacing: 1px;">
 	@if(Model != null)
 	{
 
-		<h1 class=" display-3 mt-4 mr-2 text-white">CE DEPARTAMENT EȘTI?</h1>
-		<form class="w-75" method="post" style="letter-spacing: 2px;">
+		<h1 class="display-3 mt-4 mr-2 text-white font-capitalize">Ce departament ți se potrivește?</h1>
+		<form class="w-75" method="post">
 			<div asp-validation-summary="All" class="text-danger" role="alert"></div>
 			@{
 				var id = 0;
 				foreach (var question in Model.questions)
 				{
 					<div class="form-group">
-						<label for="" id="formQuestion">@question.Question</label>
+						<label for="" id="formQuestion" style="box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); padding: 5px 10px; background-color: rgba(0, 28, 70, 0.815); margin-top: 6vh; border-radius: 10px">@question.Question</label>
 						<input type="hidden" asp-for="questions[id].Question" value="@question.Question">
 						<input type="hidden" asp-for="questions[id].Options" value="@question.Options">
 
 						<select asp-for="answers[id]" class="pixelFont form-control overflow-hidden" size="4" required>
-
 							@{
 								int index = 1;
 								foreach (var depOption in question.depOptions)
@@ -81,7 +80,7 @@
 		var Edu = scores[1];
 		var Hr = scores[2];
 		var Mf = scores[3];
-		<h1 class=" display-3 mt-4 mr-2 text-white">Ce departament te fură...</h1>
+		<h1 class=" display-3 mt-4 mr-2 text-white pb-5">Ce departament te fură...</h1>
 		@* <p>@Design</p>  *@
 		@* <p>@Edu</p>  *@
 		@* <p>@Hr</p>  *@
@@ -130,7 +129,7 @@
 			path.addEventListener("animationend", (event) => {path.style.opacity = "100";});
 		</script>
 
-		<div class="align-self-lg-start" id="explicatii">
+		<div class="align-self-lg-start pt-5" id="explicatii">
 			<h2 class="text-white">Ce zice asta despre tine?</h2>
 			@{
 				List<Tuple<float, string, string>> messages = new List<Tuple<float, string, string>> { };
