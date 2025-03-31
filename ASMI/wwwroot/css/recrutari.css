@@ -46,6 +46,7 @@
     height: 400px;
     display: block;
     margin: 0 auto;
+    margin-bottom: -3px;
 }
 
 .buttonquiz{
@@ -179,10 +180,13 @@ ul{
         display: block !important;
     }
 
-#pamant{
-    width: 100%;
+    #pamant{
+        width: 100%;
+    }
 }
 
+#pamant{
+    margin-bottom: -9px;
 }
 
 .fitcontent{
