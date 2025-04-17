@@ -332,6 +332,11 @@ namespace ASMI.Controllers
             return View();
         }
 
+        public IActionResult Elevi()
+        {
+            return View();
+        }
+
 
     }
 }
