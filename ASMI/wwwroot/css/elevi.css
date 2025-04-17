@@ -1,4 +1,23 @@
-﻿.card{
+﻿.card-rounded{
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.card-bubblesBg {
+    background-size: 100% !important;
+}
+
+.card-bubblesBg:nth-of-type(2n+1){
+    background-image: url("../images/wrapbg.jpg") !important;
+}
+
+.card-bubblesBg:nth-of-type(2n){
+    background-image: url("../images/wrapbg-flip.jpg") !important;
+   
+}
+
+.card {
+    overflow-wrap: break-word;
 }
