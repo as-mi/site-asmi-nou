@@ -332,6 +332,10 @@ namespace ASMI.Controllers
             return View();
         }
 
+        public IActionResult Zpd()
+        {
+            return View();
+        }
 
     }
 }
