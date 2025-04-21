@@ -42,9 +42,12 @@
 
 					<div class="card-text text-center mb-4">@proiect.Description</div>
 					<div class="d-flex justify-content-center just-self-end mx-auto more-button">
-						<a href="@("https://" + proiect.WebSite)" class="btn btn-primary-outline py-3">
-							<span class="mx-3">Afla mai multe</span>
-						</a>
+						@if (!string.IsNullOrEmpty(proiect.WebSite))
+						{
+							<a href="@("https://" + proiect.WebSite)" class="btn btn-primary-outline py-3">
+								<span class="mx-3">Afla mai multe</span>
+							</a>
+						}
 					</div>
 				</div>
 

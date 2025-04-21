@@ -341,7 +341,15 @@ namespace ASMI.Controllers
 
                 new Proiect("Ziua Portilor Deschise",
                 "Dacă vrei să vezi cu ochii tăi facultatea în care îți poți petrece anii studenției, te invităm să participi la tururile ghidate, cursurile demonstrative și prezentările ofertei educaționale din cadrul Zilei Porților Deschise. În tot acest timp, voluntarii ASMI și profesorii Facultății vor fi alături de tine pentru a-ți răspunde la întrebări și curiozități.",
-                new DateTime(2025,4,26), new DateTime(2025,4,27), "asmi.ro/zpd", "../images/zpd.png")
+                new DateTime(2025,4,26), new DateTime(2025,4,27), "asmi.ro/zpd", "../images/zpd.png"),
+
+                new Proiect("Hello FMI",
+                "”Hello FMI” este o serie de evenimente sociale și academice organizate de ASMI cu scopul ca noii studenți să se acomodeze cât mai repede cu Facultatea și cu colegii lor. Printre acestea se numără Marea Ieșeală(serie de jocuri de cunoaștere prin care să-ți cunoști colegii), Tre' să caut (treasure hunt în București), Bumtzi(petrecere de început de an) și Dialog Deschis(prezentare a celor mai importante aspecte din viața de student și sesiune de Q&A cu voluntarii ASMI).",
+                null, null, null, "../images/hellofmi.png"),
+
+                new Proiect("Rățușca",
+                "„Rățușca” este proiectul prin care intrăm în contact cu bobocii și îi introducem în viața de student al FMI. Încă din primele zile, voluntarii asociației se integrează cu grupele nou formate, și îi ghidează către primii pași ai studenției.",
+                null, null, null, "../images/LogoDuckFinal.png")
 			};
 
             ViewBag.Proiecte = proiecte;
