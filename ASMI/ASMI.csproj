@@ -4,6 +4,9 @@
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
   <ItemGroup>
+    <Content Remove="wwwroot\css\index - Copy.css" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.3" />
   </ItemGroup>
 </Project>
