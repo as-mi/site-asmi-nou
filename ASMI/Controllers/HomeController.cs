@@ -335,13 +335,13 @@ namespace ASMI.Controllers
         {
             List<Proiect> proiecte = new List<Proiect>
             {
-                new Proiect("Ziua Portilor Deschise",
-                "„Artă'n Dar” este un eveniment care promovează cultura și arta în rândul studenților și, în același timp, urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
-                new DateTime(2025,1,22), null),
+                new Proiect("Caravana Edu",
+				"Ești elev de liceu și nu știi către ce facultate să te îndrepți? Ei bine, voluntarii ASMI te ajută să descoperi Facultatea de Matematică și Informatică a Universității din București!",
+				new DateTime(2025,3,10), new DateTime(2025,3,14), "caravana.asmi.ro", "../images/CaravanaEducationala.png"),
 
-				new Proiect("Caravana Edu",
-				"„Artă'n Dar” este un eveniment care promovează cultura și arta în rândul studenților și, în același timp, urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
-				null, null)
+                new Proiect("Ziua Portilor Deschise",
+                "Dacă vrei să vezi cu ochii tăi facultatea în care îți poți petrece anii studenției, te invităm să participi la tururile ghidate, cursurile demonstrative și prezentările ofertei educaționale din cadrul Zilei Porților Deschise. În tot acest timp, voluntarii ASMI și profesorii Facultății vor fi alături de tine pentru a-ți răspunde la întrebări și curiozități.",
+                new DateTime(2025,4,26), new DateTime(2025,4,27), "asmi.ro/zpd", "../images/zpd.png")
 			};
 
             ViewBag.Proiecte = proiecte;

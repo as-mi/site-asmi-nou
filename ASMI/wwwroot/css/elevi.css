@@ -21,3 +21,12 @@
 .card {
     overflow-wrap: break-word;
 }
+.logo_elevi img {
+    transform: scale(1);
+    transition: transform 0.7s ease-in-out;
+}
+
+.logo_elevi img:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
