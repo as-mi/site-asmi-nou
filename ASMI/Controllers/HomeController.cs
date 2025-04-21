@@ -331,11 +331,27 @@ namespace ASMI.Controllers
         {
             return View();
         }
+        public IActionResult Elevi()
+        {
+            List<Proiect> proiecte = new List<Proiect>
+            {
+                new Proiect("Ziua Portilor Deschise",
+                "„Artă'n Dar” este un eveniment care promovează cultura și arta în rândul studenților și, în același timp, urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
+                new DateTime(2025,1,22), null),
+
+				new Proiect("Caravana Edu",
+				"„Artă'n Dar” este un eveniment care promovează cultura și arta în rândul studenților și, în același timp, urmărește scopul de a împărți bucurie și cadouri oamenilor care au cea mai mare nevoie.",
+				null, null)
+			};
+
+            ViewBag.Proiecte = proiecte;
+            return View();
+        }
+
 
         public IActionResult Zpd()
         {
             return View();
         }
-
     }
 }
