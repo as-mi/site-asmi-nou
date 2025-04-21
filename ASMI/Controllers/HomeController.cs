@@ -331,7 +331,6 @@ namespace ASMI.Controllers
         {
             return View();
         }
-
         public IActionResult Elevi()
         {
             List<Proiect> proiecte = new List<Proiect>
@@ -350,5 +349,9 @@ namespace ASMI.Controllers
         }
 
 
+        public IActionResult Zpd()
+        {
+            return View();
+        }
     }
 }
