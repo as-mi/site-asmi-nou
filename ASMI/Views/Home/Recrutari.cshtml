@@ -2,7 +2,7 @@
     ViewData["Title"] = "Recrutări";
 }
 @{
-    bool avemRecrutari = true;
+    bool avemRecrutari = false;
 }
 
 @section Styles {
@@ -86,19 +86,12 @@
                             <li class="clock"><span id="seconds"></span>secunde</li>
                         </ul>
                     </div>
+
                     <div id="content" class="emoji">
                         <h2>Momentan formularul este închis. Te așteptăm la următoarea sesiune de recrutări!</h2>
                     </div>
                 </div>
-            }
-            else
-            {
-                <div class="text-center">
-                    <h2 class="font-weight-bold">Momentan, sesiunea de recrutări a luat sfârșit!</h2>
-                    <h3>Fii pe fază pentru următoarea sesiune!</h3>
-                </div>
-            }
-            <div class="text-center" id="quizDepartamente">
+                <div class="text-center" id="quizDepartamente">
                 <h2 class="font-weight-bold" style="color: white">Unde te-ai potrivi cel mai mult?</h2>
 
                 <div>
@@ -119,6 +112,23 @@
                     <img class="w-100" src="~/images/copac_pamant.png" id="pamant" />
                 
             </div>
+            }
+            else
+            {
+                <div class="text-center">
+                    <h2 class="font-weight-bold display-4" style="color:white; padding-top: 5vh; padding-bottom: 5vh; margin: 2vh;">
+                       Momentan, sesiunea de recrutări a luat sfârșit!
+                    </h2>
+                    <h3 class="font-weight-bold" style="color:rgb(236, 236, 236); padding-top: 5vh; padding-bottom: 5vh; margin: 2vh; font-size: 3rem">
+                        Fii pe fază pentru următoarea sesiune!
+                    </h3>
+                    <div class="jusitfy-content-center">
+                        <a href="/home">
+                            <img src="/images/cutie.png" alt="Pagina principală" class="cutie buttonquiz">
+                        </a>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </div>
