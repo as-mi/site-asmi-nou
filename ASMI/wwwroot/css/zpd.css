@@ -1,0 +1,148 @@
+﻿.wow {
+    visibility: hidden;
+}
+
+:root {
+    --main-color: #0a53a6;
+    --sky: #8EACCD;
+}
+
+.bkg {
+    background-color: var(--sky);
+    /*background-image: url("../img/bkg.png");*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Jost', sans-serif;
+}
+
+.embed-responsive {
+    max-width: 85em;
+    margin: auto;
+}
+
+main {
+    padding: 0 15px;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.header-lead {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-weight: 650;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+    .header-lead span {
+        color: var(--main-color);
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+.header-img {
+    margin-top: 40px;
+}
+
+.header-asmi {
+    margin-top: 25px;
+    transition: ease-in-out 0.2s;
+}
+
+    .header-asmi:hover {
+        scale: 1.05;
+        transition: ease-in-out 0.2s;
+    }
+
+.content {
+    margin: 40px auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    font-size: 1.3rem;
+    max-width: 70em;
+}
+
+.page-footer {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    background-color: white;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.jost {
+    font-family: 'Jost', sans-serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header-lead {
+        font-size: 3.5em;
+    }
+
+    #modalTC > .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .header-img {
+        height: 80px;
+        width: auto;
+    }
+
+    .header-asmi {
+        height: 80px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-img {
+        height: 100px;
+        width: auto;
+    }
+
+    .header-asmi {
+        height: 100px;
+        width: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    main {
+        margin: 0px 150px;
+    }
+
+    .header-img {
+        height: 120px;
+        width: auto;
+    }
+
+    .header-asmi {
+        height: 120px;
+        width: auto;
+    }
+
+    #modalTC > .modal-dialog {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ASMI este asociația reprezentativă la nivelul Facultății de Matematică și Informatică a Universității din București.">
+
+    <!---
+    <link rel="icon" href="https://www.asmi.ro/wp-content/uploads/2021/04/cropped-sigla-full-vectoriala-1-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.asmi.ro/wp-content/uploads/2021/04/cropped-sigla-full-vectoriala-1-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.asmi.ro/wp-content/uploads/2021/04/cropped-sigla-full-vectoriala-1-180x180.png">
+    --->
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="~/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>@ViewData["Title"] - ASMI</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/colors.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/assets/css/main.css" />
+    <link rel="stylesheet" href="~/css/proiecte.css" />
+    <link rel="stylesheet" href="~/css/setari_aditionale.css" />
+    <link rel="stylesheet" href="~/css/butonul_rosu.css" />
+
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body class="is-preload" style="margin:0">
+    <nav id="asmi-navbar" style="background-color:whitesmoke !important;" class="navbar navbar-expand-lg position-sticky py-1">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="/">
+                <img src="~/images/asmi2.png" class="img-fluid" alt="" width="100" height="100">
+            </a>
+
+            <button class="navbar-toggler text-white shadow-none" type="button" data-toggle="collapse" data-target="#asmi-nav-content" aria-controls="asmi-nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="asmi-nav-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" style="color:#0A53A6;" href="/Home" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color:#0A53A6;" href="/zpd" aria-current="page">ZPD</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:#0A53A6;" href="/DespreFMI">Despre FMI</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:#0A53A6;" href="/Admitere">Admitere</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color:#0A53A6;" href="/FAQ">FAQ</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto  mb-2">
+                    <a class="navbar-brand d-flex" href="/">
+                        <img src="~/images/asmi2.png" class="img-fluid" alt="" width="100" height="100">
+                    </a>
+                    <a class="btn my-2 my-sm-0" href="https://www.facebook.com/asmi.ub" target="_blank"><i class="fab fa-2x fa-facebook text-main" aria-hidden="true"></i></a>
+                    <a class="btn my-2 my-sm-0" href="https://www.instagram.com/asmi.ub" target="_blank"><i class="fab fa-2x fa-instagram text-main" aria-hidden="true"></i></a>
+                    <!--<li><a class="btn-sm btn-danger font-weight-bold" href="/ButonulRosu">Ai o problemă?</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to top button -->
+    <a id="backToTopButton"><i class="fas fa-arrow-circle-up"></i></a>
+
+    <div>
+        <main role="main" style="margin:0" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="inner">
+            <div class="row">
+                <section class="col-8">
+                    <h4><b>Date de contact</b></h4>
+                    <ul class="alt">
+                        <li><a href="#">Strada Academiei Nr. 14 București</a></li>
+                        <li><a href="mailto:cd@asmi.ro">E-mail: cd@asmi.ro</a></li>
+                        <li><a href="tel:+40752300470">Phone: 0752 300 470</a></li>
+                    </ul>
+                </section>
+                <section class="col-4">
+                    <h4><b>Rețele de socializare</b></h4>
+                    <ul class="plain">
+                        <li><a href=" https://www.facebook.com/asmi.ub/ " target="_blank"><i class="fab fa-facebook-f">&nbsp;&nbsp;</i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/asmi.ub/" target="_blank"><i class="fab fa-instagram">&nbsp;&nbsp;</i>Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/asociatia-studentilor-la-matematica-si-informatica/" target="_blank"><i class="fab fa-linkedin-in">&nbsp;&nbsp;</i>LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCS10f9tXhn5SfBX_2kqGt6g" target="_blank"><i class="fab fa-youtube">&nbsp;</i>YouTube</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-8">
+                    <h4 class="mb-2"><b>Contactează-ne! </b></h4>
+                    <p>Și îți vom răspunde pe cât de repede posibil.</p>
+                </section>
+            </div>
+            <div>
+                <p class="text-white py-3 mb-0">
+                    <span>Theme <a href="https://themewagon.com/themes/free-responsive-business-template/" title="Industrious" target="_blank">Industrious</a>.</span>
+                    <span class="bottom-copyright" data-customizer="copyright-credit">© Copyright @DateTime.Now.Year ASMI - Toate drepturile rezervate</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Scripts -->
+    <script src="~/lib/assets/js/jquery.min.js"></script>
+    <script src="~/lib/assets/js/browser.min.js"></script>
+    <script src="~/lib/assets/js/breakpoints.min.js"></script>
+    <script src="~/lib/assets/js/util.js"></script>
+    <script src="~/lib/assets/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

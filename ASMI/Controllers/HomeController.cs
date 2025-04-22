@@ -317,7 +317,6 @@ namespace ASMI.Controllers
             return View();
         }
 
-
         public IActionResult ButonulRosu()
         {
             return View();
@@ -358,6 +357,20 @@ namespace ASMI.Controllers
 
 
         public IActionResult Zpd()
+        {
+            return View();
+        }
+
+        public IActionResult Admitere()
+        {
+            return View();
+        }
+        public IActionResult DespreFMI()
+        {
+            return View();
+        }
+
+        public IActionResult FAQ()
         {
             return View();
         }
