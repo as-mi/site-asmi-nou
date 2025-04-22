@@ -335,18 +335,5 @@ namespace ASMI.Controllers
             return View();
         }
 
-        public IActionResult Admitere()
-        {
-            return View();
-        }
-        public IActionResult DespreFMI()
-        {
-            return View();
-        }
-
-        public IActionResult FAQ()
-        {
-            return View();
-        }
     }
 }
