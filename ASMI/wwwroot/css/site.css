@@ -190,17 +190,16 @@ body {
     z-index: 1000;
 }
 
-    #backToTopButton:hover {
-        cursor: pointer;
-        color: #333;
-    }
+#backToTopButton:hover {
+    cursor: pointer;
+    color: #333;
+}
 
-    #backToTopButton:active {
-        color: #555;
-    }
+#backToTopButton:active {
+    color: #555;
+}
 
-    #backToTopButton.show {
-        opacity: 1;
-        visibility: visible;
-    }
-
+#backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+}

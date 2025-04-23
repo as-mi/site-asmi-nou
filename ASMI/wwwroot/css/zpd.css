@@ -2,7 +2,44 @@
     visibility: hidden;
 }
 
+body{
+    background-image: url('../images/bg_zpd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // font
+    letter-spacing: 0.04cap;
+}
+
+h2{
+    font-size: calc(16px + 0.3vw);
+}
+
+h3{
+    font-size: calc(16px + 0.2vw);
+}
+
+p{
+    font-size: calc(16px + 0.1vw);
+}
+li {
+    margin-left: 20px;
+}
+
+.zpd_card {
+    background-color: transparent;
+    background-image: url('/images/square_card.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin-left: 5%;
+    padding: 4vh 4vw;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
 :root {
+    backgrund-color: black;
     --main-color: #0a53a6;
     --sky: #8EACCD;
 }
@@ -145,8 +182,4 @@ main {
     #modalTC > .modal-dialog {
         max-width: 80%;
     }
-}
-
-li {
-    margin-left: 20px;
 }

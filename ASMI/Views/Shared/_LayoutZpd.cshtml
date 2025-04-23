@@ -32,15 +32,15 @@
     <link rel="stylesheet" href="~/css/setari_aditionale.css" />
     <link rel="stylesheet" href="~/css/butonul_rosu.css" />
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     @await RenderSectionAsync("Styles", required: false)
 </head>
 
 <body class="is-preload" style="margin:0">
     <nav id="asmi-navbar" style="background-color:whitesmoke !important;" class="navbar navbar-expand-lg position-sticky py-1">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex" href="/">
-                <img src="~/images/asmi2.png" class="img-fluid" alt="" width="100" height="100">
+            <a class="navbar-brand d-flex" href=" ">
+                <img src="~/images/zpd.png" class="img-fluid" alt="" width="100" height="100">
             </a>
 
             <button style="color:#0A53A6 !important;" class="navbar-toggler text-white shadow-none" type="button" data-toggle="collapse" data-target="#asmi-nav-content" aria-controls="asmi-nav-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,20 +48,27 @@
             </button>
 
             <div class="collapse navbar-collapse" id="asmi-nav-content">
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" style="color:#0A53A6;" href="/Home" aria-current="page">Home</a></li>
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 zpd-navbar">
                     <li class="nav-item"><a class="nav-link active" style="color:#0A53A6;" href="/zpd" aria-current="page">ZPD</a></li>
                     <li class="nav-item"><a class="nav-link" style="color:#0A53A6;" href="/DespreFMI">Despre FMI</a></li>
                     <li class="nav-item"><a class="nav-link" style="color:#0A53A6;" href="/Admitere">Admitere</a></li>
                     <li class="nav-item"><a class="nav-link" style="color:#0A53A6;" href="/FAQ">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color:#0A53A6;" href="/Home" aria-current="page">Site ASMI</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto  mb-2">
-                    <a class="navbar-brand d-flex" href="/">
-                        <img src="~/images/asmi2.png" class="img-fluid" alt="" width="100" height="100">
-                    </a>
-                    <a class="btn my-2 my-sm-0" href="https://www.facebook.com/asmi.ub" target="_blank"><i class="fab fa-2x fa-facebook text-main" aria-hidden="true"></i></a>
-                    <a class="btn my-2 my-sm-0" href="https://www.instagram.com/asmi.ub" target="_blank"><i class="fab fa-2x fa-instagram text-main" aria-hidden="true"></i></a>
-                    <!--<li><a class="btn-sm btn-danger font-weight-bold" href="/ButonulRosu">Ai o problemă?</a></li>-->
+
+                    <div class="d-flex justify-content-center align-items-center space-x-6">
+                        <a class="btn" style="display: flex; align-items: center; justify-content: center; justify-items: center;" href="https://www.facebook.com/asmi.ub" target="_blank">
+                            <i class="fab fa-2x fa-facebook text-main" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn" style="display: flex; align-items: center; justify-content: center; justify-items: center" href="https://www.instagram.com/asmi.ub" target="_blank">
+                            <i class="fab fa-2x fa-instagram text-main" aria-hidden="true"></i>
+                        </a>
+                        <a class="navbar-brand flex-shrink-0" style="display: flex; align-items: center; justify-content: center; justify-items: center;" href="/">
+                            <img src="~/images/asmi2.png" class="img-fluid" alt="" width="100" height="100">
+                        </a>
+                    </div>
+
                 </ul>
             </div>
         </div>
