@@ -105,6 +105,65 @@ main {
     max-width: 70em;
 }
 
+.navigation-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-button {
+    margin-right: 20vw;
+    margin-left: 20vw;
+    background-color: #0A53A6;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: calc(16px + 0.1vw);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05cap;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-width: fit-content;
+    max-width: calc(50% - 10px); 
+
+    text-transform: uppercase;
+    letter-spacing: 0.08cap;
+
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 5px rgba(10, 83, 166, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button:hover {
+    background-color: #083b76;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none !important;
+}
+
+.nav-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .page-footer {
     font-size: 1em;
     color: black;
@@ -152,7 +211,47 @@ main {
 }
 
 @media (max-width: 768px) {
+    .page-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
 
+    .nav-button {
+
+        margin: 0 auto; 
+        background-color: #0A53A6;
+        color: white !important;
+        border: none;
+        border-radius: 5px;
+        padding: 0.75rem 1.5rem;
+        font-size: calc(16px + 0.1vw);
+        cursor: pointer;
+        white-space: normal;
+        text-align: center;
+        word-wrap: break-word;
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 80%;
+        max-width: 500px; 
+        min-width: 200px;
+
+        text-transform: uppercase;
+        letter-spacing: 0.08cap;
+
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 2px 5px rgba(10, 83, 166, 0.2);
+        position: relative;
+    }
+
+
+    .navigation-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     .header-img {
         height: 100px;
         width: auto;
