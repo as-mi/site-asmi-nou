@@ -1,19 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "ZPD";
+	ViewData["Title"] = "ZPD";
 }
 @{
-    Layout = "~/Views/Shared/_LayoutZpd.cshtml";
+	Layout = "~/Views/Shared/_LayoutZpd.cshtml";
 }
 @section Styles {
-    <link rel="stylesheet" href="~/css/zpd.css" />
+	<link rel="stylesheet" href="~/css/zpd.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 }
 
 
-    <div class="py-5">
-        <img src="~/images/ZPD_Title.png" alt="Ziua Porților Deschise" style="display: block; max-width: 100%; height: auto; margin: 0 auto; padding: 10px;">
-    </div>
+<div class="py-5">
+	<img src="~/images/ZPD_Title.png" alt="Ziua Porților Deschise" style="display: block; max-width: 100%; height: auto; margin: 0 auto; padding: 10px;">
+</div>
 
-    @* <div style="width: 90vw; margin-left: 5vw; background-color: rgb(228, 228, 228); padding: 10px; border-radius: 10px; margin-bottom: 5vh; box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.334);">
+@* <div style="width: 90vw; margin-left: 5vw; background-color: rgb(228, 228, 228); padding: 10px; border-radius: 10px; margin-bottom: 5vh; box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.334);">
         <p class="jost">
             Vrei să vezi cum arată Facultatea de Matematică și Informatică pe interior? 
             Pe <strong>26-27 aprilie</strong>, te invităm la 
@@ -31,76 +33,117 @@
         </p>
     </div> *@
 
-    <div class="zpd_card">
-        <p>
-            <p>
-                Dacă vrei să afli mai multe despre oferta educațională a Facultății, să discuți cu voluntarii ASMI despre viața studențească sau să iei parte la un curs demonstrativ, Ziua Porților Deschise este evenimentul potrivit pentru tine!
-            </p>
-            <p>
-                Înscrierile pentru evenimentul fizic s-au încheiat, însă dacă dorești să participi, anul acesta cursurile și prezentările se vor desfășura și în format online! 
-            </p>
-            <h2>Calendarul evenimentului</h2>
-            <p style="font-style: italic; color: rgb(0, 0, 117);">
-                Toate prezentările și cursurile pot fi vizionate online cu ajutorul butonului de mai jos, la ora precizată.
-            </p>
-            <h3> Sâmbătă, 26 aprilie</h3>
-            <ul>
-                <li>
-                    10:00 - Curs demonstrativ de Informatică 
-                </li>
-                <li>
-                    11:00 - Prezentare a ofertei educaționale
-                </li>
-                <li>
-                    14:30 - Curs demonstrativ de Informatică - Programare Orientată pe Obiecte
-                </li>
-                <li>
-                    15:30 - Prezentare a ofertei educaționale
-                </li>
-            </ul>
-            <h3>Duminică, 27 aprilie</h3>
-            <ul>
-                <li>
-                    10:00 - Curs demonstrativ de Informatică - Computer Vision
-                </li>
-                <li>
-                    11:00 - Prezentare a ofertei educaționale    
-                </li>
-                <li>
-                    14:30 - Curs demonstrativ de Matematică - Șiruri de numere
-                </li>
-                <li>
-                    15:30 - Prezentare a ofertei educaționale
-                </li>
-            </ul>
+<div class="zpd_card">
+	<p>
+	<p>
+		Dacă vrei să afli mai multe despre oferta educațională a Facultății, să discuți cu voluntarii ASMI despre viața studențească sau să iei parte la un curs demonstrativ, Ziua Porților Deschise este evenimentul potrivit pentru tine!
+	</p>
+	<p>
+		Înscrierile pentru evenimentul fizic s-au încheiat, însă dacă dorești să participi, anul acesta cursurile și prezentările se vor desfășura și în format online!
+	</p>
+	<h2>Calendarul evenimentului</h2>
+	<p style="font-style: italic; color: rgb(0, 0, 117);">
+		Toate prezentările și cursurile pot fi vizionate online cu ajutorul butonului de mai jos, la ora precizată.
+	</p>
+	<h3> Sâmbătă, 26 aprilie</h3>
+	<ul>
+		<li>
+			10:00 - Curs demonstrativ de Informatică
+		</li>
+		<li>
+			11:00 - Prezentare a ofertei educaționale
+		</li>
+		<li>
+			14:30 - Curs demonstrativ de Informatică - Programare Orientată pe Obiecte
+		</li>
+		<li>
+			15:30 - Prezentare a ofertei educaționale
+		</li>
+	</ul>
+	<h3>Duminică, 27 aprilie</h3>
+	<ul>
+		<li>
+			10:00 - Curs demonstrativ de Informatică - Computer Vision
+		</li>
+		<li>
+			11:00 - Prezentare a ofertei educaționale
+		</li>
+		<li>
+			14:30 - Curs demonstrativ de Matematică - Șiruri de numere
+		</li>
+		<li>
+			15:30 - Prezentare a ofertei educaționale
+		</li>
+	</ul>
 
-            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: auto; margin-top: 20px;">
-                <a href="https://meet.google.com/feo-mcgu-jqz" target="_blank" style="text-decoration: none;">
-                    <button style="text-transform:uppercase; letter-spacing: 0.1cap; background-color: rgb(0, 0, 135); color: white !important; border: none; border-radius: 5px; cursor: pointer;">
-                        Vezi prezentarea live
-                    </button>
-                </a>
-                <p style="font-size: 1rem; color: rgb(0, 0, 135);" class="mt-2">* conform orarului</p>
-            </div>
-        </p>
-    </div>
+	<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: auto; margin-top: 20px;">
+		<a href="https://meet.google.com/feo-mcgu-jqz" target="_blank" style="text-decoration: none;">
+			<button style="text-transform:uppercase; letter-spacing: 0.1cap; background-color: rgb(0, 0, 135); color: white !important; border: none; border-radius: 5px; cursor: pointer;">
+				Vezi prezentarea live
+			</button>
+		</a>
+		<p style="font-size: 1rem; color: rgb(0, 0, 135);" class="mt-2">* conform orarului</p>
+	</div>
+	</p>
+</div>
 
-    <div class="zpd_card p-5">
-        <p>
-            <p style="font-style: italic; color: rgb(0, 0, 117);">
-                Vă rugăm să participați la evenimentul fizic doar dacă ați completat formularul de înscriere.
-            </p>
-            <p>
-            Locația evenimentului:
-            </p>
-            <iframe loading="lazy" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA9fGn6BgcbA-uVeW_CD5kgYZSGk2dl0P8&amp;q=Facultatea+de+Matematică+și+Informatică+-+Universitatea+din+București" width="100%" height="300" frameborder="0">
-            </iframe>
-        </p>
-    </div>
-    <div class="zpd_card">
-        <a href="/DespreFMI" class="zpd_nav-button">
-            Descoperă FMI <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
+<div class="zpd_card p-5">
+	<p>
+	<p style="font-style: italic; color: rgb(0, 0, 117);">
+		Vă rugăm să participați la evenimentul fizic doar dacă ați completat formularul de înscriere.
+	</p>
+	<p>
+		Locația evenimentului:
+	</p>
+	<iframe loading="lazy" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA9fGn6BgcbA-uVeW_CD5kgYZSGk2dl0P8&amp;q=Facultatea+de+Matematică+și+Informatică+-+Universitatea+din+București" width="100%" height="300" frameborder="0">
+	</iframe>
+	</p>
+</div>
+<div class="zpd_card">
+	<a href="/DespreFMI" class="zpd_nav-button">
+		Descoperă FMI <i class="fas fa-arrow-right"></i>
+	</a>
+</div>
+
+<div class="zpd_card p-5 mb-5">
+	<br />
+	<br />
+	<p><h2>Galerie Foto</h2></p>
+	@foreach (var categ in ViewBag.Poze)
+	{
+		<p><h3>@categ.categ</h3></p>
+		<div class="feature-35-owl owl-carousel owl-theme mb-5">
+			@foreach (String img in categ.imgs)
+			{
+				<div class="item d-flex flex-row justify-content-center align-items-center">
+					<a href="javascript:void(0)">
+						<img src="@img" alt="gal-item" class="img-fluid" style="max-height: 50vh;" />
+					</a>
+				</div>
+			}
+
+		</div>
+	}
+
+</div>
 
 </section>
+
+@section Scripts {
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<script>
+		$('.feature-35-owl').owlCarousel({
+			items: 1,
+			loop: true,
+			autoplay: true,
+			margin: 10,
+			nav: true,
+			navText : []
+		});
+	</script>
+
+
+}
