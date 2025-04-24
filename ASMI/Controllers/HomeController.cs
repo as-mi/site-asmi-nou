@@ -37,12 +37,6 @@ namespace ASMI.Controllers
             public int h;
         }
 
-        public class ZPDData
-        {
-            public string categ;
-            public List<String> imgs;
-        }
-
         private static List<ProjData> pProjects = new List<ProjData>() {
              new ProjData {
                 img = "artandar-.png",
@@ -364,80 +358,6 @@ namespace ASMI.Controllers
 
         public IActionResult Zpd()
         {
-            List<ZPDData> PozeZPD = new List<ZPDData> {
-
-                new ZPDData{
-                    categ = "Exterior",
-                    imgs = new List<string>{
-                        "images/zpd/e1.png",
-                        "images/zpd/e2.png",
-                        "images/zpd/e3.png",
-                        "images/zpd/e4.png",
-                        "images/zpd/e5.png",
-                        "images/zpd/e6.png",
-                        "images/zpd/e7.png"
-                    }
-                },
-
-                new ZPDData{
-                    categ = "Laboratorul Softbinator",
-                    imgs = new List<string>{
-                        "images/zpd/sb1.png",
-                        "images/zpd/sb2.png",
-                        "images/zpd/sb3.png",
-                        "images/zpd/sb4.png",
-                        "images/zpd/sb5.png",
-                    }
-                },
-
-                new ZPDData
-                {
-                    categ = "Sala Google",
-                    imgs = new List<string>{
-                        "images/zpd/g1.png",
-                        "images/zpd/g2.png",
-                        "images/zpd/g3.png",
-                        "images/zpd/g4.png",
-                        "images/zpd/g5.png",
-                        "images/zpd/g6.png"
-                    }
-                },
-
-                new ZPDData
-                {
-                    categ = "Laboratorul de Robotică",
-                    imgs = new List<string>
-                    {
-                        "images/zpd/rb1.png",
-                        "images/zpd/rb2.png",
-                        "images/zpd/rb3.png",
-                        "images/zpd/rb4.png",
-                        "images/zpd/rb5.png",
-                        "images/zpd/rb6.png",
-                        "images/zpd/rb7.png",
-                        "images/zpd/rb8.png",
-                        "images/zpd/rb9.png",
-                        "images/zpd/rb10.png",
-                        "images/zpd/rb11.png"
-                    }
-                },
-
-                new ZPDData
-                {
-                    categ = "Săli și holuri",
-                    imgs = new List<string>
-                    {
-                        "images/zpd/s1.png",
-                        "images/zpd/s2.png",
-                        "images/zpd/s3.png",
-                        "images/zpd/s4.png",
-                        "images/zpd/s5.png",
-                        "images/zpd/s6.png"
-                    }
-                }
-            };
-
-            ViewBag.Poze = PozeZPD;
             return View();
         }
 
@@ -454,7 +374,5 @@ namespace ASMI.Controllers
         {
             return View();
         }
-
-    
     }
 }
