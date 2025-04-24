@@ -6,6 +6,7 @@ body{
     background-image: url('../images/bg_zpd.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     // font
     letter-spacing: 0.04cap;
 }
