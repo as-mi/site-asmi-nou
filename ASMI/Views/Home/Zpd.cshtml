@@ -105,14 +105,14 @@
 	</a>
 </div>
 
-<div class="zpd_card p-5 mb-5">
+<div class="zpd_card p-5">
 	<br />
 	<br />
 	<p><h2>Galerie Foto</h2></p>
 	@foreach (var categ in ViewBag.Poze)
 	{
 		<p><h3>@categ.categ</h3></p>
-		<div class="feature-35-owl owl-carousel owl-theme mb-5">
+		<div class="feature-35-owl owl-carousel owl-theme">
 			@foreach (String img in categ.imgs)
 			{
 				<div class="item d-flex flex-row justify-content-center align-items-center">
