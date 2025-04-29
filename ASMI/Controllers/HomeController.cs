@@ -369,24 +369,24 @@ namespace ASMI.Controllers
                 new ZPDData{
                     categ = "Exterior",
                     imgs = new List<string>{
-                        "images/zpd/e1.png",
-                        "images/zpd/e2.png",
-                        "images/zpd/e3.png",
-                        "images/zpd/e4.png",
-                        "images/zpd/e5.png",
-                        "images/zpd/e6.png",
-                        "images/zpd/e7.png"
+                        "images/zpd/e1.jpg",
+                        "images/zpd/e2.jpg",
+                        "images/zpd/e3.jpg",
+                        "images/zpd/e4.jpg",
+                        "images/zpd/e5.jpg",
+                        "images/zpd/e6.jpg",
+                        "images/zpd/e7.jpg"
                     }
                 },
 
                 new ZPDData{
                     categ = "Laboratorul Softbinator",
                     imgs = new List<string>{
-                        "images/zpd/sb1.png",
-                        "images/zpd/sb2.png",
-                        "images/zpd/sb3.png",
-                        "images/zpd/sb4.png",
-                        "images/zpd/sb5.png",
+                        "images/zpd/sb1.jpg",
+                        "images/zpd/sb2.jpg",
+                        "images/zpd/sb3.jpg",
+                        "images/zpd/sb4.jpg",
+                        "images/zpd/sb5.jpg",
                     }
                 },
 
@@ -394,12 +394,12 @@ namespace ASMI.Controllers
                 {
                     categ = "Sala Google",
                     imgs = new List<string>{
-                        "images/zpd/g1.png",
-                        "images/zpd/g2.png",
-                        "images/zpd/g3.png",
-                        "images/zpd/g4.png",
-                        "images/zpd/g5.png",
-                        "images/zpd/g6.png"
+                        "images/zpd/g1.jpg",
+                        "images/zpd/g2.jpg",
+                        "images/zpd/g3.jpg",
+                        "images/zpd/g4.jpg",
+                        "images/zpd/g5.jpg",
+                        "images/zpd/g6.jpg"
                     }
                 },
 
@@ -408,17 +408,17 @@ namespace ASMI.Controllers
                     categ = "Laboratorul de Robotică",
                     imgs = new List<string>
                     {
-                        "images/zpd/rb1.png",
-                        "images/zpd/rb2.png",
-                        "images/zpd/rb3.png",
-                        "images/zpd/rb4.png",
-                        "images/zpd/rb5.png",
-                        "images/zpd/rb6.png",
-                        "images/zpd/rb7.png",
-                        "images/zpd/rb8.png",
-                        "images/zpd/rb9.png",
-                        "images/zpd/rb10.png",
-                        "images/zpd/rb11.png"
+                        "images/zpd/rb1.jpg",
+                        "images/zpd/rb2.jpg",
+                        "images/zpd/rb3.jpg",
+                        "images/zpd/rb4.jpg",
+                        "images/zpd/rb5.jpg",
+                        "images/zpd/rb6.jpg",
+                        "images/zpd/rb7.jpg",
+                        "images/zpd/rb8.jpg",
+                        "images/zpd/rb9.jpg",
+                        "images/zpd/rb10.jpg",
+                        "images/zpd/rb11.jpg"
                     }
                 },
 
@@ -427,12 +427,12 @@ namespace ASMI.Controllers
                     categ = "Săli și holuri",
                     imgs = new List<string>
                     {
-                        "images/zpd/s1.png",
-                        "images/zpd/s2.png",
-                        "images/zpd/s3.png",
-                        "images/zpd/s4.png",
-                        "images/zpd/s5.png",
-                        "images/zpd/s6.png"
+                        "images/zpd/s1.jpg",
+                        "images/zpd/s2.jpg",
+                        "images/zpd/s3.jpg",
+                        "images/zpd/s4.jpg",
+                        "images/zpd/s5.jpg",
+                        "images/zpd/s6.jpg"
                     }
                 }
             };
