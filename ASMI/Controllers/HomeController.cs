@@ -206,7 +206,7 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Design & PR",
-                    img = "images/dd_design.jpg",
+                    img = "images/dd_design.jpeg",
                     director = "Delia Tapai",
                     desc =  new List<string>{
                         "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi \"Imaginea Asociației\". Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram. Fie că este vorba de Recrutări sau Petreceri, fără o promovare ca la carte, lumea nu ar fi atrasă de evenimentele noastre iar informația ar ajunge la mult mai puțini oameni. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător.",
