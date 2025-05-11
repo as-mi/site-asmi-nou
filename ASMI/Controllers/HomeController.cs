@@ -278,7 +278,7 @@ namespace ASMI.Controllers
 
                 new DepData{
                     title = "Management & Fundraising",
-                    img = "images/dd_mf.jpg",
+                    img = "images/dd_mf.jpeg",
                     director = "Vlad Apostol",
                     desc = new List<string> { "Pentru ca un proiect să decurgă cum ne dorim este nevoie de muncă, dedicare și comunicare, însă pentru a crea ceva memorabil este nevoie de un element special, ceva să unească efortul comun și să ne dea aripi viselor. Aici intervin sponsorii noștrii care ne susțin în încercarea de a-i ajuta pe studenți. Noi suntem reprezentanții externi fiind primii cu care iau legătura firmele atunci când ne oferă sprijinul lor. De asemenea noi oferim o voce oamenilor dornici să spună ce le-a plăcut în cadrul evenimentelor, dar și ce trebuie îmbunătățit, astfel încât edițiile următoare să fie din ce în ce mai bune. În cadrul departamentului vei învăța ce înseamnă să organizezi un proiect, cum să discuți și să negociezi cu firme mari din domeniul IT și nu numai, dar și ce înseamnă munca în echipa, gestionarea resurselor și distracția alături de colegi. Dacă te interesează legătura dintre Asociație și companiile partenere și îți dorești să consolidezi mai departe aceste relații, dar și să creezi unele noi, atunci Management & Fundraising te așteaptă!" },
                     facebook = "https://www.facebook.com/vlad.apostol.71",
