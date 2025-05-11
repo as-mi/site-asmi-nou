@@ -231,13 +231,13 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Educațional",
-                    img = "images/dd_edu.jpeg",
-                    director = "Cristi Ingeaua",
+                    img = "images/dd_edu.png",
+                    director = "Matei-Octavian Andrei",
                     desc = new List<string>{"Departamentul Educațional se ocupă direct de întreaga interacțiune atât cu studenții facultății noastre, cât și cu elevi care și-ar dori să urmeze FMI. Noi coordonăm voluntarii din întreaga Asociație în gestionarea proiectelor precum: Rățușca, Admiterea, Caravana Educațională, Ziua Porților Deschise. Cu ajutorul acestora reușim să motivăm și să oferim ajutor constant studenților pentru a le crea o experiență de neuitat într-una din cele mai semnificative perioade a vieții lor.", "Membrii departamentului dezvoltă abilităţi de public speaking, project management, teamwork şi leadership pe care le pot folosi în proiectele Asociaţiei și nu numai.", "În câteva cuvinte, Edu este cu şi pentru studenţi!", "Dacă şi tu vrei să îţi ajuţi colegii şi să încerci să faci anii petrecuţi în facultate mai buni, hai în echipa Edu!"},
-                    facebook = "https://www.facebook.com/cristi.ingeaua",
+                    facebook = "https://www.facebook.com/profile.php?id=61551758288923",
                     linkedin = null,
                     github = null,
-                    instagram = "https://www.instagram.com/kriz.420/",
+                    instagram = "https://www.instagram.com/matei_21/",
                     imgs = new List<string>{
                         "images/edu/d1.jpeg",
                         "images/edu/d2.jpeg",
