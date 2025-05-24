@@ -131,16 +131,7 @@ namespace ASMI.Controllers
                 name = "Dialog Deschis",
                 url = null
             },
-             new ProjData
-             {
-                img = null,
-                desc = "Acest proiect se desfășoară la începutul anului universitar, deoarece scopul său este de a motiva și de a " +
-                 "pregăti studenții să aplice la firmele de top din domeniu (Google, Facebook, Amazon etc.). Constă într-o " +
-                 "prezentare din partea diverselor persoane care au fost interni în cadrul acestora.",
-                name = "InternView",
-                url = null
-             },
-
+        
              new ProjData
              {
                 img = null,
@@ -171,8 +162,7 @@ namespace ASMI.Controllers
               {
                 img = null,
                 desc = "ASMI organizează o multitudine de petreceri pentru a le face viața studențească mai frumoasă și pentru a le oferi studenților " +
-                  "oportunitatea de a socializa și de a se distra. Printre acestea se numără Bumtzi (prima petrecere din anul universitar), FeMeI Party,"  +
-                  "ASMI Party și Petrecerea de Trecere. ",
+                  "oportunitatea de a socializa și de a se distra. Printre acestea se numără Bumtzi (prima petrecere din anul universitar) și FeMeI Party.",
                 name = "Petreceri ASMI",
                 url = null
               }
