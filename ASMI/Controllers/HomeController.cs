@@ -206,7 +206,7 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Design & PR",
-                    img = "images/dd_design.jpeg",
+                    img = "images/DeliaDDDesign.jpg",
                     director = "Delia Tapai",
                     desc =  new List<string>{
                         "Dacă am putea descrie acest departament în două cuvinte acelea sigur ar fi \"Imaginea Asociației\". Imaginează-ți pentru câteva secunde cum ar arăta un proiect fără afișe, postări pe Facebook sau pe Instagram. Fie că este vorba de Recrutări sau Petreceri, fără o promovare ca la carte, lumea nu ar fi atrasă de evenimentele noastre iar informația ar ajunge la mult mai puțini oameni. De aceea, avem nevoie de mult ajutor din partea acestui departament pentru a transmite informația într-un mod cât mai plăcut și mai atrăgător.",
@@ -231,7 +231,7 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Educațional",
-                    img = "images/dd_edu.jpg",
+                    img = "images/MateiDDEdu.jpg",
                     director = "Matei-Octavian Andrei",
                     desc = new List<string>{"Departamentul Educațional se ocupă direct de întreaga interacțiune atât cu studenții facultății noastre, cât și cu elevi care și-ar dori să urmeze FMI. Noi coordonăm voluntarii din întreaga Asociație în gestionarea proiectelor precum: Rățușca, Admiterea, Caravana Educațională, Ziua Porților Deschise. Cu ajutorul acestora reușim să motivăm și să oferim ajutor constant studenților pentru a le crea o experiență de neuitat într-una din cele mai semnificative perioade a vieții lor.", "Membrii departamentului dezvoltă abilităţi de public speaking, project management, teamwork şi leadership pe care le pot folosi în proiectele Asociaţiei și nu numai.", "În câteva cuvinte, Edu este cu şi pentru studenţi!", "Dacă şi tu vrei să îţi ajuţi colegii şi să încerci să faci anii petrecuţi în facultate mai buni, hai în echipa Edu!"},
                     facebook = "https://www.facebook.com/profile.php?id=61551758288923",
@@ -253,7 +253,7 @@ namespace ASMI.Controllers
                 new DepData
                 {
                     title = "Human Resources",
-                    img = "images/dd_hr.jpg",
+                    img = "images/RobertDDHR.jpg",
                     director = "Robert-Gabriel Sîrbu",
                     desc = new List<string>{
                     "Noi suntem, pe scurt, „inima Asociației” ! Ne ocupăm de integrarea bobocilor ce ni se alătură în fiecare toamnă și primăvară, astfel încât aceștia să ajungă să se simtă cu adevărat parte din familia noastră. De asemenea, asigurăm dezvoltarea și motivarea constantă a voluntarilor noștri prin organizarea activităților de socializare.", "Pe lângă procesul de recrutare, proiecte precum Marea Ieșeală, Tre' să Caut, chiar și Petrecerile, sunt organizate de voluntarii acestui departament. Așa că, dacă ești o persoană empatică, altruistă, îți place să ajuți, să comunici cu oamenii și să organizezi activități, departamentul Human Resources te așteaptă cu brațele deschise!"
@@ -278,7 +278,7 @@ namespace ASMI.Controllers
 
                 new DepData{
                     title = "Management & Fundraising",
-                    img = "images/dd_mf.jpeg",
+                    img = "images/VladDDMF.jpg",
                     director = "Vlad Apostol",
                     desc = new List<string> { "Pentru ca un proiect să decurgă cum ne dorim este nevoie de muncă, dedicare și comunicare, însă pentru a crea ceva memorabil este nevoie de un element special, ceva să unească efortul comun și să ne dea aripi viselor. Aici intervin sponsorii noștrii care ne susțin în încercarea de a-i ajuta pe studenți. Noi suntem reprezentanții externi fiind primii cu care iau legătura firmele atunci când ne oferă sprijinul lor. De asemenea noi oferim o voce oamenilor dornici să spună ce le-a plăcut în cadrul evenimentelor, dar și ce trebuie îmbunătățit, astfel încât edițiile următoare să fie din ce în ce mai bune. În cadrul departamentului vei învăța ce înseamnă să organizezi un proiect, cum să discuți și să negociezi cu firme mari din domeniul IT și nu numai, dar și ce înseamnă munca în echipa, gestionarea resurselor și distracția alături de colegi. Dacă te interesează legătura dintre Asociație și companiile partenere și îți dorești să consolidezi mai departe aceste relații, dar și să creezi unele noi, atunci Management & Fundraising te așteaptă!" },
                     facebook = "https://www.facebook.com/vlad.apostol.71",
